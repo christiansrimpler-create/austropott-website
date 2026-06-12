@@ -1333,6 +1333,12 @@ details.info .inhalt { padding: 0 1.25rem 1.25rem; }
 }
 
 @media (max-width: 40rem) {
+  /* Hero kompakter: weniger Leerraum oben, Bildausschnitt auf den
+     Schauspieler rechts statt auf die leere Bildmitte */
+  .hero { min-height: min(72vh, 40rem); }
+  .hero .wrap { padding-top: clamp(3rem, 8vh, 5rem); }
+  .hero img.hero-bg { object-position: 58% center; }
+
   .stueck-grid { grid-template-columns: 1fr; }
   .quote-grid { grid-template-columns: 1fr; }
   .footer-main { grid-template-columns: 1fr; }
