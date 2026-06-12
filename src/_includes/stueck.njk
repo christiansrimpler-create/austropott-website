@@ -1,0 +1,80 @@
+---
+layout: layout.njk
+---
+    <div class="wrap stueck-hero">
+      <div class="titelseite">
+        <span class="kicker">{{ genre }}</span>
+        <h1>{{ (titel_html or titel) | safe }}</h1>
+        {%- if untertitel %}
+        <p class="untertitel">{{ untertitel }}</p>
+        {%- endif %}
+        <p class="lead">{{ teaser }}</p>
+        <div class="hero-actions">
+          <a class="btn btn-red" href="{{ einstellungen.ticket_url }}" target="_blank" rel="noopener">Tickets kaufen</a>
+          <a class="btn" href="{{ '/termine.html' | url }}">Termine</a>
+        </div>
+      </div>
+      <figure class="frame">
+        <img src="{{ bild | url }}" alt="{{ bild_alt }}">
+        {%- if foto_credit %}
+        <figcaption>{{ foto_credit }}</figcaption>
+        {%- endif %}
+      </figure>
+    </div>
+    {%- if pressezitate and pressezitate.length == 1 %}
+    <section class="section section-deep">
+      <div class="wrap">
+        <div class="bigquote reveal">
+          <blockquote>„{{ pressezitate[0].text }}“</blockquote>
+          {%- if pressezitate[0].quelle %}
+          <cite>{{ pressezitate[0].quelle }}</cite>
+          {%- endif %}
+        </div>
+      </div>
+    </section>
+    {%- elif pressezitate and pressezitate.length > 1 %}
+    <section class="section section-deep">
+      <div class="wrap quote-grid" style="--line-night: rgba(24,20,16,0.2)">
+        {%- for zitat in pressezitate %}
+        <div class="quote-card reveal">
+          <blockquote>„{{ zitat.text }}“</blockquote>
+          {%- if zitat.quelle %}
+          <cite>{{ zitat.quelle }}</cite>
+          {%- endif %}
+        </div>
+        {%- endfor %}
+      </div>
+    </section>
+    {%- endif %}
+    <section class="section">
+      <div class="wrap prose">
+        <span class="kicker">Zum Stück</span>
+        {{ content | safe }}
+        {%- if rechte %}
+        <p class="hinweis" style="font-size:0.85rem;color:var(--ink-soft)">{{ rechte | mdInline | safe }}</p>
+        {%- endif %}
+      </div>
+    </section>
+    {%- if schlusszitat and schlusszitat.text %}
+    <section class="section section-night">
+      <div class="wrap">
+        <div class="bigquote reveal">
+          <blockquote>„{{ schlusszitat.text }}“</blockquote>
+          {%- if schlusszitat.quelle %}
+          <cite>{{ schlusszitat.quelle }}</cite>
+          {%- endif %}
+        </div>
+      </div>
+    </section>
+    {%- endif %}
+    <section class="section">
+      <div class="wrap prose">
+        <div class="cta-box">
+          <strong>Karten für die nächste Vorstellung?</strong>
+          <div class="actions">
+            <a class="btn" href="{{ '/termine.html' | url }}">Termine ansehen</a>
+            <a class="btn btn-red" href="{{ einstellungen.ticket_url }}" target="_blank" rel="noopener">Tickets kaufen</a>
+          </div>
+        </div>
+      </div>
+    </section>

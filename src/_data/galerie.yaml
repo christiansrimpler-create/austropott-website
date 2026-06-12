@@ -1,0 +1,32 @@
+# Galerie-Bilder – über das CMS unter „Galerie“ bearbeitbar
+bilder:
+  - bild: /assets/img/galerie/abschiedsdinner.jpg
+    beschreibung: "Szenenfoto aus „Das Abschiedsdinner“"
+  - bild: /assets/img/galerie/siegersbusch-fim-6482.jpg
+    beschreibung: "Szenenfoto einer austroPott-Aufführung"
+  - bild: /assets/img/galerie/kunst-2.jpg
+    beschreibung: "Szenenfoto aus „KUNST“"
+  - bild: /assets/img/galerie/bass1.jpg
+    beschreibung: "Michael Kamp in „Der Kontrabass“"
+  - bild: /assets/img/galerie/siegersbusch-fim-6758.jpg
+    beschreibung: "Szenenfoto einer austroPott-Aufführung"
+  - bild: /assets/img/galerie/gott-des-gemetzels.jpg
+    beschreibung: "Szenenfoto aus „Der Gott des Gemetzels“"
+  - bild: /assets/img/galerie/dsc-0028-2.jpg
+    beschreibung: "Szenenfoto einer austroPott-Aufführung"
+  - bild: /assets/img/galerie/kunst-6.jpg
+    beschreibung: "Szenenfoto aus „KUNST“"
+  - bild: /assets/img/galerie/siegersbusch-fim-6638.jpg
+    beschreibung: "Szenenfoto einer austroPott-Aufführung"
+  - bild: /assets/img/galerie/tur.jpg
+    beschreibung: "Szenenfoto aus „Die Tür nebenan“"
+  - bild: /assets/img/galerie/bass2.jpg
+    beschreibung: "Michael Kamp in „Der Kontrabass“"
+  - bild: /assets/img/galerie/dsc-0077-2.jpg
+    beschreibung: "Szenenfoto einer austroPott-Aufführung"
+  - bild: /assets/img/galerie/img-3881.jpg
+    beschreibung: "Szenenfoto einer austroPott-Aufführung"
+  - bild: /assets/img/galerie/siegersbusch-fim-6671.jpg
+    beschreibung: "Szenenfoto einer austroPott-Aufführung"
+  - bild: /assets/img/galerie/img-3903-2.jpg
+    beschreibung: "Szenenfoto einer austroPott-Aufführung"

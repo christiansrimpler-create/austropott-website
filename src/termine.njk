@@ -1,0 +1,59 @@
+---
+layout: layout.njk
+permalink: /termine.html
+title: "Termine | austroPott – Theater im Dortmunder U"
+desc: "Alle Vorstellungstermine von austroPott im Dortmunder U auf einen Blick. Tickets online bei Tickettoaster buchen."
+active: termine
+---
+    <div class="wrap page-head">
+      <span class="kicker">Spielplan</span>
+      <h1>Termine</h1>
+      <p class="lead">Alle Vorstellungen finden im Kino im Erdgeschoss des Dortmunder U statt. Die Abendkasse öffnet eine Stunde vor Vorstellungsbeginn.</p>
+    </div>
+    <section class="section">
+      <div class="wrap">
+        {%- set kommende = termine.termine | zukuenftige %}
+        {%- if kommende.length %}
+        {%- for gruppe in kommende | nachMonat %}
+        <h2 class="termin-monat">{{ gruppe.monat }}</h2>
+        <ul class="termin-liste">
+          {%- for termin in gruppe.termine %}
+          {%- set ziel = termin.stueck | stueckUrl(collections.stuecke) %}
+          <li class="termin">
+            <span class="tag">{{ termin.datum | wochentag }}</span>
+            <span class="zeit">{{ termin.uhrzeit }}</span>
+            {%- if ziel %}
+            <a class="titel" href="{{ ziel | url }}">{{ termin.stueck }}</a>
+            {%- else %}
+            <span class="titel">{{ termin.stueck }}</span>
+            {%- endif %}
+            <a class="btn btn-red" href="{{ einstellungen.ticket_url }}" target="_blank" rel="noopener">Tickets</a>
+          </li>
+          {%- endfor %}
+        </ul>
+        {%- endfor %}
+        {%- else %}
+        <div class="prose">
+          <p class="lead">{{ einstellungen.termine_hinweis }}</p>
+          <p>Schauen Sie bald wieder vorbei oder abonnieren Sie unseren <a href="{{ '/service/newsletter.html' | url }}">Newsletter</a> – dann erfahren Sie als Erste, wann es weitergeht. Sobald die Vorstellungen feststehen, finden Sie die Karten direkt in unserem Ticketshop.</p>
+          <div class="hero-actions">
+            <a class="btn btn-red" href="{{ einstellungen.ticket_url }}" target="_blank" rel="noopener">Zum Ticketshop</a>
+            <a class="btn" href="{{ '/service/newsletter.html' | url }}">Newsletter abonnieren</a>
+          </div>
+        </div>
+        {%- endif %}
+      </div>
+    </section>
+    <section class="section section-deep">
+      <div class="wrap kontakt-grid">
+        <div>
+          <h2>Gut zu wissen</h2>
+          <p>Die Abendkasse öffnet eine Stunde vor Vorstellungsbeginn. Wir haben keine Barkasse – Sie können mit EC- und Kreditkarte sowie kontaktlos zahlen.</p>
+          <p>Nach Vorstellungsbeginn ist kein Einlass möglich. Bereits gekaufte Karten können wir leider nicht umtauschen oder zurückgeben.</p>
+          <a class="btn" href="{{ '/tickets.html' | url }}">Alle Ticket-Infos</a>
+        </div>
+        <figure class="frame" style="margin:0">
+          <img src="{{ '/assets/img/termine.jpg' | url }}" alt="Szenenfoto einer austroPott-Vorstellung" loading="lazy">
+        </figure>
+      </div>
+    </section>

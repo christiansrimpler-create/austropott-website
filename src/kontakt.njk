@@ -1,0 +1,28 @@
+---
+layout: layout.njk
+permalink: /kontakt.html
+title: "Kontakt | austroPott – Theater im Dortmunder U"
+desc: "Kontakt zu austroPott: Telefon 0231 99 320 430, E-Mail tickets@austropott.de. Spielstätte: Kino im Dortmunder U, Leonie-Reygers-Terrasse, Dortmund."
+active: kontakt
+---
+    <div class="wrap page-head">
+      <span class="kicker">Wir sind für Sie da</span>
+      <h1>Kontakt</h1>
+      <p class="lead">Sie haben Fragen zu Vorstellungen, Tickets oder Gruppenbuchungen? Rufen Sie uns an oder schreiben Sie uns – wir melden uns so schnell wie möglich.</p>
+    </div>
+    <section class="section">
+      <div class="wrap kontakt-grid">
+        <div>
+          <a class="kontakt-zeile" href="tel:{{ einstellungen.telefon_link }}"><small>Telefon</small>{{ einstellungen.telefon }}</a>
+          <a class="kontakt-zeile" href="mailto:{{ einstellungen.email }}"><small>E-Mail</small>{{ einstellungen.email }}</a>
+          <span class="kontakt-zeile" style="border-bottom:none"><small>Spielstätte</small>{{ einstellungen.spielstaette }}<br>{{ einstellungen.adresse_strasse }}<br>{{ einstellungen.adresse_ort }}</span>
+          <div class="hero-actions" style="margin-top:1.5rem">
+            <a class="btn" href="{{ '/service/anfahrt.html' | url }}">So finden Sie uns</a>
+            <a class="btn btn-red" href="{{ einstellungen.ticket_url }}" target="_blank" rel="noopener">Tickets kaufen</a>
+          </div>
+        </div>
+        <figure class="frame" style="margin:0">
+          <img src="{{ '/assets/img/kontakt.jpg' | url }}" alt="Szene aus „Das Abschiedsdinner“ von austroPott" loading="lazy">
+        </figure>
+      </div>
+    </section>

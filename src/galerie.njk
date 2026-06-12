@@ -1,0 +1,21 @@
+---
+layout: layout.njk
+permalink: /service/galerie.html
+title: "Galerie | austroPott – Theater im Dortmunder U"
+desc: "Szenenfotos aus den Produktionen von austroPott im Dortmunder U."
+active: service
+---
+    <div class="wrap page-head">
+      <span class="kicker">Szenenfotos</span>
+      <h1>Galerie</h1>
+      <p class="lead">Eindrücke aus unseren Produktionen – zum Vergrößern einfach anklicken.</p>
+    </div>
+    <section class="section">
+      <div class="wrap">
+        <div class="galerie-grid">
+          {%- for foto in galerie.bilder %}
+          <a href="{{ foto.bild | url }}"><img src="{{ foto.bild | url }}" alt="{{ foto.beschreibung }}" loading="lazy"></a>
+          {%- endfor %}
+        </div>
+      </div>
+    </section>

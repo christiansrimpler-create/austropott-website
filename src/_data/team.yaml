@@ -1,0 +1,63 @@
+# Team-Seite – über das CMS unter „Team“ bearbeitbar
+intro: >-
+  austroPott wurde 2012 von Richard Saringer, Harald Schwaiger und Michael Kamp
+  ins Leben gerufen. In Kooperation mit dem Dortmunder U spielen wir dort seitdem
+  in wechselnder Besetzung regelmäßig erfolgreiche Stücke – von der Komödie bis
+  zum Schauspiel, immer mit Tiefgang – und werden von unserem Publikum mit
+  wachsendem Zuspruch angenommen.
+mitglieder:
+  - name: "Michael Kamp"
+    rolle: "Schauspiel · Gründungsmitglied"
+    bild: /assets/img/team-michael-kamp.jpg
+    website: "https://www.michaelkamp.com"
+    text: >-
+      Michael Kamp wurde 1972 in Oberhausen geboren. Seine Schauspielausbildung
+      erhielt er an der Universität für Musik und Darstellende Kunst Mozarteum in
+      Salzburg. Anschließend war er elf Jahre am Schauspiel Dortmund unter der
+      Leitung von Michael Gruner engagiert. Es folgten Festengagements am
+      Düsseldorfer Schauspielhaus und am Schauspielhaus Bochum.
+
+
+      Er arbeitet außerdem als freier Schauspieler u. a. am Staatstheater Mainz,
+      für Film und Fernsehen sowie als Sprecher für Deutschlandfunk, den WDR und ARTE.
+  - name: "Monika Bujinski"
+    rolle: "Schauspiel"
+    bild: /assets/img/team-monika-bujinski.jpg
+    website: ""
+    text: >-
+      Monika Bujinski wurde in München geboren und studierte an der Universität
+      „Mozarteum“ in Salzburg. Engagements führten sie unter anderem zu den
+      Salzburger Festspielen, ans Theater Bern, die Berliner Schaubühne, das
+      Theater Dortmund, das Wiener Hamakom Theater Nestroyhof, an das Grillo
+      Theater in Essen und an das Theater Rottstraße 5 in Bochum.
+
+
+      Monika Bujinski, die regelmäßig auch für Film und Fernsehen arbeitet, wurde
+      zweifach in der NRW-Kritikerumfrage als Beste Schauspielerin genannt.
+  - name: "Harald Schwaiger"
+    rolle: "Schauspiel · Gründungsmitglied"
+    bild: /assets/img/team-harald-schwaiger.jpg
+    website: "https://www.harald-schwaiger.com"
+    text: >-
+      Der Österreicher Harald Schwaiger studierte an der Universität Mozarteum
+      Salzburg und spielte u. a. am Schauspiel Frankfurt, Deutschen Nationaltheater
+      Weimar, Düsseldorfer Schauspielhaus und Schauspiel Dortmund. Er ist immer
+      wieder in TV-Serien und -filmen wie „Lindenstraße“, „Rosenheim-Cops“ oder
+      „Faking H.“ sowie in den Kinofilmen „Rheingold“ (Fatih Akin) und „Draußen
+      in meinem Kopf“ zu sehen.
+
+
+      Schwaiger ist Gründungsmitglied der Gruppe austroPott und seit 2019
+      Intendant des Musik- und Theaterfestivals Dalheimer Sommer.
+  - name: "Gitta Kessler"
+    rolle: "Soufflage & künstlerischer Blick"
+    bild: /assets/img/team-gitta-kessler.jpg
+    website: ""
+    text: >-
+      Gitta Kessler, eine Meisterin ihres Fachs, begleitet uns schon seit 1999!
+      Bereits am Schauspielhaus Dortmund hat sie uns mit ihrer Soufflage zur
+      Seite gestanden. Bei austroPott wirft sie zudem stets einen wachsamen Blick
+      auf die Entwicklung des Stückes und gibt inszenatorische Hilfestellung.
+
+
+      Und das ehrenamtlich!

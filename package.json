@@ -1,0 +1,15 @@
+{
+  "name": "austropott-website",
+  "private": true,
+  "description": "Website des Theater-Trios austroPott (Theater im Dortmunder U)",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "js-yaml": "^4.1.0",
+    "markdown-it": "^14.2.0"
+  },
+  "type": "module"
+}

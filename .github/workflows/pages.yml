@@ -1,8 +1,11 @@
-name: Website auf GitHub Pages veröffentlichen
+name: Website bauen und auf GitHub Pages veröffentlichen
 
 on:
   push:
     branches: [main]
+  schedule:
+    # Täglich neu bauen, damit vergangene Termine automatisch verschwinden
+    - cron: "30 3 * * *"
   workflow_dispatch:
 
 permissions:
@@ -22,9 +25,18 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx eleventy
+        env:
+          # Unterpfad der Vorschau-URL; bei Umzug auf austropott.de auf "/" ändern
+          PATH_PREFIX: /austropott-website/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: _site
       - id: deployment
         uses: actions/deploy-pages@v4

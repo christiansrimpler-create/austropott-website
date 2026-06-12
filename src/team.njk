@@ -1,0 +1,31 @@
+---
+layout: layout.njk
+permalink: /team.html
+title: "Team | austroPott – Theater im Dortmunder U"
+desc: "Das austroPott-Ensemble: Monika Bujinski, Michael Kamp, Harald Schwaiger und Gitta Kessler. Seit 2012 Theater mit Tiefgang im Dortmunder U."
+active: team
+---
+    <div class="wrap page-head">
+      <span class="kicker">Das Ensemble</span>
+      <h1>Team</h1>
+      <p class="lead">{{ team.intro }}</p>
+    </div>
+    <section class="section">
+      <div class="wrap">
+        {%- for person in team.mitglieder %}
+        <div class="person reveal">
+          <figure class="person-foto frame">
+            <img src="{{ person.bild | url }}" alt="Porträt von {{ person.name }}" loading="lazy">
+          </figure>
+          <div>
+            <span class="rolle">{{ person.rolle }}</span>
+            <h3>{{ person.name }}</h3>
+            {{ person.text | md | safe }}
+            {%- if person.website %}
+            <p><a href="{{ person.website }}" target="_blank" rel="noopener">{{ person.website | replace("https://", "") }}</a></p>
+            {%- endif %}
+          </div>
+        </div>
+        {%- endfor %}
+      </div>
+    </section>

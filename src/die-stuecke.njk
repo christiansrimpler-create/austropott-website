@@ -1,0 +1,34 @@
+---
+layout: layout.njk
+permalink: /die-stuecke/index.html
+title: "Die Stücke | austroPott – Theater im Dortmunder U"
+desc: "Die aktuellen Stücke von austroPott im Dortmunder U: Einszweiundzwanzig vor dem Ende, Love Letters und Mephisto."
+active: stuecke
+---
+    <div class="wrap page-head">
+      <span class="kicker">Aktuell auf der Bühne</span>
+      <h1>Die Stücke</h1>
+      <p class="lead">Drei Produktionen, drei Abende, ein Versprechen: Theater mit Tiefgang – gespielt im Kino des Dortmunder U.</p>
+    </div>
+    <section class="section">
+      <div class="wrap">
+        <div class="stueck-grid">
+          {%- for stueck in collections.stuecke %}
+          <a class="stueck-card reveal" href="{{ stueck.url | url }}">
+            <figure><img src="{{ stueck.data.bild | url }}" alt="{{ stueck.data.bild_alt }}" loading="lazy"></figure>
+            <div class="genre">{{ stueck.data.genre }}</div>
+            <h3>{{ stueck.data.titel }}</h3>
+            <p>{{ stueck.data.kurztext }}</p>
+            <span class="mehr">Mehr erfahren →</span>
+          </a>
+          {%- endfor %}
+        </div>
+        <div class="cta-box">
+          <strong>Lust auf einen Theaterabend?</strong>
+          <div class="actions">
+            <a class="btn" href="{{ '/termine.html' | url }}">Termine ansehen</a>
+            <a class="btn btn-red" href="{{ einstellungen.ticket_url }}" target="_blank" rel="noopener">Tickets kaufen</a>
+          </div>
+        </div>
+      </div>
+    </section>

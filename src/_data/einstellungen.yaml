@@ -1,0 +1,28 @@
+# Allgemeine Einstellungen – über das CMS unter „Einstellungen“ bearbeitbar
+ticket_url: "https://austropott.tickettoaster.de/produkte"
+telefon: "0231 99 320 430"
+telefon_link: "+4923199320430"
+email: "tickets@austropott.de"
+spielstaette: "Kino im Dortmunder U"
+adresse_strasse: "Leonie-Reygers-Terrasse"
+adresse_ort: "44137 Dortmund"
+instagram: "https://instagram.com/austropott"
+facebook: "https://www.facebook.com/AustropottSchauspiel"
+youtube: "https://www.youtube.com/@austropott7406/featured"
+hero_kicker: "Schauspiel im Dortmunder U"
+hero_headline: "Theater mit Tiefgang."
+hero_text: "Monika Bujinski, Michael Kamp und Harald Schwaiger spielen seit 2012 im Herzen Dortmunds – pointiert, berührend, immer nah am Publikum."
+footer_text: "Theater mit Tiefgang – gespielt von Monika Bujinski, Michael Kamp und Harald Schwaiger im Kino des Dortmunder U."
+termine_hinweis: >-
+  Die Termine für die neue Spielzeit werden in Kürze veröffentlicht.
+sponsoren:
+  - bild: /assets/img/sponsoren/kulturbuero.png
+    name: Kulturbüro Dortmund
+  - bild: /assets/img/sponsoren/sparkasse-dortmund.png
+    name: Sparkasse Dortmund
+  - bild: /assets/img/sponsoren/dortmunder-volksbank.jpg
+    name: Dortmunder Volksbank
+  - bild: /assets/img/sponsoren/dortmunder-u.png
+    name: Dortmunder U
+  - bild: /assets/img/sponsoren/gundi.jpg
+    name: Gundi
