@@ -12,3 +12,14 @@
 - { from: /die-stuecke/1h22-vor-dem-ende.html, to: /die-stuecke/1h22-vor-dem-ende/ }
 - { from: /die-stuecke/love-letters.html, to: /die-stuecke/love-letters/ }
 - { from: /die-stuecke/mephisto.html, to: /die-stuecke/mephisto/ }
+
+# Alte "-mobil"-Seiten der früheren EverWeb-Website (separate Handy-URLs, von
+# Google indexiert) → auf die neuen, responsiven Seiten leiten. /start-mobil.html
+# wird separat über src/start-mobil.njk auf / geleitet.
+- { from: /termine-mobil-.html, to: /termine/ }
+- { from: /tickets-und-gutscheine-mobil-.html, to: /tickets/ }
+- { from: /team-mobil.html, to: /team/ }
+- { from: /kontakt-mobil.html, to: /kontakt/ }
+- { from: /die-stuecke-mobil.html, to: /die-stuecke/ }
+- { from: /anfahrt-mobil-.html, to: /service/anfahrt/ }
+- { from: /newsletter-mobil.html, to: /service/newsletter/ }
