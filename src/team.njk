@@ -17,7 +17,6 @@ active: team
             <img src="{{ person.bild | url }}" alt="Porträt von {{ person.name }}" loading="lazy">
           </figure>
           <div>
-            <span class="rolle">{{ person.rolle }}</span>
             <h3>{{ person.name }}</h3>
             {{ person.text | md | safe }}
             {%- if person.website %}
