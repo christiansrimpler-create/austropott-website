@@ -41,9 +41,9 @@ active: tickets
       <div class="wrap">
         <h2>Gut zu wissen</h2>
         {%- for f in faq.fragen %}
-        <details class="info">
+        <details class="info"{% if loop.first %} open{% endif %}>
           <summary>{{ f.frage }}</summary>
-          <div class="inhalt">{{ f.antwort | md }}</div>
+          <div class="inhalt">{{ f.antwort | md | safe }}</div>
         </details>
         {%- endfor %}
         <div class="hero-actions" style="margin-top:2rem">

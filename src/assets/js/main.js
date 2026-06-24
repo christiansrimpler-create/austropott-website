@@ -90,6 +90,19 @@
     });
   }
 
+  /* ---- FAQ / „Gut zu wissen“: nur ein Akkordeon gleichzeitig offen ---- */
+  var infoDetails = document.querySelectorAll("details.info");
+  if (infoDetails.length) {
+    infoDetails.forEach(function (d) {
+      d.addEventListener("toggle", function () {
+        if (!d.open) return;
+        infoDetails.forEach(function (other) {
+          if (other !== d) other.open = false;
+        });
+      });
+    });
+  }
+
   /* ---- Galerie-Lightbox (funktioniert für mehrere Raster) ---- */
   var galerien = document.querySelectorAll(".galerie-grid");
   if (galerien.length) {
