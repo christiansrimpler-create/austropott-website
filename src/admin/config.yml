@@ -102,6 +102,7 @@ collections:
           - { name: hero_kicker, label: "Großes Bild: kleine rote Zeile", widget: string }
           - { name: hero_headline, label: "Großes Bild: Überschrift", widget: string }
           - { name: hero_text, label: "Großes Bild: Text", widget: text }
+          - { name: hero_bild, label: "Großes Bild: Startbild (erstes Bild der Slideshow)", widget: image }
           - name: hero_fokus_desktop
             label: "Großes Bild: Bildausschnitt am Desktop"
             hint: "Welcher Bereich des Bildes sichtbar bleibt, wenn es beschnitten wird."

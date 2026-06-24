@@ -6,10 +6,13 @@ desc: "austroPott spielt seit 2012 erfolgreiche Komödien und Schauspiele im Dor
 active: start
 ---
     <section class="hero">
+      {%- set startbild = einstellungen.hero_bild or '/assets/img/buehne-start.jpg' %}
       <div class="hero-slides">
-        <img class="hero-bg is-active" src="{{ '/assets/img/buehne-start.jpg' | url }}" alt="Szene aus einer austroPott-Aufführung im Dortmunder U" fetchpriority="high" style="--fokus-d: {{ einstellungen.hero_fokus_desktop or '50% 35%' }}; --fokus-m: {{ einstellungen.hero_fokus_mobile or '58% center' }};">
+        <img class="hero-bg is-active" src="{{ startbild | url }}" alt="Szene aus einer austroPott-Aufführung im Dortmunder U" fetchpriority="high" style="--fokus-d: {{ einstellungen.hero_fokus_desktop or '50% 35%' }}; --fokus-m: {{ einstellungen.hero_fokus_mobile or '58% center' }};">
         {%- for foto in galerie.bilder %}
+        {%- if foto.bild != startbild %}
         <img class="hero-bg" data-src="{{ foto.bild | url }}" alt="" loading="lazy" style="--fokus-d: {{ foto.fokus_desktop or '50% 35%' }}; --fokus-m: {{ foto.fokus_mobile or '50% 35%' }};">
+        {%- endif %}
         {%- endfor %}
       </div>
       <div class="wrap">
