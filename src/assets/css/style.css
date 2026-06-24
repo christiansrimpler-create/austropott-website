@@ -1200,8 +1200,20 @@ details.info .inhalt { padding: 0 1.25rem 1.25rem; }
 }
 
 .newsletter-success p {
-  margin: 0;
   max-width: 38rem;
+}
+
+.newsletter-success .success-lead {
+  font-size: 1.1rem;
+  margin: 0 0 1rem;
+}
+
+.newsletter-success .success-lead strong { color: var(--red); }
+
+.newsletter-success .success-note {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
 }
 
 /* --------------------------------------------------------------------------
