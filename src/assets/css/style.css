@@ -312,7 +312,14 @@ p { margin: 0 0 1.1em; }
   white-space: nowrap;
 }
 
-.brand .p { color: var(--red); }
+/* Original handgemaltes "P" aus dem alten Logo */
+.brand-p {
+  display: inline-block;
+  height: 1.05em;
+  width: auto;
+  vertical-align: -0.16em;
+  margin: 0 -0.04em;
+}
 
 .brand::before,
 .brand::after {
