@@ -47,6 +47,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/admin": "admin" });
+  eleventyConfig.addPassthroughCopy({ "src/CNAME": "CNAME" }); // eigene Domain für GitHub Pages
   eleventyConfig.ignores.add("src/admin/**");
 
   eleventyConfig.addFilter("md", (value) => md.render(value || ""));

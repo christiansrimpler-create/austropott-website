@@ -8,7 +8,7 @@ backend:
 media_folder: src/assets/img
 public_folder: /assets/img
 
-site_url: https://christiansrimpler-create.github.io/austropott-website
+site_url: https://austropott.de
 
 collections:
   - name: termine

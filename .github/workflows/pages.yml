@@ -32,8 +32,8 @@ jobs:
       - run: npm ci
       - run: npx eleventy
         env:
-          # Unterpfad der Vorschau-URL; bei Umzug auf austropott.de auf "/" ändern
-          PATH_PREFIX: /austropott-website/
+          # Eigene Domain austropott.de -> Auslieferung im Root
+          PATH_PREFIX: /
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
