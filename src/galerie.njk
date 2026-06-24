@@ -1,21 +1,49 @@
 ---
 layout: layout.njk
 permalink: /service/galerie.html
-title: "Galerie | austroPott – Theater im Dortmunder U"
-desc: "Szenenfotos aus den Produktionen von austroPott im Dortmunder U."
+title: "Galerie & Archiv | austroPott – Theater im Dortmunder U"
+desc: "Szenenfotos und vergangene Produktionen von austroPott im Dortmunder U – seit 2013 von „KUNST“ über „Der Gott des Gemetzels“ bis „Die Tanzstunde“."
 active: service
 ---
     <div class="wrap page-head">
-      <span class="kicker">Szenenfotos</span>
-      <h1>Galerie</h1>
-      <p class="lead">Eindrücke aus unseren Produktionen – zum Vergrößern einfach anklicken.</p>
+      <span class="kicker">Fotos & vergangene Produktionen</span>
+      <h1>Galerie &amp; Archiv</h1>
+      <p class="lead">Eindrücke aus unseren Produktionen – nach Stück sortiert. Fotos zum Vergrößern einfach anklicken.</p>
     </div>
+
     <section class="section">
       <div class="wrap">
-        <div class="galerie-grid">
-          {%- for foto in galerie.bilder %}
-          <a href="{{ foto.bild | url }}"><img src="{{ foto.bild | url }}" alt="{{ foto.beschreibung }}" loading="lazy"></a>
-          {%- endfor %}
+        {%- for prod in produktionen.produktionen %}
+        {%- if prod.bilder and prod.bilder.length %}
+        <div class="produktion-block">
+          <h2>{{ prod.titel }}</h2>
+          {%- if prod.jahre or prod.besetzung %}
+          <p class="produktion-meta">{{ prod.jahre }}{% if prod.jahre and prod.besetzung %} · {% endif %}{{ prod.besetzung }}</p>
+          {%- endif %}
+          <div class="galerie-grid">
+            {%- for foto in prod.bilder %}
+            <a href="{{ foto.bild | url }}"><img src="{{ foto.bild | url }}" alt="{{ foto.beschreibung }}" loading="lazy"></a>
+            {%- endfor %}
+          </div>
         </div>
+        {%- endif %}
+        {%- endfor %}
+      </div>
+    </section>
+
+    <section class="section section-deep">
+      <div class="wrap">
+        <h2>Weitere Produktionen</h2>
+        <p class="lead">Alle Stücke seit 2013 – auch ohne Fotos in unserem Archiv.</p>
+        <ul class="chronik">
+          {%- for prod in produktionen.produktionen %}
+          {%- if not prod.bilder or not prod.bilder.length %}
+          <li>
+            <span class="jahr">{{ prod.jahre }}</span>
+            <div class="produktion"><strong>{{ prod.titel }}</strong><span>{{ prod.besetzung }}</span></div>
+          </li>
+          {%- endif %}
+          {%- endfor %}
+        </ul>
       </div>
     </section>

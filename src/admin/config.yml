@@ -209,51 +209,42 @@ collections:
             field: { name: punkt, label: Eintrag, widget: string }
 
   - name: galerie
-    label: Galerie
+    label: "Galerie & Archiv"
     icon: photo_library
     editor:
       preview: false
     files:
-      - name: galerie
-        label: Galerie-Bilder
-        file: src/_data/galerie.yaml
-        fields:
-          - name: bilder
-            label: Bilder
-            label_singular: Bild
-            widget: list
-            summary: "{{fields.beschreibung}}"
-            fields:
-              - { name: bild, label: Bild, widget: image }
-              - { name: beschreibung, label: Beschreibung, widget: string }
-              - name: fokus_desktop
-                label: "Bildausschnitt am Desktop (Slideshow oben)"
-                hint: "Welcher Bereich sichtbar bleibt, wenn das Bild in der Startseiten-Slideshow beschnitten wird."
-                widget: select
-                default: "50% 35%"
-                options: *fokus_optionen
-              - name: fokus_mobile
-                label: "Bildausschnitt am Handy (Slideshow oben)"
-                widget: select
-                default: "50% 35%"
-                options: *fokus_optionen
-
-  - name: archiv
-    label: Archiv
-    icon: history
-    editor:
-      preview: false
-    files:
-      - name: archiv
-        label: Vergangene Produktionen
-        file: src/_data/archiv.yaml
+      - name: produktionen
+        label: "Produktionen & Fotos"
+        file: src/_data/produktionen.yaml
         fields:
           - name: produktionen
             label: Produktionen
             label_singular: Produktion
             widget: list
-            summary: "{{fields.jahre}}: {{fields.titel}}"
+            summary: "{{fields.titel}} ({{fields.jahre}})"
             fields:
-              - { name: jahre, label: "Jahr(e)", widget: string, hint: "z. B. „2024“ oder „2019–2020“" }
               - { name: titel, label: Titel, widget: string, hint: "mit Anführungszeichen, z. B. „Die Tanzstunde“" }
-              - { name: besetzung, label: Besetzung, widget: string, hint: "z. B. „mit Monika Bujinski und Michael Kamp“" }
+              - { name: jahre, label: "Jahr(e)", widget: string, hint: "z. B. „2024“ oder „2021 · 2022“", required: false }
+              - { name: besetzung, label: Besetzung, widget: string, hint: "z. B. „mit Monika Bujinski und Michael Kamp“", required: false }
+              - name: bilder
+                label: Fotos
+                label_singular: Foto
+                hint: "Produktionen mit Fotos erscheinen oben als eigener Block, ohne Fotos in der Chronik darunter."
+                widget: list
+                required: false
+                summary: "{{fields.beschreibung}}"
+                fields:
+                  - { name: bild, label: Bild, widget: image }
+                  - { name: beschreibung, label: Beschreibung, widget: string }
+                  - name: fokus_desktop
+                    label: "Bildausschnitt am Desktop (Startseiten-Slideshow)"
+                    hint: "Welcher Bereich sichtbar bleibt, wenn das Bild in der Slideshow oben beschnitten wird."
+                    widget: select
+                    default: "50% 35%"
+                    options: *fokus_optionen
+                  - name: fokus_mobile
+                    label: "Bildausschnitt am Handy (Startseiten-Slideshow)"
+                    widget: select
+                    default: "50% 35%"
+                    options: *fokus_optionen

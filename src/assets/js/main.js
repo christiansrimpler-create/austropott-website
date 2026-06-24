@@ -90,9 +90,9 @@
     });
   }
 
-  /* ---- Galerie-Lightbox ---- */
-  var galerie = document.querySelector(".galerie-grid");
-  if (galerie) {
+  /* ---- Galerie-Lightbox (funktioniert für mehrere Raster) ---- */
+  var galerien = document.querySelectorAll(".galerie-grid");
+  if (galerien.length) {
     var lightbox = document.createElement("div");
     lightbox.className = "lightbox";
     lightbox.innerHTML =
@@ -101,14 +101,16 @@
 
     var lbImg = lightbox.querySelector("img");
 
-    galerie.addEventListener("click", function (e) {
-      var link = e.target.closest("a");
-      if (!link) return;
-      e.preventDefault();
-      lbImg.src = link.href;
-      lbImg.alt = link.querySelector("img") ? link.querySelector("img").alt : "";
-      lightbox.classList.add("open");
-      document.body.style.overflow = "hidden";
+    galerien.forEach(function (galerie) {
+      galerie.addEventListener("click", function (e) {
+        var link = e.target.closest("a");
+        if (!link) return;
+        e.preventDefault();
+        lbImg.src = link.href;
+        lbImg.alt = link.querySelector("img") ? link.querySelector("img").alt : "";
+        lightbox.classList.add("open");
+        document.body.style.overflow = "hidden";
+      });
     });
 
     function closeLightbox() {

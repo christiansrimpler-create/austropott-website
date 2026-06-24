@@ -1,24 +1,17 @@
 ---
-layout: layout.njk
 permalink: /service/archiv.html
-title: "Archiv | austroPott – Theater im Dortmunder U"
-desc: "Vergangene Produktionen von austroPott seit 2013: von „KUNST“ über „Der Gott des Gemetzels“ bis „Die Tanzstunde“."
-active: service
+eleventyExcludeFromCollections: true
 ---
-    <div class="wrap page-head">
-      <span class="kicker">Seit 2013 auf der Bühne</span>
-      <h1>Archiv</h1>
-      <p class="lead">Vergangene Produktionen von austroPott im Dortmunder U.</p>
-    </div>
-    <section class="section">
-      <div class="wrap">
-        <ul class="chronik">
-          {%- for produktion in archiv.produktionen %}
-          <li>
-            <span class="jahr">{{ produktion.jahre }}</span>
-            <div class="produktion"><strong>{{ produktion.titel }}</strong><span>{{ produktion.besetzung }}</span></div>
-          </li>
-          {%- endfor %}
-        </ul>
-      </div>
-    </section>
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Archiv – jetzt unter „Galerie & Archiv“ | austroPott</title>
+  <link rel="canonical" href="{{ '/service/galerie.html' | url }}">
+  <meta name="robots" content="noindex, follow">
+  <meta http-equiv="refresh" content="0; url={{ '/service/galerie.html' | url }}">
+</head>
+<body>
+  <p>Das Archiv ist umgezogen zu <a href="{{ '/service/galerie.html' | url }}">Galerie &amp; Archiv</a>.</p>
+</body>
+</html>

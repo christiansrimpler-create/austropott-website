@@ -20,6 +20,16 @@ export default function (eleventyConfig) {
     }
   });
 
+  // Flache Liste aller Produktions-Fotos (für die Hero-Slideshow auf der Startseite)
+  eleventyConfig.addGlobalData("alleFotos", () => {
+    try {
+      const data = yaml.load(readFileSync("src/_data/produktionen.yaml", "utf8"));
+      return (data.produktionen || []).flatMap((p) => p.bilder || []);
+    } catch {
+      return [];
+    }
+  });
+
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/admin": "admin" });
   eleventyConfig.ignores.add("src/admin/**");

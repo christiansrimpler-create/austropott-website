@@ -1015,6 +1015,19 @@ details.info .inhalt { padding: 0 1.25rem 1.25rem; }
    Galerie + Lightbox
    -------------------------------------------------------------------------- */
 
+/* Galerie & Archiv: Produktions-Blöcke mit Fotos */
+.produktion-block { margin-bottom: clamp(2.75rem, 5vw, 4.25rem); }
+.produktion-block:last-child { margin-bottom: 0; }
+.produktion-block h2 { margin-bottom: 0.2rem; }
+
+.produktion-meta {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  margin: 0 0 1.3rem;
+}
+
 .galerie-grid {
   columns: 3;
   column-gap: 1.25rem;
