@@ -6,7 +6,12 @@ desc: "austroPott spielt seit 2012 erfolgreiche Komödien und Schauspiele im Dor
 active: start
 ---
     <section class="hero">
-      <img class="hero-bg" src="{{ '/assets/img/buehne-start.jpg' | url }}" alt="Szene aus einer austroPott-Aufführung im Dortmunder U" fetchpriority="high">
+      <div class="hero-slides">
+        <img class="hero-bg is-active" src="{{ '/assets/img/buehne-start.jpg' | url }}" alt="Szene aus einer austroPott-Aufführung im Dortmunder U" fetchpriority="high">
+        {%- for foto in galerie.bilder %}
+        <img class="hero-bg" data-src="{{ foto.bild | url }}" alt="" loading="lazy">
+        {%- endfor %}
+      </div>
       <div class="wrap">
         <span class="kicker">{{ einstellungen.hero_kicker }}</span>
         <h1>{{ einstellungen.hero_headline }}</h1>

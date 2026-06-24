@@ -612,6 +612,8 @@ p { margin: 0 0 1.1em; }
   overflow: hidden;
 }
 
+.hero-slides { position: absolute; inset: 0; }
+
 .hero img.hero-bg {
   position: absolute;
   inset: 0;
@@ -619,6 +621,14 @@ p { margin: 0 0 1.1em; }
   height: 100%;
   object-fit: cover;
   object-position: center bottom;
+  opacity: 0;
+  transition: opacity 1.4s ease;
+}
+
+.hero img.hero-bg.is-active { opacity: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero img.hero-bg { transition: none; }
 }
 
 .hero::after {

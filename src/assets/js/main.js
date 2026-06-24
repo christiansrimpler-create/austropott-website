@@ -47,6 +47,31 @@
     revealEls.forEach(function (el) { el.classList.add("visible"); });
   }
 
+  /* ---- Hero: Galerie-Bilder als Hintergrund-Slideshow durchblenden ----
+     Erstes Bild ist sofort sichtbar (LCP). Weitere Bilder werden nur bei
+     Bedarf geladen (data-src), immer das nächste im Voraus. */
+  var heroSlides = document.querySelector(".hero-slides");
+  if (heroSlides) {
+    var slides = Array.prototype.slice.call(heroSlides.querySelectorAll(".hero-bg"));
+    var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (slides.length > 1 && !reduceMotion) {
+      var current = 0;
+      var load = function (n) {
+        var s = slides[n];
+        if (s && s.dataset.src && !s.getAttribute("src")) s.src = s.dataset.src;
+      };
+      load(1); // nächstes Bild vorab laden
+      window.setInterval(function () {
+        if (document.hidden) return;
+        var next = (current + 1) % slides.length;
+        slides[current].classList.remove("is-active");
+        slides[next].classList.add("is-active");
+        current = next;
+        load((current + 1) % slides.length); // übernächstes vorab laden
+      }, 6000);
+    }
+  }
+
   /* ---- Newsletter: Inline-Bestätigung statt leerer Brevo-Seite ----
      Das Formular sendet weiter an Brevo (Ziel ist ein verstecktes iframe),
      wir blenden danach eine Danke-Meldung auf der Seite ein. */
