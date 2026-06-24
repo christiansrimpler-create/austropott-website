@@ -316,6 +316,7 @@ p { margin: 0 0 1.1em; }
   font-family: var(--font-mono);
   font-weight: 400;
   font-size: 1.75rem;
+  line-height: 1.05;
   letter-spacing: 0.08em;
   text-decoration: none;
   color: var(--ink);
@@ -361,7 +362,7 @@ p { margin: 0 0 1.1em; }
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--ink-soft);
-  margin-top: -0.35rem;
+  margin-top: 0.1rem;
 }
 
 /* Desktop-Navigation */
