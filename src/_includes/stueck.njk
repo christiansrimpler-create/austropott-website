@@ -3,7 +3,7 @@ layout: layout.njk
 ---
     <div class="wrap stueck-hero">
       <div class="titelseite">
-        <span class="kicker">{{ genre }}</span>
+        <p class="stueck-genre">{{ genre }}</p>
         <h1>{{ (titel_html or titel) | safe }}</h1>
         {%- if untertitel %}
         <p class="untertitel">{{ untertitel }}</p>
@@ -48,7 +48,6 @@ layout: layout.njk
     {%- endif %}
     <section class="section">
       <div class="wrap prose">
-        <span class="kicker">Zum Stück</span>
         {{ content | safe }}
         {%- if rechte %}
         <p class="hinweis" style="font-size:0.85rem;color:var(--ink-soft)">{{ rechte | mdInline | safe }}</p>

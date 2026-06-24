@@ -16,7 +16,6 @@ active: start
         {%- endfor %}
       </div>
       <div class="wrap">
-        <span class="kicker">{{ einstellungen.hero_kicker }}</span>
         <h1>{{ einstellungen.hero_headline }}</h1>
         <p class="lead">{{ einstellungen.hero_text }}</p>
         <div class="hero-actions">
@@ -37,7 +36,6 @@ active: start
 
     <section class="section section-deep">
       <div class="wrap">
-        <span class="kicker">Aktuell auf der Bühne</span>
         <h2>Die Stücke</h2>
         <div class="stueck-grid">
           {%- for stueck in collections.stuecke %}
@@ -55,7 +53,6 @@ active: start
 
     <section class="section">
       <div class="wrap">
-        <span class="kicker">Spielplan</span>
         <h2>Nächste Termine</h2>
         {%- set kommende = termine.termine | zukuenftige %}
         {%- if kommende.length %}
@@ -103,7 +100,6 @@ active: start
     <section class="section">
       <div class="wrap kontakt-grid">
         <div>
-          <span class="kicker">Seit 2012 im Dortmunder U</span>
           <h2>Wer wir sind</h2>
           <p class="lead">austroPott wurde 2012 von Richard Saringer, Harald Schwaiger und Michael Kamp ins Leben gerufen. In Kooperation mit dem Dortmunder U spielen wir dort in wechselnder Besetzung regelmäßig erfolgreiche Stücke – von der Komödie bis zum Schauspiel, immer mit Tiefgang.</p>
           <p>Wir freuen uns auf Sie und wünschen Ihnen viel Vergnügen!</p>

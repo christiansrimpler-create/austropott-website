@@ -99,7 +99,6 @@ collections:
         label: "Startseite, Kontaktdaten & Allgemeines"
         file: src/_data/einstellungen.yaml
         fields:
-          - { name: hero_kicker, label: "Großes Bild: kleine rote Zeile", widget: string }
           - { name: hero_headline, label: "Großes Bild: Überschrift", widget: string }
           - { name: hero_text, label: "Großes Bild: Text", widget: text }
           - { name: hero_bild, label: "Großes Bild: Startbild (erstes Bild der Slideshow)", widget: image }

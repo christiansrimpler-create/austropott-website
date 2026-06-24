@@ -196,6 +196,17 @@ p { margin: 0 0 1.1em; }
 
 .kicker::before { content: "— "; }
 
+/* Genre-Angabe über dem Stück-Titel – neutral, kein roter Eyebrow */
+.stueck-genre {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0 0 1rem;
+}
+
 /* --------------------------------------------------------------------------
    Roter Eckwinkel – das Logo-Motiv als Rahmen-Element
    -------------------------------------------------------------------------- */
