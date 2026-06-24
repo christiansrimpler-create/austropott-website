@@ -276,7 +276,7 @@ p { margin: 0 0 1.1em; }
 
 .prose { max-width: var(--w-text); }
 
-.prose a { color: var(--red-dark); text-decoration-thickness: 1px; }
+.prose a:not(.btn) { color: var(--red-dark); text-decoration-thickness: 1px; }
 
 /* --------------------------------------------------------------------------
    Header
