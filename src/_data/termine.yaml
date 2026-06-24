@@ -1,3 +1,4 @@
-# Vorstellungstermine – über das CMS unter „Termine“ bearbeitbar.
-# Vergangene Termine verschwinden automatisch von der Website.
-termine: []
+termine:
+  - datum: 2026-06-25
+    uhrzeit: 22:00
+    stueck: Einszweiundzwanzig vor dem Ende
