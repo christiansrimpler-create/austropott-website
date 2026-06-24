@@ -2,31 +2,61 @@
 bilder:
   - bild: /assets/img/galerie/abschiedsdinner.jpg
     beschreibung: "Szenenfoto aus „Das Abschiedsdinner“"
+    fokus_desktop: "50% 35%"
+    fokus_mobile: "50% 35%"
   - bild: /assets/img/galerie/siegersbusch-fim-6482.jpg
     beschreibung: "Szenenfoto einer austroPott-Aufführung"
+    fokus_desktop: "50% 35%"
+    fokus_mobile: "50% 35%"
   - bild: /assets/img/galerie/kunst-2.jpg
     beschreibung: "Szenenfoto aus „KUNST“"
+    fokus_desktop: "50% 35%"
+    fokus_mobile: "50% 35%"
   - bild: /assets/img/galerie/bass1.jpg
     beschreibung: "Michael Kamp in „Der Kontrabass“"
+    fokus_desktop: "50% 35%"
+    fokus_mobile: "50% 35%"
   - bild: /assets/img/galerie/siegersbusch-fim-6758.jpg
     beschreibung: "Szenenfoto einer austroPott-Aufführung"
+    fokus_desktop: "50% 35%"
+    fokus_mobile: "50% 35%"
   - bild: /assets/img/galerie/gott-des-gemetzels.jpg
     beschreibung: "Szenenfoto aus „Der Gott des Gemetzels“"
+    fokus_desktop: "50% 35%"
+    fokus_mobile: "50% 35%"
   - bild: /assets/img/galerie/dsc-0028-2.jpg
     beschreibung: "Szenenfoto einer austroPott-Aufführung"
+    fokus_desktop: "50% 35%"
+    fokus_mobile: "50% 35%"
   - bild: /assets/img/galerie/kunst-6.jpg
     beschreibung: "Szenenfoto aus „KUNST“"
+    fokus_desktop: "50% 35%"
+    fokus_mobile: "50% 35%"
   - bild: /assets/img/galerie/siegersbusch-fim-6638.jpg
     beschreibung: "Szenenfoto einer austroPott-Aufführung"
+    fokus_desktop: "50% 35%"
+    fokus_mobile: "50% 35%"
   - bild: /assets/img/galerie/tur.jpg
     beschreibung: "Szenenfoto aus „Die Tür nebenan“"
+    fokus_desktop: "50% 35%"
+    fokus_mobile: "50% 35%"
   - bild: /assets/img/galerie/bass2.jpg
     beschreibung: "Michael Kamp in „Der Kontrabass“"
+    fokus_desktop: "50% 35%"
+    fokus_mobile: "50% 35%"
   - bild: /assets/img/galerie/dsc-0077-2.jpg
     beschreibung: "Szenenfoto einer austroPott-Aufführung"
+    fokus_desktop: "50% 35%"
+    fokus_mobile: "50% 35%"
   - bild: /assets/img/galerie/img-3881.jpg
     beschreibung: "Szenenfoto einer austroPott-Aufführung"
+    fokus_desktop: "50% 35%"
+    fokus_mobile: "50% 35%"
   - bild: /assets/img/galerie/siegersbusch-fim-6671.jpg
     beschreibung: "Szenenfoto einer austroPott-Aufführung"
+    fokus_desktop: "50% 35%"
+    fokus_mobile: "50% 35%"
   - bild: /assets/img/galerie/img-3903-2.jpg
     beschreibung: "Szenenfoto einer austroPott-Aufführung"
+    fokus_desktop: "50% 35%"
+    fokus_mobile: "50% 35%"

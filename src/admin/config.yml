@@ -102,6 +102,27 @@ collections:
           - { name: hero_kicker, label: "Großes Bild: kleine rote Zeile", widget: string }
           - { name: hero_headline, label: "Großes Bild: Überschrift", widget: string }
           - { name: hero_text, label: "Großes Bild: Text", widget: text }
+          - name: hero_fokus_desktop
+            label: "Großes Bild: Bildausschnitt am Desktop"
+            hint: "Welcher Bereich des Bildes sichtbar bleibt, wenn es beschnitten wird."
+            widget: select
+            default: "50% 35%"
+            options: &fokus_optionen
+              - { label: "Oben", value: "50% 15%" }
+              - { label: "Eher oben", value: "50% 35%" }
+              - { label: "Mitte", value: "50% 50%" }
+              - { label: "Eher unten", value: "50% 70%" }
+              - { label: "Unten", value: "50% 85%" }
+              - { label: "Oben links", value: "22% 18%" }
+              - { label: "Oben rechts", value: "78% 18%" }
+              - { label: "Links", value: "20% 50%" }
+              - { label: "Rechts", value: "80% 50%" }
+          - name: hero_fokus_mobile
+            label: "Großes Bild: Bildausschnitt am Handy"
+            hint: "Am Handy ist das Bild schmaler – hier ein eigener Ausschnitt."
+            widget: select
+            default: "50% 50%"
+            options: *fokus_optionen
           - { name: termine_hinweis, label: "Hinweistext, wenn keine Termine eingetragen sind", widget: text }
           - { name: footer_text, label: "Text im Seitenfuß", widget: text }
           - { name: ticket_url, label: "Link zum Ticketshop", widget: string }
@@ -204,6 +225,17 @@ collections:
             fields:
               - { name: bild, label: Bild, widget: image }
               - { name: beschreibung, label: Beschreibung, widget: string }
+              - name: fokus_desktop
+                label: "Bildausschnitt am Desktop (Slideshow oben)"
+                hint: "Welcher Bereich sichtbar bleibt, wenn das Bild in der Startseiten-Slideshow beschnitten wird."
+                widget: select
+                default: "50% 35%"
+                options: *fokus_optionen
+              - name: fokus_mobile
+                label: "Bildausschnitt am Handy (Slideshow oben)"
+                widget: select
+                default: "50% 35%"
+                options: *fokus_optionen
 
   - name: archiv
     label: Archiv

@@ -620,7 +620,8 @@ p { margin: 0 0 1.1em; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 35%;
+  /* Fokuspunkt pro Bild über das CMS einstellbar (Desktop) */
+  object-position: var(--fokus-d, 50% 35%);
   opacity: 0;
   transition: opacity 1.4s ease;
 }
@@ -1390,7 +1391,8 @@ details.info .inhalt { padding: 0 1.25rem 1.25rem; }
      Schauspieler rechts statt auf die leere Bildmitte */
   .hero { min-height: min(72vh, 40rem); }
   .hero .wrap { padding-top: clamp(3rem, 8vh, 5rem); }
-  .hero img.hero-bg { object-position: 58% center; }
+  /* Fokuspunkt pro Bild über das CMS einstellbar (Mobile) */
+  .hero img.hero-bg { object-position: var(--fokus-m, var(--fokus-d, 58% center)); }
 
   .stueck-grid { grid-template-columns: 1fr; }
   .quote-grid { grid-template-columns: 1fr; }

@@ -12,6 +12,8 @@ youtube: "https://www.youtube.com/@austropott7406/featured"
 hero_kicker: "Schauspiel im Dortmunder U"
 hero_headline: "Theater mit Tiefgang."
 hero_text: "Monika Bujinski, Michael Kamp und Harald Schwaiger spielen seit 2012 im Herzen Dortmunds – pointiert, berührend, immer nah am Publikum."
+hero_fokus_desktop: "50% 35%"
+hero_fokus_mobile: "50% 50%"
 footer_text: "Theater mit Tiefgang – gespielt von Monika Bujinski, Michael Kamp und Harald Schwaiger im Kino des Dortmunder U."
 termine_hinweis: >-
   Die Termine für die neue Spielzeit werden in Kürze veröffentlicht.
