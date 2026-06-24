@@ -55,19 +55,36 @@
     var slides = Array.prototype.slice.call(heroSlides.querySelectorAll(".hero-bg"));
     var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (slides.length > 1 && !reduceMotion) {
-      var current = 0;
       var load = function (n) {
         var s = slides[n];
         if (s && s.dataset.src && !s.getAttribute("src")) s.src = s.dataset.src;
       };
-      load(1); // nächstes Bild vorab laden
+      var shuffle = function (arr) {
+        for (var k = arr.length - 1; k > 0; k--) {
+          var j = Math.floor(Math.random() * (k + 1));
+          var t = arr[k]; arr[k] = arr[j]; arr[j] = t;
+        }
+      };
+      // Startbild (Index 0) bleibt der Einstieg, der Rest läuft gemischt.
+      var rest = [];
+      for (var i = 1; i < slides.length; i++) rest.push(i);
+      shuffle(rest);
+      var order = [0].concat(rest);
+      var pos = 0;
+      load(order[1]); // nächstes Bild vorab laden
       window.setInterval(function () {
         if (document.hidden) return;
-        var next = (current + 1) % slides.length;
-        slides[current].classList.remove("is-active");
-        slides[next].classList.add("is-active");
-        current = next;
-        load((current + 1) % slides.length); // übernächstes vorab laden
+        var prev = order[pos];
+        pos++;
+        if (pos >= order.length) {
+          // Durchlauf fertig -> Reihenfolge neu mischen
+          shuffle(rest);
+          order = [0].concat(rest);
+          pos = 0;
+        }
+        slides[prev].classList.remove("is-active");
+        slides[order[pos]].classList.add("is-active");
+        load(order[(pos + 1) % order.length]); // übernächstes vorab laden
       }, 6000);
     }
   }
