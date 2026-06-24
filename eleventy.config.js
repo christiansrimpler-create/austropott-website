@@ -20,6 +20,9 @@ export default function (eleventyConfig) {
     }
   });
 
+  // Basis-URL für canonical-Tags und Sitemap (Zieldomain; per Env überschreibbar)
+  eleventyConfig.addGlobalData("siteUrl", process.env.SITE_URL || "https://austropott.de");
+
   // Cache-Busting für das JavaScript (analog zur CSS)
   eleventyConfig.addGlobalData("jsVersion", () => {
     try {
