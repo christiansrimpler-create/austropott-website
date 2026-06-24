@@ -302,9 +302,9 @@ p { margin: 0 0 1.1em; }
 .brand {
   display: inline-block;
   font-family: var(--font-mono);
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.45rem;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.08em;
   text-decoration: none;
   color: var(--ink);
   position: relative;
@@ -1168,7 +1168,7 @@ details.info .inhalt { padding: 0 1.25rem 1.25rem; }
   align-items: flex-start;
   font-family: var(--font-serif);
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0.08em;
   text-transform: none;
   font-size: 0.92rem;
   margin-bottom: 1.5rem;
