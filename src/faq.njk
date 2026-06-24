@@ -1,0 +1,26 @@
+---
+layout: layout.njk
+permalink: /service/faq.html
+title: "Häufige Fragen | austroPott – Theater im Dortmunder U"
+desc: "Antworten auf häufige Fragen rund um Ihren Theaterbesuch bei austroPott im Dortmunder U: Abendkasse, Einlass, Gutscheine, barrierefreier Platz und mehr."
+active: service
+---
+    <div class="wrap page-head">
+      <span class="kicker">Gut zu wissen</span>
+      <h1>Häufige Fragen</h1>
+      <p class="lead">Die wichtigsten Antworten rund um Ihren Theaterbesuch bei uns – von Abendkasse und Einlass bis Gutschein.</p>
+    </div>
+    <section class="section">
+      <div class="wrap">
+        {%- for f in faq.fragen %}
+        <details class="info">
+          <summary>{{ f.frage }}</summary>
+          <div class="inhalt">{{ f.antwort | md }}</div>
+        </details>
+        {%- endfor %}
+        <div class="hero-actions" style="margin-top:2rem">
+          <a class="btn btn-red" href="{{ einstellungen.ticket_url }}" target="_blank" rel="noopener">Zum Ticketshop</a>
+          <a class="btn" href="{{ '/kontakt.html' | url }}">Ihre Frage ist nicht dabei? Kontakt</a>
+        </div>
+      </div>
+    </section>

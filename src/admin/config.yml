@@ -248,3 +248,23 @@ collections:
                     widget: select
                     default: "50% 35%"
                     options: *fokus_optionen
+
+  - name: faq
+    label: "Häufige Fragen"
+    icon: help
+    editor:
+      preview: false
+    files:
+      - name: faq
+        label: "Fragen & Antworten"
+        file: src/_data/faq.yaml
+        hint: "Erscheint auf der FAQ-Seite und als „Gut zu wissen“ auf der Ticketseite."
+        fields:
+          - name: fragen
+            label: Fragen
+            label_singular: Frage
+            widget: list
+            summary: "{{fields.frage}}"
+            fields:
+              - { name: frage, label: Frage, widget: string }
+              - { name: antwort, label: Antwort, widget: markdown }

@@ -40,42 +40,12 @@ active: tickets
     <section class="section section-deep">
       <div class="wrap">
         <h2>Gut zu wissen</h2>
+        {%- for f in faq.fragen %}
         <details class="info">
-          <summary>Abendkasse &amp; Einlass</summary>
-          <div class="inhalt">
-            <p>Die Abendkasse öffnet eine Stunde vor Vorstellungsbeginn. Wir haben keine Barkasse, aber Sie können mit EC- und Kreditkarte sowie kontaktlos zahlen.</p>
-            <p>Bereits gekaufte Karten können wir leider nicht umtauschen oder zurückgeben. Nach Vorstellungsbeginn ist kein Einlass möglich.</p>
-          </div>
+          <summary>{{ f.frage }}</summary>
+          <div class="inhalt">{{ f.antwort | md }}</div>
         </details>
-        <details class="info">
-          <summary>Barrierefreier Platz für Rollstuhlfahrer</summary>
-          <div class="inhalt">
-            <p>Es befindet sich ein barrierefreier Rollstuhlplatz in der ersten Reihe – im Saalplan des Ticketshops mit dem Rollstuhlsymbol gekennzeichnet. Die Begleitperson bitte in der Nähe einbuchen.</p>
-          </div>
-        </details>
-        <details class="info">
-          <summary>So lösen Sie einen Gutschein-Code ein</summary>
-          <div class="inhalt">
-            <ol>
-              <li>Klicken Sie im Ticketshop auf das gewünschte Datum der Vorstellung.</li>
-              <li>Legen Sie die gewünschte Anzahl Tickets in den Warenkorb.</li>
-              <li>Klicken Sie im Warenkorb auf den Button „Ich habe einen Gutscheincode“ unterhalb der Gesamtsumme.</li>
-              <li>Geben Sie den oder die Codes nacheinander ein und klicken Sie auf „Einlösen“.</li>
-            </ol>
-            <p>Gutscheine enthalten einen Code und können nur im Online-Ticketshop eingelöst werden, nicht an der Abendkasse.</p>
-          </div>
-        </details>
-        <details class="info">
-          <summary>So nutzen Sie ein Passwort (z.&nbsp;B. Mitarbeiterrabatt)</summary>
-          <div class="inhalt">
-            <ol>
-              <li>Klicken Sie im Ticketshop auf das gewünschte Datum der Vorstellung.</li>
-              <li>Klicken Sie unterhalb der Kategorieauswahl auf „Ich habe ein Passwort“.</li>
-              <li>Geben Sie Ihr Passwort ein und klicken Sie auf „Absenden“. Die rabattierte Kategorie wird Ihnen unter den Preiskategorien angezeigt.</li>
-              <li>Legen Sie die gewünschte Anzahl Tickets in den Warenkorb und wählen Sie dort die Rabattkategorie aus.</li>
-            </ol>
-          </div>
-        </details>
+        {%- endfor %}
         <div class="hero-actions" style="margin-top:2rem">
           <a class="btn btn-red" href="{{ einstellungen.ticket_url }}" target="_blank" rel="noopener">Zum Ticketshop</a>
           <a class="btn" href="{{ '/kontakt.html' | url }}">Fragen? Kontaktieren Sie uns</a>
