@@ -361,6 +361,7 @@ p { margin: 0 0 1.1em; }
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--ink-soft);
+  margin-top: -0.35rem;
 }
 
 /* Desktop-Navigation */
