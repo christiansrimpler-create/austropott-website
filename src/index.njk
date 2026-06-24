@@ -20,7 +20,7 @@ active: start
         <p class="lead">{{ einstellungen.hero_text }}</p>
         <div class="hero-actions">
           <a class="btn btn-red" href="{{ einstellungen.ticket_url }}" target="_blank" rel="noopener">Tickets kaufen</a>
-          <a class="btn btn-light" href="{{ '/termine.html' | url }}">Zum Spielplan</a>
+          <a class="btn btn-light" href="{{ '/termine/' | url }}">Zum Spielplan</a>
         </div>
       </div>
     </section>
@@ -72,12 +72,12 @@ active: start
           {%- endfor %}
         </ul>
         <div class="hero-actions" style="margin-top:1.5rem">
-          <a class="btn" href="{{ '/termine.html' | url }}">Alle Termine</a>
+          <a class="btn" href="{{ '/termine/' | url }}">Alle Termine</a>
         </div>
         {%- else %}
-        <p class="lead prose">{{ einstellungen.termine_hinweis }} Abonnieren Sie unseren <a href="{{ '/service/newsletter.html' | url }}">Newsletter</a>, damit Sie nichts verpassen – oder schauen Sie direkt im Ticketshop vorbei.</p>
+        <p class="lead prose">{{ einstellungen.termine_hinweis }} Abonnieren Sie unseren <a href="{{ '/service/newsletter/' | url }}">Newsletter</a>, damit Sie nichts verpassen – oder schauen Sie direkt im Ticketshop vorbei.</p>
         <div class="hero-actions">
-          <a class="btn" href="{{ '/termine.html' | url }}">Alle Termine</a>
+          <a class="btn" href="{{ '/termine/' | url }}">Alle Termine</a>
           <a class="btn btn-red" href="{{ einstellungen.ticket_url }}" target="_blank" rel="noopener">Zum Ticketshop</a>
         </div>
         {%- endif %}
@@ -103,7 +103,7 @@ active: start
           <h2>Wer wir sind</h2>
           <p class="lead">austroPott wurde 2012 von Richard Saringer, Harald Schwaiger und Michael Kamp ins Leben gerufen. In Kooperation mit dem Dortmunder U spielen wir dort in wechselnder Besetzung regelmäßig erfolgreiche Stücke – von der Komödie bis zum Schauspiel, immer mit Tiefgang.</p>
           <p>Wir freuen uns auf Sie und wünschen Ihnen viel Vergnügen!</p>
-          <a class="btn" href="{{ '/team.html' | url }}">Das Team kennenlernen</a>
+          <a class="btn" href="{{ '/team/' | url }}">Das Team kennenlernen</a>
         </div>
         <figure class="frame" style="margin:0">
           <img src="{{ '/assets/img/galerie/siegersbusch-fim-6638.jpg' | url }}" alt="Michael Kamp auf der Bühne im Dortmunder U" loading="lazy">

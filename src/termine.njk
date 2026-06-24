@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-permalink: /termine.html
+permalink: /termine/
 title: "Termine | austroPott – Theater im Dortmunder U"
 desc: "Alle Vorstellungstermine von austroPott im Dortmunder U auf einen Blick. Tickets online bei Tickettoaster buchen."
 active: termine
@@ -34,10 +34,10 @@ active: termine
         {%- else %}
         <div class="prose">
           <p class="lead">{{ einstellungen.termine_hinweis }}</p>
-          <p>Schauen Sie bald wieder vorbei oder abonnieren Sie unseren <a href="{{ '/service/newsletter.html' | url }}">Newsletter</a> – dann erfahren Sie als Erste, wann es weitergeht. Sobald die Vorstellungen feststehen, finden Sie die Karten direkt in unserem Ticketshop.</p>
+          <p>Schauen Sie bald wieder vorbei oder abonnieren Sie unseren <a href="{{ '/service/newsletter/' | url }}">Newsletter</a> – dann erfahren Sie als Erste, wann es weitergeht. Sobald die Vorstellungen feststehen, finden Sie die Karten direkt in unserem Ticketshop.</p>
           <div class="hero-actions">
             <a class="btn btn-red" href="{{ einstellungen.ticket_url }}" target="_blank" rel="noopener">Zum Ticketshop</a>
-            <a class="btn" href="{{ '/service/newsletter.html' | url }}">Newsletter abonnieren</a>
+            <a class="btn" href="{{ '/service/newsletter/' | url }}">Newsletter abonnieren</a>
           </div>
         </div>
         {%- endif %}
@@ -49,7 +49,7 @@ active: termine
           <h2>Gut zu wissen</h2>
           <p>Die Abendkasse öffnet eine Stunde vor Vorstellungsbeginn. Wir haben keine Barkasse – Sie können mit EC- und Kreditkarte sowie kontaktlos zahlen.</p>
           <p>Nach Vorstellungsbeginn ist kein Einlass möglich. Bereits gekaufte Karten können wir leider nicht umtauschen oder zurückgeben.</p>
-          <a class="btn" href="{{ '/tickets.html' | url }}">Alle Ticket-Infos</a>
+          <a class="btn" href="{{ '/tickets/' | url }}">Alle Ticket-Infos</a>
         </div>
         <figure class="frame" style="margin:0">
           <img src="{{ '/assets/img/termine.jpg' | url }}" alt="Szenenfoto einer austroPott-Vorstellung" loading="lazy">

@@ -1,0 +1,14 @@
+# Weiterleitungen von den alten .html-URLs auf die sauberen URLs (SEO/Lesezeichen).
+- { from: /tickets.html, to: /tickets/ }
+- { from: /termine.html, to: /termine/ }
+- { from: /team.html, to: /team/ }
+- { from: /kontakt.html, to: /kontakt/ }
+- { from: /impressum-und-datenschutz.html, to: /impressum-und-datenschutz/ }
+- { from: /service/anfahrt.html, to: /service/anfahrt/ }
+- { from: /service/das-u.html, to: /service/das-u/ }
+- { from: /service/newsletter.html, to: /service/newsletter/ }
+- { from: /service/galerie.html, to: /service/galerie/ }
+- { from: /service/faq.html, to: /service/faq/ }
+- { from: /die-stuecke/1h22-vor-dem-ende.html, to: /die-stuecke/1h22-vor-dem-ende/ }
+- { from: /die-stuecke/love-letters.html, to: /die-stuecke/love-letters/ }
+- { from: /die-stuecke/mephisto.html, to: /die-stuecke/mephisto/ }

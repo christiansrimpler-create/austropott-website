@@ -17,27 +17,27 @@
       <nav class="main-nav" aria-label="Hauptnavigation">
         <ul>
           <li class="has-sub">
-            <a href="{{ '/die-stuecke/index.html' | url }}"{% if active == "stuecke" %} aria-current="page"{% endif %}>Die Stücke</a>
+            <a href="{{ '/die-stuecke/' | url }}"{% if active == "stuecke" %} aria-current="page"{% endif %}>Die Stücke</a>
             <ul class="sub">
               {%- for stueck in collections.stuecke %}
               <li><a href="{{ stueck.url | url }}">{{ stueck.data.titel }}</a></li>
               {%- endfor %}
             </ul>
           </li>
-          <li><a href="{{ '/termine.html' | url }}"{% if active == "termine" %} aria-current="page"{% endif %}>Termine</a></li>
-          <li><a href="{{ '/tickets.html' | url }}"{% if active == "tickets" %} aria-current="page"{% endif %}>Tickets</a></li>
-          <li><a href="{{ '/team.html' | url }}"{% if active == "team" %} aria-current="page"{% endif %}>Team</a></li>
+          <li><a href="{{ '/termine/' | url }}"{% if active == "termine" %} aria-current="page"{% endif %}>Termine</a></li>
+          <li><a href="{{ '/tickets/' | url }}"{% if active == "tickets" %} aria-current="page"{% endif %}>Tickets</a></li>
+          <li><a href="{{ '/team/' | url }}"{% if active == "team" %} aria-current="page"{% endif %}>Team</a></li>
           <li class="has-sub">
-            <a href="{{ '/service/index.html' | url }}"{% if active == "service" %} aria-current="page"{% endif %}>Infos</a>
+            <a href="{{ '/service/' | url }}"{% if active == "service" %} aria-current="page"{% endif %}>Infos</a>
             <ul class="sub">
-              <li><a href="{{ '/service/anfahrt.html' | url }}">Anfahrt</a></li>
-              <li><a href="{{ '/service/das-u.html' | url }}">Das U</a></li>
-              <li><a href="{{ '/service/faq.html' | url }}">Häufige Fragen</a></li>
-              <li><a href="{{ '/service/newsletter.html' | url }}">Newsletter</a></li>
-              <li><a href="{{ '/service/galerie.html' | url }}">Galerie &amp; Archiv</a></li>
+              <li><a href="{{ '/service/anfahrt/' | url }}">Anfahrt</a></li>
+              <li><a href="{{ '/service/das-u/' | url }}">Das U</a></li>
+              <li><a href="{{ '/service/faq/' | url }}">Häufige Fragen</a></li>
+              <li><a href="{{ '/service/newsletter/' | url }}">Newsletter</a></li>
+              <li><a href="{{ '/service/galerie/' | url }}">Galerie &amp; Archiv</a></li>
             </ul>
           </li>
-          <li><a href="{{ '/kontakt.html' | url }}"{% if active == "kontakt" %} aria-current="page"{% endif %}>Kontakt</a></li>
+          <li><a href="{{ '/kontakt/' | url }}"{% if active == "kontakt" %} aria-current="page"{% endif %}>Kontakt</a></li>
         </ul>
         <a class="btn btn-red nav-ticket" href="{{ einstellungen.ticket_url }}" target="_blank" rel="noopener">Tickets</a>
       </nav>
@@ -55,27 +55,27 @@
     <nav aria-label="Mobile Navigation">
       <ul>
         <li>
-          <a href="{{ '/die-stuecke/index.html' | url }}"{% if active == "stuecke" %} aria-current="page"{% endif %}>Die Stücke</a>
+          <a href="{{ '/die-stuecke/' | url }}"{% if active == "stuecke" %} aria-current="page"{% endif %}>Die Stücke</a>
           <ul class="sub-static">
             {%- for stueck in collections.stuecke %}
             <li><a href="{{ stueck.url | url }}">{{ stueck.data.titel }}</a></li>
             {%- endfor %}
           </ul>
         </li>
-        <li><a href="{{ '/termine.html' | url }}"{% if active == "termine" %} aria-current="page"{% endif %}>Termine</a></li>
-        <li><a href="{{ '/tickets.html' | url }}"{% if active == "tickets" %} aria-current="page"{% endif %}>Tickets</a></li>
-        <li><a href="{{ '/team.html' | url }}"{% if active == "team" %} aria-current="page"{% endif %}>Team</a></li>
+        <li><a href="{{ '/termine/' | url }}"{% if active == "termine" %} aria-current="page"{% endif %}>Termine</a></li>
+        <li><a href="{{ '/tickets/' | url }}"{% if active == "tickets" %} aria-current="page"{% endif %}>Tickets</a></li>
+        <li><a href="{{ '/team/' | url }}"{% if active == "team" %} aria-current="page"{% endif %}>Team</a></li>
         <li>
-          <a href="{{ '/service/index.html' | url }}"{% if active == "service" %} aria-current="page"{% endif %}>Infos</a>
+          <a href="{{ '/service/' | url }}"{% if active == "service" %} aria-current="page"{% endif %}>Infos</a>
           <ul class="sub-static">
-            <li><a href="{{ '/service/anfahrt.html' | url }}">Anfahrt</a></li>
-            <li><a href="{{ '/service/das-u.html' | url }}">Das U</a></li>
-            <li><a href="{{ '/service/faq.html' | url }}">Häufige Fragen</a></li>
-            <li><a href="{{ '/service/newsletter.html' | url }}">Newsletter</a></li>
-            <li><a href="{{ '/service/galerie.html' | url }}">Galerie &amp; Archiv</a></li>
+            <li><a href="{{ '/service/anfahrt/' | url }}">Anfahrt</a></li>
+            <li><a href="{{ '/service/das-u/' | url }}">Das U</a></li>
+            <li><a href="{{ '/service/faq/' | url }}">Häufige Fragen</a></li>
+            <li><a href="{{ '/service/newsletter/' | url }}">Newsletter</a></li>
+            <li><a href="{{ '/service/galerie/' | url }}">Galerie &amp; Archiv</a></li>
           </ul>
         </li>
-        <li><a href="{{ '/kontakt.html' | url }}"{% if active == "kontakt" %} aria-current="page"{% endif %}>Kontakt</a></li>
+        <li><a href="{{ '/kontakt/' | url }}"{% if active == "kontakt" %} aria-current="page"{% endif %}>Kontakt</a></li>
       </ul>
     </nav>
     <div class="mobile-menu-foot">
@@ -112,21 +112,21 @@
       <div>
         <h4>Theater</h4>
         <ul>
-          <li><a href="{{ '/die-stuecke/index.html' | url }}">Die Stücke</a></li>
-          <li><a href="{{ '/termine.html' | url }}">Termine</a></li>
-          <li><a href="{{ '/tickets.html' | url }}">Tickets</a></li>
-          <li><a href="{{ '/team.html' | url }}">Team</a></li>
+          <li><a href="{{ '/die-stuecke/' | url }}">Die Stücke</a></li>
+          <li><a href="{{ '/termine/' | url }}">Termine</a></li>
+          <li><a href="{{ '/tickets/' | url }}">Tickets</a></li>
+          <li><a href="{{ '/team/' | url }}">Team</a></li>
         </ul>
       </div>
       <div>
         <h4>Infos</h4>
         <ul>
-          <li><a href="{{ '/service/anfahrt.html' | url }}">Anfahrt</a></li>
-          <li><a href="{{ '/service/das-u.html' | url }}">Das U</a></li>
-          <li><a href="{{ '/service/faq.html' | url }}">Häufige Fragen</a></li>
-          <li><a href="{{ '/service/newsletter.html' | url }}">Newsletter</a></li>
-          <li><a href="{{ '/service/galerie.html' | url }}">Galerie &amp; Archiv</a></li>
-          <li><a href="{{ '/kontakt.html' | url }}">Kontakt</a></li>
+          <li><a href="{{ '/service/anfahrt/' | url }}">Anfahrt</a></li>
+          <li><a href="{{ '/service/das-u/' | url }}">Das U</a></li>
+          <li><a href="{{ '/service/faq/' | url }}">Häufige Fragen</a></li>
+          <li><a href="{{ '/service/newsletter/' | url }}">Newsletter</a></li>
+          <li><a href="{{ '/service/galerie/' | url }}">Galerie &amp; Archiv</a></li>
+          <li><a href="{{ '/kontakt/' | url }}">Kontakt</a></li>
         </ul>
       </div>
       <div>
@@ -150,7 +150,7 @@
     </div>
     <div class="wrap footer-legal">
       <span>© {% year %} austroPott · Bujinski Kamp Schwaiger GbR</span>
-      <a href="{{ '/impressum-und-datenschutz.html' | url }}">Impressum &amp; Datenschutz</a>
+      <a href="{{ '/impressum-und-datenschutz/' | url }}">Impressum &amp; Datenschutz</a>
     </div>
   </footer>
 

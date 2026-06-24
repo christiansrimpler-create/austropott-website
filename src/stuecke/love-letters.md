@@ -1,6 +1,6 @@
 ---
 layout: stueck.njk
-permalink: /die-stuecke/love-letters.html
+permalink: /die-stuecke/love-letters/
 title: "Love Letters | austroPott – Theater im Dortmunder U"
 desc: "Love Letters von A. R. Gurney: Eine Frau, ein Mann und ihre Briefe – ein Leben lang. Mit Monika Bujinski und Michael Kamp im Dortmunder U."
 active: stuecke

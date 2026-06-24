@@ -1,0 +1,21 @@
+---
+pagination:
+  data: redirects
+  size: 1
+  alias: r
+permalink: "{{ r.from }}"
+eleventyExcludeFromCollections: true
+---
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>austroPott – Theater im Dortmunder U</title>
+  <link rel="canonical" href="{{ siteUrl }}{{ r.to }}">
+  <meta name="robots" content="noindex, follow">
+  <meta http-equiv="refresh" content="0; url={{ r.to | url }}">
+</head>
+<body>
+  <p>Diese Seite ist umgezogen zu <a href="{{ r.to | url }}">austropott.de{{ r.to }}</a>.</p>
+</body>
+</html>

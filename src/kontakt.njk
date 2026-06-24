@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-permalink: /kontakt.html
+permalink: /kontakt/
 title: "Kontakt | austroPott – Theater im Dortmunder U"
 desc: "Kontakt zu austroPott: Telefon 0231 99 320 430, E-Mail tickets@austropott.de. Spielstätte: Kino im Dortmunder U, Leonie-Reygers-Terrasse, Dortmund."
 active: kontakt
@@ -16,7 +16,7 @@ active: kontakt
           <a class="kontakt-zeile" href="mailto:{{ einstellungen.email }}"><small>E-Mail</small>{{ einstellungen.email }}</a>
           <span class="kontakt-zeile" style="border-bottom:none"><small>Spielstätte</small>{{ einstellungen.spielstaette }}<br>{{ einstellungen.adresse_strasse }}<br>{{ einstellungen.adresse_ort }}</span>
           <div class="hero-actions" style="margin-top:1.5rem">
-            <a class="btn" href="{{ '/service/anfahrt.html' | url }}">So finden Sie uns</a>
+            <a class="btn" href="{{ '/service/anfahrt/' | url }}">So finden Sie uns</a>
             <a class="btn btn-red" href="{{ einstellungen.ticket_url }}" target="_blank" rel="noopener">Tickets kaufen</a>
           </div>
         </div>
