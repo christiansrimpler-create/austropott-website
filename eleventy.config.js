@@ -1,10 +1,24 @@
 import yaml from "js-yaml";
 import MarkdownIt from "markdown-it";
+import { createHash } from "node:crypto";
+import { readFileSync } from "node:fs";
 
 const md = new MarkdownIt({ html: true, typographer: false });
 
 export default function (eleventyConfig) {
   eleventyConfig.addDataExtension("yaml,yml", (contents) => yaml.load(contents));
+
+  // Cache-Busting: Hash über den CSS-Inhalt, ändert sich nur bei echten Änderungen
+  eleventyConfig.addGlobalData("cssVersion", () => {
+    try {
+      return createHash("md5")
+        .update(readFileSync("src/assets/css/style.css"))
+        .digest("hex")
+        .slice(0, 8);
+    } catch {
+      return "";
+    }
+  });
 
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/admin": "admin" });
