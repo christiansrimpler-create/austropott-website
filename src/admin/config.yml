@@ -177,7 +177,6 @@ collections:
             summary: "{{fields.name}}"
             fields:
               - { name: name, label: Name, widget: string }
-              - { name: rolle, label: "Rolle (kleine rote Zeile)", widget: string }
               - { name: bild, label: Foto, widget: image }
               - { name: text, label: Lebenslauf, widget: text }
               - { name: website, label: "Eigene Website (optional)", widget: string, required: false }

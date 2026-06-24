@@ -7,7 +7,6 @@ intro: >-
   wachsendem Zuspruch angenommen.
 mitglieder:
   - name: "Michael Kamp"
-    rolle: "Schauspiel · Gründungsmitglied"
     bild: /assets/img/team-michael-kamp.jpg
     website: "https://www.michaelkamp.com"
     text: >-
@@ -21,7 +20,6 @@ mitglieder:
       Er arbeitet außerdem als freier Schauspieler u. a. am Staatstheater Mainz,
       für Film und Fernsehen sowie als Sprecher für Deutschlandfunk, den WDR und ARTE.
   - name: "Monika Bujinski"
-    rolle: "Schauspiel"
     bild: /assets/img/team-monika-bujinski.jpg
     website: ""
     text: >-
@@ -35,7 +33,6 @@ mitglieder:
       Monika Bujinski, die regelmäßig auch für Film und Fernsehen arbeitet, wurde
       zweifach in der NRW-Kritikerumfrage als Beste Schauspielerin genannt.
   - name: "Harald Schwaiger"
-    rolle: "Schauspiel · Gründungsmitglied"
     bild: /assets/img/team-harald-schwaiger.jpg
     website: "https://www.harald-schwaiger.com"
     text: >-
@@ -50,7 +47,6 @@ mitglieder:
       Schwaiger ist Gründungsmitglied der Gruppe austroPott und seit 2019
       Intendant des Musik- und Theaterfestivals Dalheimer Sommer.
   - name: "Gitta Kessler"
-    rolle: "Soufflage & künstlerischer Blick"
     bild: /assets/img/team-gitta-kessler.jpg
     website: ""
     text: >-
