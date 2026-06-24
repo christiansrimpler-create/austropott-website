@@ -955,7 +955,7 @@ p { margin: 0 0 1.1em; }
   font-size: 0.78rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--red);
+  color: var(--ink-soft);
   display: block;
   margin-bottom: 0.8rem;
 }
