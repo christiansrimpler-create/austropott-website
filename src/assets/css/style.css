@@ -918,6 +918,10 @@ p { margin: 0 0 1.1em; }
 
 .person:last-child { border-bottom: none; }
 
+/* Foto rechts: Spalten spiegeln, damit das Foto gleich groß bleibt (schmale Spalte) */
+.person:nth-child(even) {
+  grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
+}
 .person:nth-child(even) .person-foto { order: 2; }
 
 .person-foto {
@@ -1414,7 +1418,8 @@ details.info .inhalt { padding: 0 1.25rem 1.25rem; }
   .footer-main { grid-template-columns: 1fr; }
   .galerie-grid { columns: 1; }
   .kontakt-grid { grid-template-columns: 1fr; }
-  .person { grid-template-columns: 1fr; }
+  .person,
+  .person:nth-child(even) { grid-template-columns: 1fr; }
   .person:nth-child(even) .person-foto { order: 0; }
   .person-foto { max-width: 22rem; }
 
