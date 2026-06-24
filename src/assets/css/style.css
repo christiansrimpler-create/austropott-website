@@ -14,6 +14,15 @@
   src: url("../fonts/bricolage-grotesque-normal-400-800-latin.woff2") format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+/* Railway Sans – freie Wiederbelebung von Johnston (London Underground, 1916).
+   Nur ein Schnitt; deshalb global font-synthesis: none gegen Fake-Bold. */
+@font-face {
+  font-family: "Railway Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/railway-sans.woff2") format("woff2");
+}
 @font-face {
   font-family: "Courier Prime";
   font-style: italic;
@@ -96,7 +105,7 @@
 }/* ==========================================================================
    austroPott – Theater im Dortmunder U
    Designsystem: Signalrot / Tiefschwarz / Papierweiß
-   Typografie: Bricolage Grotesque (Headlines) · Source Serif 4 (Fließtext)
+   Typografie: Railway Sans / Johnston (Headlines) · Source Serif 4 (Fließtext)
                Courier Prime (Meta, Daten, Buttons – Schreibmaschinen-Motiv
                aus dem Logo)
    ========================================================================== */
@@ -113,7 +122,7 @@
   --line: rgba(24, 20, 16, 0.16);
   --line-night: rgba(246, 241, 232, 0.18);
 
-  --font-display: "Bricolage Grotesque", "Helvetica Neue", sans-serif;
+  --font-display: "Railway Sans", "Helvetica Neue", sans-serif;
   --font-serif: "Source Serif 4", Georgia, serif;
   --font-mono: "Courier Prime", "Courier New", monospace;
 
@@ -139,6 +148,8 @@ body {
   font-size: 1.0625rem;
   line-height: 1.65;
   font-optical-sizing: auto;
+  /* Railway Sans (Headlines) hat nur einen Schnitt – kein synthetisches Bold/Kursiv */
+  font-synthesis: none;
 }
 
 img { max-width: 100%; height: auto; display: block; }
