@@ -109,7 +109,7 @@ collections:
             widget: select
             default: "50% 35%"
             options: &fokus_optionen
-              - { label: "Oben", value: "50% 15%" }
+              - { label: "Oben", value: "50% 8%" }
               - { label: "Eher oben", value: "50% 35%" }
               - { label: "Mitte", value: "50% 50%" }
               - { label: "Eher unten", value: "50% 70%" }
