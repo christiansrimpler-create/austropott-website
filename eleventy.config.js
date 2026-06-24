@@ -20,6 +20,18 @@ export default function (eleventyConfig) {
     }
   });
 
+  // Cache-Busting für das JavaScript (analog zur CSS)
+  eleventyConfig.addGlobalData("jsVersion", () => {
+    try {
+      return createHash("md5")
+        .update(readFileSync("src/assets/js/main.js"))
+        .digest("hex")
+        .slice(0, 8);
+    } catch {
+      return "";
+    }
+  });
+
   // Flache Liste aller Produktions-Fotos (für die Hero-Slideshow auf der Startseite)
   eleventyConfig.addGlobalData("alleFotos", () => {
     try {
