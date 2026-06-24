@@ -300,6 +300,7 @@ p { margin: 0 0 1.1em; }
 
 /* Wortmarke mit Logo-Winkeln */
 .brand {
+  display: inline-block;
   font-family: var(--font-mono);
   font-weight: 700;
   font-size: 1.45rem;
