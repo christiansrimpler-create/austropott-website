@@ -1183,6 +1183,27 @@ details.info .inhalt { padding: 0 1.25rem 1.25rem; }
   color: var(--ink-soft);
 }
 
+/* Verstecktes Ziel-iframe für die Brevo-Antwort */
+.newsletter-frame { display: none; }
+
+/* Inline-Bestätigung nach dem Absenden */
+.newsletter-success {
+  max-width: var(--w-text);
+  border: 2px solid var(--red);
+  border-left-width: 0.55rem;
+  padding: 2rem;
+}
+
+.newsletter-success h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-success p {
+  margin: 0;
+  max-width: 38rem;
+}
+
 /* --------------------------------------------------------------------------
    Footer
    -------------------------------------------------------------------------- */

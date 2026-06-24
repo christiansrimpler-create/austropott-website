@@ -47,6 +47,24 @@
     revealEls.forEach(function (el) { el.classList.add("visible"); });
   }
 
+  /* ---- Newsletter: Inline-Bestätigung statt leerer Brevo-Seite ----
+     Das Formular sendet weiter an Brevo (Ziel ist ein verstecktes iframe),
+     wir blenden danach eine Danke-Meldung auf der Seite ein. */
+  var nlForm = document.getElementById("newsletter-form");
+  if (nlForm) {
+    nlForm.addEventListener("submit", function () {
+      // submit feuert nur bei gültigem Formular -> Absenden läuft bereits
+      var success = document.querySelector(".newsletter-success");
+      window.setTimeout(function () {
+        nlForm.hidden = true;
+        if (success) {
+          success.hidden = false;
+          success.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      }, 0);
+    });
+  }
+
   /* ---- Galerie-Lightbox ---- */
   var galerie = document.querySelector(".galerie-grid");
   if (galerie) {
