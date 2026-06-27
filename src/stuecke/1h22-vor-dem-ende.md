@@ -1,7 +1,7 @@
 ---
 titel: Achtsam morden
 genre: Eine tiefenentspannte Kriminalkomödie
-untertitel: 3 Schauspieler in 25 Rollen!
+untertitel: Bühnenfassung von Bernd Schmidt nach dem Roman von Karsten Dusse
 teaser: |-
   Der Alltag von Spitzenanwalt Björn Diemel ist der pure Horror: Seine Ehe liegt in Scherben, die Tochter sieht ihn kaum, und sein wichtigster Mandant ist ein brutaler, unberechenbarer Mafia-Boss, der ihn Tag und Nacht auf Trab hält. Um seine Ehe zu retten und nicht den Verstand zu verlieren, zwingt ihn seine Frau zu einem Achtsamkeits-Seminar. Was als verzweifelter Versuch startet, die Work-Life-Balance zu reparieren, entwickelt sich schnell zu einer mörderisch guten Lebensphilosophie. Denn Björn nimmt die Ratschläge seines Therapeuten verdammt wörtlich: Als ihm der kriminelle Großstadt-Gangster mal wieder die kostbare Zeit mit seiner Tochter rauben will, schafft sich Björn ganz einfach eine „Zeitinsel“ – und bringt den nervigen Mandanten kurzerhand um. 
   Zwischen Atemübungen, Leichenentsorgung und dem nächsten Elternabend im Kindergarten balanciert er fortan ein Leben als achtsamer Mörder.
@@ -25,10 +25,8 @@ title: Einszweiundzwanzig vor dem Ende | austroPott – Theater im Dortmunder U
 titel_html: Einszweiund&shy;zwanzig vor dem Ende
 ---
 
-Vor Bernard steht ein fremder Mann mit Waffe – der sich als seltsam schrulliger Gesprächspartner entpuppt. In aberwitzigen Dialogen erfährt Bernard: Der Möchtegern-Killer ist niemand anderes als der Tod persönlich, der die jeweiligen Kandidaten ins Jenseits begleitet.
+Der Alltag von Spitzenanwalt Björn Diemel ist der pure Horror: Seine Ehe liegt in Scherben, die Tochter sieht ihn kaum, und sein wichtigster Mandant ist ein brutaler, unberechenbarer Mafia-Boss, der ihn Tag und Nacht auf Trab hält. Um seine Ehe zu retten und nicht den Verstand zu verlieren, zwingt ihn seine Frau zu einem Achtsamkeits-Seminar. Was als verzweifelter Versuch startet, die Work-Life-Balance zu reparieren, entwickelt sich schnell zu einer mörderisch guten Lebensphilosophie. Denn Björn nimmt die Ratschläge seines Therapeuten verdammt wörtlich: Als ihm der kriminelle Großstadt-Gangster mal wieder die kostbare Zeit mit seiner Tochter rauben will, schafft sich Björn ganz einfach eine „Zeitinsel“ – und bringt den nervigen Mandanten kurzerhand um. 
 
-Doch der Tod hat sich im Stockwerk geirrt …
+Zwischen Atemübungen, Leichenentsorgung und dem nächsten Elternabend im Kindergarten balanciert er fortan ein Leben als achtsamer Mörder.
 
-### Der Autor
-
-Matthieu Delaporte, Jahrgang 1971, brilliert mit intelligenten Komödien und pointierten Dialogen. Gemeinsam mit Alexandre de La Patellière landete er Sensationserfolge wie „Der Vorname“ und „Das Abschiedsdinner“ – letzteres 2022 auch mit großem Erfolg von uns im Dortmunder U aufgeführt.
+Monika Bujinski, Harald Schwaiger und Michael Kamp schlüpfen in 25 Rollen - erleben Sie Karsten Dusses Sensations-Bestseller „Achtsam morden“ als rabenschwarze, bissige Kriminalkomödie live auf unserer Bühne und sichern Sie sich jetzt Ihre Tickets für einen mörderisch unterhaltsamen Theaterabend!
