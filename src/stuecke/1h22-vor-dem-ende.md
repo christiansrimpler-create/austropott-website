@@ -1,6 +1,6 @@
 ---
 titel: Achtsam morden
-genre: Morden will gelernt sein – am besten  tiefenentspannt!
+genre: Eine tiefenentspannte Kriminalkomödie
 untertitel: 3 Schauspieler in 25 Rollen!
 teaser: |-
   Morden will gelernt sein – am besten  tiefenentspannt!
@@ -12,7 +12,7 @@ teaser: |-
 
 
   Aufführungsrechte bei Gustav Kiepenheuer Bühnenvertriebs-GmbH, Berlin | www.kiepenheuer-medien.de
-kurztext: 'Erleben Sie den gestressten Top-Anwalt Björn Diemel auf seinem absurd-komischen Weg zu mehr Work-Life-Balance. Eine tiefenentspannte Kriminalkomödie voll schwarzem Humor, die zeigt:  Atmen hilft. Morden auch.'
+kurztext: Erleben Sie den gestressten Top-Anwalt Björn Diemel auf seinem absurd-komischen Weg zu mehr Work-Life-Balance.  Denn wenn der Achtsamkeitscoach sagt „Schaffen Sie sich Zeitinseln“, muss der nervige Mafia-Boss eben weichen.
 bild: /assets/img/ChatGPT Image 4. Juni 2026, 19_57_25.png
 bild_alt: Michael Kamp in „Einszweiundzwanzig vor dem Ende“
 foto_credit: 'Foto: Ralph Brix'
