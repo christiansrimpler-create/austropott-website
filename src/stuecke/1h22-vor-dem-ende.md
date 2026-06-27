@@ -12,10 +12,7 @@ teaser: |-
 
 
   Aufführungsrechte bei Gustav Kiepenheuer Bühnenvertriebs-GmbH, Berlin | www.kiepenheuer-medien.de
-kurztext: |-
-  Erleben Sie den gestressten Top-Anwalt Björn Diemel auf seinem absurd-komischen Weg zu mehr Work-Life-Balance.                                                                                     Denn wenn der Achtsamkeitscoach sagt „Schaffen Sie sich Zeitinseln“, muss der nervige Mafia-Boss eben weichen.                                                                                             Eine tiefenentspannte Kriminalkomödie voll schwarzem Humor, die zeigt:  Atmen hilft. Morden auch. 
-
-  Monika Bujinski, Harald Schwaiger und Michael Kamp schlüpfen in 25 Rollen - sichern Sie sich jetzt Ihre Tickets für einen mörderisch unterhaltsamen Theaterabend!
+kurztext: 'Erleben Sie den gestressten Top-Anwalt Björn Diemel auf seinem absurd-komischen Weg zu mehr Work-Life-Balance. Eine tiefenentspannte Kriminalkomödie voll schwarzem Humor, die zeigt:  Atmen hilft. Morden auch.'
 bild: /assets/img/ChatGPT Image 4. Juni 2026, 19_57_25.png
 bild_alt: Michael Kamp in „Einszweiundzwanzig vor dem Ende“
 foto_credit: 'Foto: Ralph Brix'
@@ -24,8 +21,8 @@ pressezitate:
   - text: Ein amüsantes und punktgenau gespieltes Pointen-Ping-Pong … Nicht verpassen!
     quelle: Ruhr Nachrichten
 rechte: Aufführungsrechte bei Gustav Kiepenheuer Bühnenvertriebs-GmbH, Berlin | www.kiepenheuer-medien.de
-desc: 'Komödie von Matthieu Delaporte: Bernard will seinem Leben ein Ende setzen – da klopft der Tod persönlich an die Tür. Mit Michael Kamp im Dortmunder U.'
 active: stuecke
+desc: 'Komödie von Matthieu Delaporte: Bernard will seinem Leben ein Ende setzen – da klopft der Tod persönlich an die Tür. Mit Michael Kamp im Dortmunder U.'
 layout: stueck.njk
 permalink: /die-stuecke/1h22-vor-dem-ende/
 title: Einszweiundzwanzig vor dem Ende | austroPott – Theater im Dortmunder U
