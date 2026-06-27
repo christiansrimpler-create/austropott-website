@@ -2,7 +2,7 @@
 titel: Achtsam morden
 genre: Eine tiefenentspannte Kriminalkomödie
 untertitel: Bühnenfassung von Bernd Schmidt nach dem Roman von Karsten Dusse
-teaser: Erleben Sie den gestressten Top-Anwalt Björn Diemel auf seinem absurd-komischen Weg zu mehr Work-Life-Balance.  Denn wenn der Achtsamkeitscoach sagt „Schaffen Sie sich Zeitinseln“, muss der nervige Mafia-Boss eben weichen.
+teaser: Erleben Sie den gestressten Top-Anwalt Björn Diemel auf seinem absurd-komischen Weg zu mehr Work-Life-Balance.
 kurztext: Erleben Sie den gestressten Top-Anwalt Björn Diemel auf seinem absurd-komischen Weg zu mehr Work-Life-Balance.  Denn wenn der Achtsamkeitscoach sagt „Schaffen Sie sich Zeitinseln“, muss der nervige Mafia-Boss eben weichen.
 bild: /assets/img/ChatGPT Image 4. Juni 2026, 19_57_25.png
 bild_alt: Achtsam morden
