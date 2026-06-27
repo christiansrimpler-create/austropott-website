@@ -4,7 +4,7 @@ genre: Komödie nach dem Bestseller von ...
 untertitel: ''
 teaser: Premiere am 17.10.26!
 kurztext: Näheres bald auf dieser Seite.
-bild: /assets/img/stueck-1h22.jpg
+bild: /assets/img/ChatGPT Image 4. Juni 2026, 19_57_25.png
 bild_alt: Michael Kamp in „Einszweiundzwanzig vor dem Ende“
 foto_credit: 'Foto: Ralph Brix'
 reihenfolge: 1
