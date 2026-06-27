@@ -1,9 +1,18 @@
 ---
-titel: Neues Stück 2026!
-genre: Komödie nach dem Bestseller von ...
-untertitel: ''
-teaser: Premiere am 17.10.26!
-kurztext: Näheres bald auf dieser Seite.
+titel: Achtsam morden
+genre: Bühnenfassung von Bernd Schmidt nach dem Roman von Karsten Dusse
+untertitel: 3 Schauspieler in 25 Rollen!
+teaser: |-
+  Morden will gelernt sein – am besten  tiefenentspannt!
+
+   
+  Erleben Sie den gestressten Top-Anwalt Björn Diemel auf seinem absurd-komischen Weg zu mehr Work-Life-Balance.                                                                                     Denn wenn der Achtsamkeitscoach sagt „Schaffen Sie sich Zeitinseln“, muss der nervige Mafia-Boss eben weichen.                                                                                             Eine tiefenentspannte Kriminalkomödie voll schwarzem Humor, die zeigt:  Atmen hilft. Morden auch. 
+
+  Monika Bujinski, Harald Schwaiger und Michael Kamp schlüpfen in 25 Rollen - sichern Sie sich jetzt Ihre Tickets für einen mörderisch unterhaltsamen Theaterabend!
+
+
+  Aufführungsrechte bei Gustav Kiepenheuer Bühnenvertriebs-GmbH, Berlin | www.kiepenheuer-medien.de
+kurztext: Aufführungsrechte bei Gustav Kiepenheuer Bühnenvertriebs-GmbH, Berlin | www.kiepenheuer-medien.de
 bild: /assets/img/ChatGPT Image 4. Juni 2026, 19_57_25.png
 bild_alt: Michael Kamp in „Einszweiundzwanzig vor dem Ende“
 foto_credit: 'Foto: Ralph Brix'
@@ -12,8 +21,8 @@ pressezitate:
   - text: Ein amüsantes und punktgenau gespieltes Pointen-Ping-Pong … Nicht verpassen!
     quelle: Ruhr Nachrichten
 rechte: "Aufführungsrechte: [Theaterverlag Desch, Berlin](https://www.theater-verlag-desch.de) · mit freundlicher Genehmigung von L'Agence Drama, 24 rue Feydeau, 75002 Paris, Frankreich ([www.dramaparis.com](https://www.dramaparis.com))"
-active: stuecke
 desc: 'Komödie von Matthieu Delaporte: Bernard will seinem Leben ein Ende setzen – da klopft der Tod persönlich an die Tür. Mit Michael Kamp im Dortmunder U.'
+active: stuecke
 layout: stueck.njk
 permalink: /die-stuecke/1h22-vor-dem-ende/
 title: Einszweiundzwanzig vor dem Ende | austroPott – Theater im Dortmunder U
