@@ -6,7 +6,7 @@ teaser: Erleben Sie den gestressten Top-Anwalt Björn Diemel auf seinem absurd-k
 kurztext: Erleben Sie den gestressten Top-Anwalt Björn Diemel auf seinem absurd-komischen Weg zu mehr Work-Life-Balance.
 bild: /assets/img/ChatGPT_Image_28._Juni_2026,_12_52_16.jpg
 bild_alt: Illustration Achtsam morden
-foto_credit: Michael Kamp
+foto_credit: ''
 reihenfolge: 1
 pressezitate:
   - text: 3 Schauspieler in 25 Rollen!
