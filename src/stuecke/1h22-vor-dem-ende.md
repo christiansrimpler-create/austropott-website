@@ -4,16 +4,16 @@ genre: Eine tiefenentspannte Kriminalkomödie
 untertitel: Bühnenfassung von Bernd Schmidt nach dem Roman von Karsten Dusse
 teaser: Erleben Sie den gestressten Top-Anwalt Björn Diemel auf seinem absurd-komischen Weg zu mehr Work-Life-Balance.
 kurztext: Erleben Sie den gestressten Top-Anwalt Björn Diemel auf seinem absurd-komischen Weg zu mehr Work-Life-Balance.
-bild: /assets/img/ChatGPT Image 4. Juni 2026, 19_57_25.png
-bild_alt: Achtsam morden
+bild: /assets/img/ChatGPT_Image_28._Juni_2026,_12_52_16.jpg
+bild_alt: Illustration Achtsam morden
 foto_credit: Michael Kamp
 reihenfolge: 1
 pressezitate:
-  - text: Ein amüsantes und punktgenau gespieltes Pointen-Ping-Pong … Nicht verpassen!
-    quelle: Ruhr Nachrichten
+  - text: 3 Schauspieler in 25 Rollen!
+    quelle: ''
 rechte: Aufführungsrechte bei Gustav Kiepenheuer Bühnenvertriebs-GmbH, Berlin | www.kiepenheuer-medien.de
-active: stuecke
 desc: 'Komödie von Matthieu Delaporte: Bernard will seinem Leben ein Ende setzen – da klopft der Tod persönlich an die Tür. Mit Michael Kamp im Dortmunder U.'
+active: stuecke
 layout: stueck.njk
 permalink: /die-stuecke/1h22-vor-dem-ende/
 title: Einszweiundzwanzig vor dem Ende | austroPott – Theater im Dortmunder U
