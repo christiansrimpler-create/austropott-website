@@ -13,6 +13,7 @@ presse:
 
 stuecke_ueberschrift: "Die Stücke"
 termine_ueberschrift: "Nächste Termine"
+termine_leer_text: "Die Termine für die neue Spielzeit werden in Kürze veröffentlicht. Abonnieren Sie unseren [Newsletter](/service/newsletter/), damit Sie nichts verpassen – oder schauen Sie direkt im Ticketshop vorbei."
 publikum_ueberschrift: "Das sagt unser Publikum"
 publikum:
   - "Perfektes Tempo, sprachwitzig, authentisch, genial."

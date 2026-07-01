@@ -27,7 +27,7 @@ active: tickets
         </table>
         <div class="prose">
           <p>{{ seiten.tickets.versand_hinweis }}</p>
-          <p><strong>*Ermäßigungsberechtigt mit Nachweis sind:</strong></p>
+          <p><strong>{{ seiten.tickets.ermaessigung_intro }}</strong></p>
           <ul>
             {%- for punkt in seiten.tickets.ermaessigung %}
             <li>{{ punkt }}</li>

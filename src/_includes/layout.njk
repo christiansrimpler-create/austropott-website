@@ -88,7 +88,7 @@
   </main>
 
   <div class="ticket-bar">
-    <span>Karten für alle Vorstellungen</span>
+    <span>{{ einstellungen.ticketbar_text }}</span>
     <a class="btn btn-red" href="{{ einstellungen.ticket_url }}" target="_blank" rel="noopener">Tickets</a>
   </div>
 
@@ -141,7 +141,7 @@
       </div>
     </div>
     <div class="wrap sponsoren">
-      <h4>Wir danken unseren Sponsoren und Partnern</h4>
+      <h4>{{ einstellungen.sponsoren_ueberschrift }}</h4>
       <div class="sponsoren-logos">
         {%- for sponsor in einstellungen.sponsoren %}
         <span><img src="{{ sponsor.bild | url }}" alt="{{ sponsor.name }}" loading="lazy"></span>

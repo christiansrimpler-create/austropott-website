@@ -56,6 +56,7 @@ collections:
               - { name: quelle, label: Quelle, widget: string }
           - { name: stuecke_ueberschrift, label: "Überschrift „Die Stücke“", widget: string }
           - { name: termine_ueberschrift, label: "Überschrift „Nächste Termine“", widget: string }
+          - { name: termine_leer_text, label: "Text im Abschnitt „Nächste Termine“, wenn keine Termine eingetragen sind", widget: markdown, hint: "Wird auf der Startseite gezeigt, solange kein Termin ansteht. Link über das Ketten-Symbol einfügen." }
           - { name: publikum_ueberschrift, label: "Überschrift „Das sagt unser Publikum“", widget: string }
           - name: publikum
             label: Publikumsstimmen
@@ -119,10 +120,11 @@ collections:
       - name: die_stuecke
         label: "Übersichtsseite „Die Stücke“"
         file: src/_data/seiten/die_stuecke.yaml
-        hint: "Nur der Einleitungstext dieser Seite. Die einzelnen Stücke bearbeiten Sie im Reiter „Stücke“."
+        hint: "Einleitungstext und der Kasten unten. Die einzelnen Stücke bearbeiten Sie im Reiter „Stücke“."
         fields:
           - { name: ueberschrift, label: Überschrift, widget: string }
           - { name: lead, label: Einleitung, widget: text }
+          - { name: cta_text, label: "Aufruf-Kasten unten (Überschrift)", widget: string }
 
   - name: termine
     label: "Termine"
@@ -136,7 +138,8 @@ collections:
         fields:
           - { name: ueberschrift, label: Überschrift, widget: string }
           - { name: lead, label: Einleitung, widget: text }
-          - { name: termine_hinweis, label: "Hinweistext, wenn keine Termine eingetragen sind", widget: text }
+          - { name: termine_hinweis, label: "Wenn keine Termine da sind: 1. Absatz (hervorgehoben)", widget: text }
+          - { name: leer_zusatz, label: "Wenn keine Termine da sind: 2. Absatz", widget: markdown, hint: "Link über das Ketten-Symbol einfügen." }
           - name: liste
             label: Vorstellungstermine
             label_singular: Termin
@@ -178,6 +181,7 @@ collections:
               - { name: plaetze, label: Plätze, widget: string }
               - { name: preis, label: Preis, widget: string }
           - { name: versand_hinweis, label: Hinweis unter der Tabelle, widget: text }
+          - { name: ermaessigung_intro, label: "Überschrift über der Ermäßigungs-Liste", widget: string }
           - name: ermaessigung
             label: Ermäßigungsberechtigte
             widget: list
@@ -343,10 +347,13 @@ collections:
       - name: newsletter
         label: "Newsletter-Seite"
         file: src/_data/seiten/newsletter.yaml
-        hint: "Nur der Einleitungstext. Das Anmeldeformular selbst ist fest hinterlegt."
+        hint: "Einleitungstext und die Bestätigungs-Meldung nach dem Absenden. Das Anmeldeformular selbst ist fest hinterlegt."
         fields:
           - { name: ueberschrift, label: Überschrift, widget: string }
           - { name: lead, label: Einleitung, widget: text }
+          - { name: erfolg_ueberschrift, label: "Nach dem Absenden: Überschrift", widget: string }
+          - { name: erfolg_text, label: "Nach dem Absenden: Text", widget: markdown, hint: "Fettungen über den Editor möglich." }
+          - { name: erfolg_hinweis, label: "Nach dem Absenden: kleiner Hinweis", widget: text }
 
   - name: allgemeines
     label: "Allgemeines"
@@ -360,6 +367,8 @@ collections:
         hint: "Diese Angaben erscheinen auf allen Seiten (z. B. im Seitenfuß und in der Navigation)."
         fields:
           - { name: footer_text, label: "Text im Seitenfuß", widget: text }
+          - { name: ticketbar_text, label: "Text in der Ticket-Leiste (unten am Bildschirmrand)", widget: string }
+          - { name: sponsoren_ueberschrift, label: "Überschrift über den Sponsoren-Logos", widget: string }
           - { name: ticket_url, label: "Link zum Ticketshop", widget: string }
           - { name: telefon, label: Telefonnummer, widget: string }
           - { name: telefon_link, label: "Telefonnummer für Anruf-Link (Format +49…)", widget: string }

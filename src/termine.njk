@@ -34,7 +34,7 @@ active: termine
         {%- else %}
         <div class="prose">
           <p class="lead">{{ seiten.termine.termine_hinweis }}</p>
-          <p>Schauen Sie bald wieder vorbei oder abonnieren Sie unseren <a href="{{ '/service/newsletter/' | url }}">Newsletter</a> – dann erfahren Sie als Erste, wann es weitergeht. Sobald die Vorstellungen feststehen, finden Sie die Karten direkt in unserem Ticketshop.</p>
+          <p>{{ seiten.termine.leer_zusatz | mdInline | safe }}</p>
           <div class="hero-actions">
             <a class="btn btn-red" href="{{ einstellungen.ticket_url }}" target="_blank" rel="noopener">Zum Ticketshop</a>
             <a class="btn" href="{{ '/service/newsletter/' | url }}">Newsletter abonnieren</a>

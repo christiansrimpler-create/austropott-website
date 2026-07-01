@@ -75,7 +75,7 @@ active: start
           <a class="btn" href="{{ '/termine/' | url }}">Alle Termine</a>
         </div>
         {%- else %}
-        <p class="lead prose">{{ seiten.termine.termine_hinweis }} Abonnieren Sie unseren <a href="{{ '/service/newsletter/' | url }}">Newsletter</a>, damit Sie nichts verpassen – oder schauen Sie direkt im Ticketshop vorbei.</p>
+        <p class="lead prose">{{ seiten.start.termine_leer_text | mdInline | safe }}</p>
         <div class="hero-actions">
           <a class="btn" href="{{ '/termine/' | url }}">Alle Termine</a>
           <a class="btn btn-red" href="{{ einstellungen.ticket_url }}" target="_blank" rel="noopener">Zum Ticketshop</a>

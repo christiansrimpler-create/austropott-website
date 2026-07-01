@@ -1,3 +1,8 @@
 # Newsletter. Das Anmeldeformular selbst ist im Template hinterlegt (Brevo).
 ueberschrift: "Newsletter"
 lead: "Melden Sie sich zu unserem Newsletter an, um aktuelle Neuigkeiten von austroPott zu erhalten – neue Stücke, neue Termine, zuerst in Ihrem Postfach."
+
+# Meldung, die nach dem Absenden des Formulars erscheint.
+erfolg_ueberschrift: "Fast geschafft – ein Schritt fehlt noch!"
+erfolg_text: "Wir haben Ihnen gerade eine E-Mail geschickt. Öffnen Sie diese und klicken Sie auf den **Bestätigungs-Button** darin. **Erst danach** sind Sie für den Newsletter angemeldet – ohne diesen Klick erhalten Sie keine Nachrichten von uns."
+erfolg_hinweis: "Keine E-Mail erhalten? Bitte schauen Sie auch im Spam- bzw. Werbung-Ordner nach."
