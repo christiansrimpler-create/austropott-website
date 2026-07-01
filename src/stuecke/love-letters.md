@@ -15,11 +15,6 @@ schlusszitat:
   text: Was wir sehen, ist wenig. Was wir hören, ist alles. Was wir fühlen, entsteht dazwischen.
   quelle: ''
 rechte: 'Aufführungsrechte: [PER H. LAUKE VERLAG, Hamburg](https://www.laukeverlag.de)'
-active: stuecke
-desc: 'Love Letters von A. R. Gurney: Eine Frau, ein Mann und ihre Briefe – ein Leben lang. Mit Monika Bujinski und Michael Kamp im Dortmunder U.'
-layout: stueck.njk
-permalink: /die-stuecke/love-letters/
-title: Love Letters | austroPott – Theater im Dortmunder U
 ---
 
 Seit ihrer Kindheit schreiben sich Andy und Melissa. Und sie hören nie auf – ein Leben lang. Verschiedene Schulen, gegensätzliche Lebenswege, ein Krieg, zahlreiche Affären – doch ihre Verbindung reißt nie ab. Melissa, reich, verwöhnt und extrovertiert, trifft auf Andy, wohlerzogen, ehrgeizig und klug. Unterschiedlicher könnten sie kaum sein – und doch zieht es sie immer wieder zueinander.

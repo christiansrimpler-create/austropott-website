@@ -1,9 +1,4 @@
 ---
-layout: stueck.njk
-permalink: /die-stuecke/mephisto/
-title: "Mephisto – Der Pakt mit der Macht | austroPott – Theater im Dortmunder U"
-desc: "Mephisto nach Klaus Mann: Schauspiel & Chansons mit Harald Schwaiger. Ein Schauspieler zwischen Macht, Karriere, Gefahr und Verrat – im Dortmunder U."
-active: stuecke
 reihenfolge: 3
 titel: "Mephisto"
 genre: "Schauspiel & Chansons nach Klaus Mann"

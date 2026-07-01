@@ -4,7 +4,7 @@ export default {
   layout: "stueck.njk",
   active: "stuecke",
   eleventyComputed: {
-    permalink: (data) => data.permalink || `/die-stuecke/${data.page.fileSlug}.html`,
+    permalink: (data) => data.permalink || `/die-stuecke/${data.page.fileSlug}/`,
     title: (data) => data.title || `${data.titel} | austroPott – Theater im Dortmunder U`,
     desc: (data) => data.desc || data.teaser,
   },

@@ -9,7 +9,8 @@
 - { from: /service/newsletter.html, to: /service/newsletter/ }
 - { from: /service/galerie.html, to: /service/galerie/ }
 - { from: /service/faq.html, to: /service/faq/ }
-- { from: /die-stuecke/1h22-vor-dem-ende.html, to: /die-stuecke/1h22-vor-dem-ende/ }
+- { from: /die-stuecke/1h22-vor-dem-ende.html, to: /die-stuecke/achtsam-morden/ }
+- { from: /die-stuecke/1h22-vor-dem-ende/, to: /die-stuecke/achtsam-morden/ }
 - { from: /die-stuecke/love-letters.html, to: /die-stuecke/love-letters/ }
 - { from: /die-stuecke/mephisto.html, to: /die-stuecke/mephisto/ }
 
