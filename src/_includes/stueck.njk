@@ -4,7 +4,7 @@ layout: layout.njk
     <div class="wrap stueck-hero">
       <div class="titelseite">
         <p class="stueck-genre">{{ genre }}</p>
-        <h1>{{ (titel_html or titel) | safe }}</h1>
+        <h1>{{ titel }}</h1>
         {%- if untertitel %}
         <p class="untertitel">{{ untertitel }}</p>
         {%- endif %}
