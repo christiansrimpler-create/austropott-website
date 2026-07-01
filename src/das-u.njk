@@ -6,12 +6,12 @@ desc: "austroPott spielt im Kino im Erdgeschoss des Dortmunder U – dem Zentrum
 active: service
 ---
     <div class="wrap page-head">
-      <h1>Das U</h1>
-      <p class="lead">Wir spielen im Kino im Erdgeschoss des Dortmunder U – dem Zentrum für Kunst und Kreativität im Herzen Dortmunds.</p>
+      <h1>{{ seiten.das_u.ueberschrift }}</h1>
+      <p class="lead">{{ seiten.das_u.lead }}</p>
     </div>
     <section class="section">
       <div class="wrap prose">
-        <p>Das Dortmunder U, das ehemalige Brauereigebäude der Union-Brauerei mit dem goldenen „U“ auf dem Dach, ist heute eines der Wahrzeichen der Stadt und beherbergt Museen, Ausstellungen, Gastronomie – und unsere Bühne.</p>
+        {{ seiten.das_u.text | md | safe }}
         <div class="hero-actions">
           <a class="btn" href="https://www.dortmunder-u.de" target="_blank" rel="noopener">Zur Website des Dortmunder U</a>
           <a class="btn" href="{{ '/service/anfahrt/' | url }}">Anfahrt</a>

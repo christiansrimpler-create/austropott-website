@@ -6,18 +6,18 @@ desc: "So kommen Sie zum Dortmunder U: mit U43/U44 bis Westentor, zu Fuß in 5 M
 active: service
 ---
     <div class="wrap page-head">
-      <h1>Anfahrt</h1>
+      <h1>{{ seiten.anfahrt.ueberschrift }}</h1>
       <p class="lead">{{ einstellungen.spielstaette }} · {{ einstellungen.adresse_strasse }} · {{ einstellungen.adresse_ort }}</p>
     </div>
     <section class="section">
       <div class="wrap prose">
-        <h3>Mit Bus &amp; Bahn</h3>
-        <p>U&nbsp;43 / U&nbsp;44 bis Haltestelle <strong>Westentor</strong>.</p>
-        <h3>Mit der Bahn</h3>
-        <p>Das Dortmunder U ist in 5 Minuten fußläufig vom Hauptbahnhof aus zu erreichen: Vom Haupteingang des Hauptbahnhofs aus rechts den Wall entlanggehen und die Kreuzung Brinkhoffstraße / Königswall überqueren.</p>
-        <h3>Mit dem Auto</h3>
-        <p>Navigationsadresse: {{ einstellungen.adresse_strasse }}, {{ einstellungen.adresse_ort }}.<br>
-        Ein gebührenpflichtiges Parkhaus finden Sie in der Brinkhoffstraße&nbsp;4, direkt am Dortmunder U.</p>
+        <h3>{{ seiten.anfahrt.bus_bahn_ueberschrift }}</h3>
+        {{ seiten.anfahrt.bus_bahn_text | md | safe }}
+        <h3>{{ seiten.anfahrt.bahn_ueberschrift }}</h3>
+        {{ seiten.anfahrt.bahn_text | md | safe }}
+        <h3>{{ seiten.anfahrt.auto_ueberschrift }}</h3>
+        <p>Navigationsadresse: {{ einstellungen.adresse_strasse }}, {{ einstellungen.adresse_ort }}.</p>
+        {{ seiten.anfahrt.auto_text | md | safe }}
         <div class="hero-actions">
           <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Dortmunder+U%2C+Leonie-Reygers-Terrasse%2C+44137+Dortmund" target="_blank" rel="noopener">Route planen (Google Maps)</a>
         </div>

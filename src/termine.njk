@@ -6,8 +6,8 @@ desc: "Alle Vorstellungstermine von austroPott im Dortmunder U auf einen Blick. 
 active: termine
 ---
     <div class="wrap page-head">
-      <h1>Termine</h1>
-      <p class="lead">Alle Vorstellungen finden im Kino im Erdgeschoss des Dortmunder U statt. Die Abendkasse öffnet eine Stunde vor Vorstellungsbeginn.</p>
+      <h1>{{ seiten.termine.ueberschrift }}</h1>
+      <p class="lead">{{ seiten.termine.lead }}</p>
     </div>
     <section class="section">
       <div class="wrap">
@@ -46,9 +46,8 @@ active: termine
     <section class="section section-deep">
       <div class="wrap kontakt-grid">
         <div>
-          <h2>Gut zu wissen</h2>
-          <p>Die Abendkasse öffnet eine Stunde vor Vorstellungsbeginn. Wir haben keine Barkasse – Sie können mit EC- und Kreditkarte sowie kontaktlos zahlen.</p>
-          <p>Nach Vorstellungsbeginn ist kein Einlass möglich. Bereits gekaufte Karten können wir leider nicht umtauschen oder zurückgeben.</p>
+          <h2>{{ seiten.termine.gutzuwissen_ueberschrift }}</h2>
+          {{ seiten.termine.gutzuwissen_text | md | safe }}
           <a class="btn" href="{{ '/tickets/' | url }}">Alle Ticket-Infos</a>
         </div>
         <figure class="frame" style="margin:0">

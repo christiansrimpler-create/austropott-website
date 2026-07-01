@@ -1,0 +1,70 @@
+# Texte der einzelnen Seiten: Überschriften, Einleitungen und Fließtext.
+# Die Listen (Stücke, Termine, Team, Preise, Galerie, FAQ) werden jeweils
+# in ihrem eigenen Bereich gepflegt – hier steht nur der redaktionelle Text
+# drumherum.
+
+start:
+  stuecke_ueberschrift: "Die Stücke"
+  termine_ueberschrift: "Nächste Termine"
+  publikum_ueberschrift: "Das sagt unser Publikum"
+  ueber_ueberschrift: "Wer wir sind"
+  ueber_lead: "austroPott wurde 2012 von Richard Saringer, Harald Schwaiger und Michael Kamp ins Leben gerufen. In Kooperation mit dem Dortmunder U spielen wir dort in wechselnder Besetzung regelmäßig erfolgreiche Stücke – von der Komödie bis zum Schauspiel, immer mit Tiefgang."
+  ueber_text: "Wir freuen uns auf Sie und wünschen Ihnen viel Vergnügen!"
+
+die_stuecke:
+  ueberschrift: "Die Stücke"
+  lead: "Drei Produktionen, drei Abende, ein Versprechen: Theater mit Tiefgang – gespielt im Kino des Dortmunder U."
+
+termine:
+  ueberschrift: "Termine"
+  lead: "Alle Vorstellungen finden im Kino im Erdgeschoss des Dortmunder U statt. Die Abendkasse öffnet eine Stunde vor Vorstellungsbeginn."
+  gutzuwissen_ueberschrift: "Gut zu wissen"
+  gutzuwissen_text: |-
+    Die Abendkasse öffnet eine Stunde vor Vorstellungsbeginn. Wir haben keine Barkasse – Sie können mit EC- und Kreditkarte sowie kontaktlos zahlen.
+
+    Nach Vorstellungsbeginn ist kein Einlass möglich. Bereits gekaufte Karten können wir leider nicht umtauschen oder zurückgeben.
+
+tickets:
+  ueberschrift: "Tickets"
+  lead: "Tickets für unsere Vorstellungen bekommen Sie in unserem Online-Shop bei Tickettoaster – oder an der Abendkasse, eine Stunde vor Vorstellungsbeginn."
+  preise_ueberschrift: "Preise"
+  gutzuwissen_ueberschrift: "Gut zu wissen"
+
+team:
+  ueberschrift: "Team"
+
+galerie:
+  ueberschrift: "Galerie & Archiv"
+  lead: "Eindrücke aus unseren Produktionen – nach Stück sortiert. Fotos zum Vergrößern einfach anklicken."
+  weitere_ueberschrift: "Weitere Produktionen"
+  weitere_lead: "Alle Stücke seit 2013 – auch ohne Fotos in unserem Archiv."
+
+faq:
+  ueberschrift: "Häufige Fragen"
+  lead: "Die wichtigsten Antworten rund um Ihren Theaterbesuch bei uns – von Abendkasse und Einlass bis Gutschein."
+
+kontakt:
+  ueberschrift: "Kontakt"
+  lead: "Sie haben Fragen zu Vorstellungen, Tickets oder Gruppenbuchungen? Rufen Sie uns an oder schreiben Sie uns – wir melden uns so schnell wie möglich."
+
+service:
+  ueberschrift: "Infos"
+  lead: "Alles, was Sie für Ihren Theaterabend bei uns wissen müssen."
+
+anfahrt:
+  ueberschrift: "Anfahrt"
+  bus_bahn_ueberschrift: "Mit Bus & Bahn"
+  bus_bahn_text: "U 43 / U 44 bis Haltestelle **Westentor**."
+  bahn_ueberschrift: "Mit der Bahn"
+  bahn_text: "Das Dortmunder U ist in 5 Minuten fußläufig vom Hauptbahnhof aus zu erreichen: Vom Haupteingang des Hauptbahnhofs aus rechts den Wall entlanggehen und die Kreuzung Brinkhoffstraße / Königswall überqueren."
+  auto_ueberschrift: "Mit dem Auto"
+  auto_text: "Ein gebührenpflichtiges Parkhaus finden Sie in der Brinkhoffstraße 4, direkt am Dortmunder U."
+
+das_u:
+  ueberschrift: "Das U"
+  lead: "Wir spielen im Kino im Erdgeschoss des Dortmunder U – dem Zentrum für Kunst und Kreativität im Herzen Dortmunds."
+  text: "Das Dortmunder U, das ehemalige Brauereigebäude der Union-Brauerei mit dem goldenen „U“ auf dem Dach, ist heute eines der Wahrzeichen der Stadt und beherbergt Museen, Ausstellungen, Gastronomie – und unsere Bühne."
+
+newsletter:
+  ueberschrift: "Newsletter"
+  lead: "Melden Sie sich zu unserem Newsletter an, um aktuelle Neuigkeiten von austroPott zu erhalten – neue Stücke, neue Termine, zuerst in Ihrem Postfach."

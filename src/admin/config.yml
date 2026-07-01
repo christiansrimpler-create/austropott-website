@@ -266,3 +266,114 @@ collections:
             fields:
               - { name: frage, label: Frage, widget: string }
               - { name: antwort, label: Antwort, widget: markdown }
+
+  - name: seitentexte
+    label: "Seitentexte"
+    icon: description
+    editor:
+      preview: false
+    files:
+      - name: seiten
+        label: "Überschriften & Texte der Seiten"
+        file: src/_data/seiten.yaml
+        hint: "Hier stehen die Überschriften, Einleitungen und Textabsätze der einzelnen Seiten. Die Listen wie Stücke, Termine oder Team werden in ihren eigenen Bereichen gepflegt."
+        fields:
+          - name: start
+            label: "Startseite"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: stuecke_ueberschrift, label: "Überschrift „Die Stücke“", widget: string }
+              - { name: termine_ueberschrift, label: "Überschrift „Nächste Termine“", widget: string }
+              - { name: publikum_ueberschrift, label: "Überschrift „Das sagt unser Publikum“", widget: string }
+              - { name: ueber_ueberschrift, label: "„Wer wir sind“: Überschrift", widget: string }
+              - { name: ueber_lead, label: "„Wer wir sind“: Einleitung", widget: text }
+              - { name: ueber_text, label: "„Wer wir sind“: Schlusssatz", widget: text }
+          - name: die_stuecke
+            label: "Seite „Die Stücke“"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: ueberschrift, label: Überschrift, widget: string }
+              - { name: lead, label: Einleitung, widget: text }
+          - name: termine
+            label: "Seite „Termine“"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: ueberschrift, label: Überschrift, widget: string }
+              - { name: lead, label: Einleitung, widget: text }
+              - { name: gutzuwissen_ueberschrift, label: "„Gut zu wissen“: Überschrift", widget: string }
+              - { name: gutzuwissen_text, label: "„Gut zu wissen“: Text", widget: markdown }
+          - name: tickets
+            label: "Seite „Tickets“"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: ueberschrift, label: Überschrift, widget: string }
+              - { name: lead, label: Einleitung, widget: text }
+              - { name: preise_ueberschrift, label: "Überschrift „Preise“", widget: string }
+              - { name: gutzuwissen_ueberschrift, label: "Überschrift „Gut zu wissen“", widget: string }
+          - name: team
+            label: "Seite „Team“"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: ueberschrift, label: Überschrift, widget: string, hint: "Die Einleitung dieser Seite wird im Bereich „Team“ gepflegt." }
+          - name: galerie
+            label: "Seite „Galerie & Archiv“"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: ueberschrift, label: Überschrift, widget: string }
+              - { name: lead, label: Einleitung, widget: text }
+              - { name: weitere_ueberschrift, label: "Überschrift „Weitere Produktionen“", widget: string }
+              - { name: weitere_lead, label: "„Weitere Produktionen“: Einleitung", widget: text }
+          - name: faq
+            label: "Seite „Häufige Fragen“"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: ueberschrift, label: Überschrift, widget: string }
+              - { name: lead, label: Einleitung, widget: text }
+          - name: kontakt
+            label: "Seite „Kontakt“"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: ueberschrift, label: Überschrift, widget: string }
+              - { name: lead, label: Einleitung, widget: text }
+          - name: service
+            label: "Seite „Infos“"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: ueberschrift, label: Überschrift, widget: string }
+              - { name: lead, label: Einleitung, widget: text }
+          - name: anfahrt
+            label: "Seite „Anfahrt“"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: ueberschrift, label: Überschrift, widget: string, hint: "Adresse und Spielstätte darunter kommen aus „Startseite, Kontaktdaten & Allgemeines“." }
+              - { name: bus_bahn_ueberschrift, label: "Abschnitt 1: Überschrift", widget: string }
+              - { name: bus_bahn_text, label: "Abschnitt 1: Text", widget: markdown }
+              - { name: bahn_ueberschrift, label: "Abschnitt 2: Überschrift", widget: string }
+              - { name: bahn_text, label: "Abschnitt 2: Text", widget: markdown }
+              - { name: auto_ueberschrift, label: "Abschnitt 3: Überschrift", widget: string }
+              - { name: auto_text, label: "Abschnitt 3: Text (unter der Navigationsadresse)", widget: markdown }
+          - name: das_u
+            label: "Seite „Das U“"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: ueberschrift, label: Überschrift, widget: string }
+              - { name: lead, label: Einleitung, widget: text }
+              - { name: text, label: Fließtext, widget: markdown }
+          - name: newsletter
+            label: "Seite „Newsletter“"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: ueberschrift, label: Überschrift, widget: string }
+              - { name: lead, label: Einleitung, widget: text }

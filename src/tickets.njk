@@ -6,15 +6,15 @@ desc: "Tickets für austroPott im Dortmunder U: Preise, Ermäßigungen, Abendkas
 active: tickets
 ---
     <div class="wrap page-head">
-      <h1>Tickets</h1>
-      <p class="lead">Tickets für unsere Vorstellungen bekommen Sie in unserem Online-Shop bei Tickettoaster – oder an der Abendkasse, eine Stunde vor Vorstellungsbeginn.</p>
+      <h1>{{ seiten.tickets.ueberschrift }}</h1>
+      <p class="lead">{{ seiten.tickets.lead }}</p>
       <div class="hero-actions" style="margin-bottom:2.5rem">
         <a class="btn btn-red" href="{{ einstellungen.ticket_url }}" target="_blank" rel="noopener">Zum Ticketshop</a>
       </div>
     </div>
     <section class="section">
       <div class="wrap">
-        <h2>Preise</h2>
+        <h2>{{ seiten.tickets.preise_ueberschrift }}</h2>
         <table class="preise">
           <thead>
             <tr><th>Kategorie</th><th>Plätze</th><th>Preis</th></tr>
@@ -38,7 +38,7 @@ active: tickets
     </section>
     <section class="section section-deep">
       <div class="wrap">
-        <h2>Gut zu wissen</h2>
+        <h2>{{ seiten.tickets.gutzuwissen_ueberschrift }}</h2>
         {%- for f in faq.fragen %}
         <details class="info"{% if loop.first %} open{% endif %}>
           <summary>{{ f.frage }}</summary>

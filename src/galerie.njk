@@ -6,8 +6,8 @@ desc: "Szenenfotos und vergangene Produktionen von austroPott im Dortmunder U �
 active: service
 ---
     <div class="wrap page-head">
-      <h1>Galerie &amp; Archiv</h1>
-      <p class="lead">Eindrücke aus unseren Produktionen – nach Stück sortiert. Fotos zum Vergrößern einfach anklicken.</p>
+      <h1>{{ seiten.galerie.ueberschrift }}</h1>
+      <p class="lead">{{ seiten.galerie.lead }}</p>
     </div>
 
     <section class="section">
@@ -32,8 +32,8 @@ active: service
 
     <section class="section section-deep">
       <div class="wrap">
-        <h2>Weitere Produktionen</h2>
-        <p class="lead">Alle Stücke seit 2013 – auch ohne Fotos in unserem Archiv.</p>
+        <h2>{{ seiten.galerie.weitere_ueberschrift }}</h2>
+        <p class="lead">{{ seiten.galerie.weitere_lead }}</p>
         <ul class="chronik">
           {%- for prod in produktionen.produktionen %}
           {%- if not prod.bilder or not prod.bilder.length %}
