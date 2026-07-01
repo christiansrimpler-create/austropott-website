@@ -12,8 +12,8 @@ pressezitate:
   - text: 3 Schauspieler in 25 Rollen!
     quelle: ''
 rechte: Aufführungsrechte bei Gustav Kiepenheuer Bühnenvertriebs-GmbH, Berlin | www.kiepenheuer-medien.de
-desc: 'Komödie von Matthieu Delaporte: Bernard will seinem Leben ein Ende setzen – da klopft der Tod persönlich an die Tür. Mit Michael Kamp im Dortmunder U.'
 active: stuecke
+desc: 'Komödie von Matthieu Delaporte: Bernard will seinem Leben ein Ende setzen – da klopft der Tod persönlich an die Tür. Mit Michael Kamp im Dortmunder U.'
 layout: stueck.njk
 permalink: /die-stuecke/1h22-vor-dem-ende/
 title: Einszweiundzwanzig vor dem Ende | austroPott – Theater im Dortmunder U
