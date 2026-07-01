@@ -1,0 +1,15 @@
+# Termine – Einleitung, Terminliste und „Gut zu wissen“ an einem Ort.
+ueberschrift: "Termine"
+lead: "Alle Vorstellungen finden im Kino im Erdgeschoss des Dortmunder U statt. Die Abendkasse öffnet eine Stunde vor Vorstellungsbeginn."
+termine_hinweis: "Die Termine für die neue Spielzeit werden in Kürze veröffentlicht."
+
+liste:
+  - datum: 2026-06-24
+    uhrzeit: 11:00
+    stueck: Einszweiundzwanzig vor dem Ende
+
+gutzuwissen_ueberschrift: "Gut zu wissen"
+gutzuwissen_text: |-
+  Die Abendkasse öffnet eine Stunde vor Vorstellungsbeginn. Wir haben keine Barkasse – Sie können mit EC- und Kreditkarte sowie kontaktlos zahlen.
+
+  Nach Vorstellungsbeginn ist kein Einlass möglich. Bereits gekaufte Karten können wir leider nicht umtauschen oder zurückgeben.

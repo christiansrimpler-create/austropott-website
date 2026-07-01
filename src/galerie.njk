@@ -12,7 +12,7 @@ active: service
 
     <section class="section">
       <div class="wrap">
-        {%- for prod in produktionen.produktionen %}
+        {%- for prod in seiten.galerie.produktionen %}
         {%- if prod.bilder and prod.bilder.length %}
         <div class="produktion-block">
           <h2>{{ prod.titel }}</h2>
@@ -35,7 +35,7 @@ active: service
         <h2>{{ seiten.galerie.weitere_ueberschrift }}</h2>
         <p class="lead">{{ seiten.galerie.weitere_lead }}</p>
         <ul class="chronik">
-          {%- for prod in produktionen.produktionen %}
+          {%- for prod in seiten.galerie.produktionen %}
           {%- if not prod.bilder or not prod.bilder.length %}
           <li>
             <span class="jahr">{{ prod.jahre }}</span>

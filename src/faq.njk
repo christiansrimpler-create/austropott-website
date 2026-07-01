@@ -11,7 +11,7 @@ active: service
     </div>
     <section class="section">
       <div class="wrap">
-        {%- for f in faq.fragen %}
+        {%- for f in seiten.faq.fragen %}
         <details class="info"{% if loop.first %} open{% endif %}>
           <summary>{{ f.frage }}</summary>
           <div class="inhalt">{{ f.antwort | md | safe }}</div>

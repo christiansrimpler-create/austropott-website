@@ -1,5 +1,8 @@
-# Häufige Fragen (FAQ) – über das CMS unter „Häufige Fragen“ bearbeitbar.
-# Erscheint auf der FAQ-Seite UND als „Gut zu wissen“ auf der Ticketseite.
+# Häufige Fragen – Einleitung und Fragen an einem Ort.
+# Die Fragen erscheinen auf dieser Seite UND als „Gut zu wissen“ auf der Ticketseite.
+ueberschrift: "Häufige Fragen"
+lead: "Die wichtigsten Antworten rund um Ihren Theaterbesuch bei uns – von Abendkasse und Einlass bis Gutschein."
+
 fragen:
   - frage: "Abendkasse & Einlass"
     antwort: |

@@ -1,4 +1,10 @@
-# Ticketpreise – über das CMS unter „Preise“ bearbeitbar
+# Tickets – Einleitung, Preistabelle und Ermäßigungen. „Gut zu wissen“ nutzt die
+# Fragen aus dem Reiter „Häufige Fragen“.
+ueberschrift: "Tickets"
+lead: "Tickets für unsere Vorstellungen bekommen Sie in unserem Online-Shop bei Tickettoaster – oder an der Abendkasse, eine Stunde vor Vorstellungsbeginn."
+preise_ueberschrift: "Preise"
+gutzuwissen_ueberschrift: "Gut zu wissen"
+
 kategorien:
   - name: "Kategorie 1"
     plaetze: "Reihen 1–4"

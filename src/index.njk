@@ -6,9 +6,9 @@ desc: "austroPott spielt seit 2012 erfolgreiche Komödien und Schauspiele im Dor
 active: start
 ---
     <section class="hero">
-      {%- set startbild = einstellungen.hero_bild or '/assets/img/buehne-start.jpg' %}
+      {%- set startbild = seiten.start.hero_bild or '/assets/img/buehne-start.jpg' %}
       <div class="hero-slides">
-        <img class="hero-bg is-active" src="{{ startbild | url }}" alt="Szene aus einer austroPott-Aufführung im Dortmunder U" fetchpriority="high" style="--fokus-d: {{ einstellungen.hero_fokus_desktop or '50% 35%' }}; --fokus-m: {{ einstellungen.hero_fokus_mobile or '58% center' }};">
+        <img class="hero-bg is-active" src="{{ startbild | url }}" alt="Szene aus einer austroPott-Aufführung im Dortmunder U" fetchpriority="high" style="--fokus-d: {{ seiten.start.hero_fokus_desktop or '50% 35%' }}; --fokus-m: {{ seiten.start.hero_fokus_mobile or '58% center' }};">
         {%- for foto in alleFotos %}
         {%- if foto.bild != startbild %}
         <img class="hero-bg" data-src="{{ foto.bild | url }}" alt="" loading="lazy" style="--fokus-d: {{ foto.fokus_desktop or '50% 35%' }}; --fokus-m: {{ foto.fokus_mobile or '50% 35%' }};">
@@ -16,8 +16,8 @@ active: start
         {%- endfor %}
       </div>
       <div class="wrap">
-        <h1>{{ einstellungen.hero_headline }}</h1>
-        <p class="lead">{{ einstellungen.hero_text }}</p>
+        <h1>{{ seiten.start.hero_headline }}</h1>
+        <p class="lead">{{ seiten.start.hero_text }}</p>
         <div class="hero-actions">
           <a class="btn btn-red" href="{{ einstellungen.ticket_url }}" target="_blank" rel="noopener">Tickets kaufen</a>
           <a class="btn btn-light" href="{{ '/termine/' | url }}">Zum Spielplan</a>
@@ -28,8 +28,8 @@ active: start
     <section class="section">
       <div class="wrap">
         <div class="bigquote reveal">
-          <blockquote>„{{ zitate.presse.text }}“</blockquote>
-          <cite>{{ zitate.presse.quelle }}</cite>
+          <blockquote>„{{ seiten.start.presse.text }}“</blockquote>
+          <cite>{{ seiten.start.presse.quelle }}</cite>
         </div>
       </div>
     </section>
@@ -54,7 +54,7 @@ active: start
     <section class="section">
       <div class="wrap">
         <h2>{{ seiten.start.termine_ueberschrift }}</h2>
-        {%- set kommende = termine.termine | zukuenftige %}
+        {%- set kommende = seiten.termine.liste | zukuenftige %}
         {%- if kommende.length %}
         <ul class="termin-liste" style="max-width:var(--w-text)">
           {%- for termin in kommende.slice(0, 4) %}
@@ -75,7 +75,7 @@ active: start
           <a class="btn" href="{{ '/termine/' | url }}">Alle Termine</a>
         </div>
         {%- else %}
-        <p class="lead prose">{{ einstellungen.termine_hinweis }} Abonnieren Sie unseren <a href="{{ '/service/newsletter/' | url }}">Newsletter</a>, damit Sie nichts verpassen – oder schauen Sie direkt im Ticketshop vorbei.</p>
+        <p class="lead prose">{{ seiten.termine.termine_hinweis }} Abonnieren Sie unseren <a href="{{ '/service/newsletter/' | url }}">Newsletter</a>, damit Sie nichts verpassen – oder schauen Sie direkt im Ticketshop vorbei.</p>
         <div class="hero-actions">
           <a class="btn" href="{{ '/termine/' | url }}">Alle Termine</a>
           <a class="btn btn-red" href="{{ einstellungen.ticket_url }}" target="_blank" rel="noopener">Zum Ticketshop</a>
@@ -88,7 +88,7 @@ active: start
       <div class="wrap">
         <h2>{{ seiten.start.publikum_ueberschrift }}</h2>
         <div class="quote-grid">
-          {%- for zitat in zitate.publikum %}
+          {%- for zitat in seiten.start.publikum %}
           <div class="quote-card reveal">
             <blockquote>„{{ zitat }}“</blockquote>
           </div>

@@ -1,4 +1,7 @@
 # Konfiguration der Redaktionsoberfläche (Sveltia CMS)
+# Aufbau: ein Reiter pro Seite (enthält alle Inhalte dieser Seite).
+# Ausnahmen: „Stücke“ ist ein Inhaltstyp (jedes Stück = eigene Unterseite),
+# „Allgemeines“ bündelt Daten, die auf allen Seiten erscheinen.
 backend:
   name: github
   repo: christiansrimpler-create/austropott-website
@@ -11,39 +14,57 @@ public_folder: /assets/img
 site_url: https://austropott.de
 
 collections:
-  - name: termine
-    label: Termine
-    icon: calendar_month
+  - name: startseite
+    label: "Startseite"
+    icon: home
     editor:
       preview: false
     files:
-      - name: termine
-        label: Vorstellungstermine
-        file: src/_data/termine.yaml
+      - name: start
+        label: "Startseite"
+        file: src/_data/seiten/start.yaml
         fields:
-          - name: termine
-            label: Termine
-            label_singular: Termin
-            widget: list
-            summary: "{{fields.datum}} – {{fields.stueck}}"
+          - { name: hero_headline, label: "Großes Bild: Überschrift", widget: string }
+          - { name: hero_text, label: "Großes Bild: Text", widget: text }
+          - { name: hero_bild, label: "Großes Bild: Startbild (erstes Bild der Slideshow)", widget: image }
+          - name: hero_fokus_desktop
+            label: "Großes Bild: Bildausschnitt am Desktop"
+            hint: "Welcher Bereich des Bildes sichtbar bleibt, wenn es beschnitten wird."
+            widget: select
+            default: "50% 35%"
+            options: &fokus_optionen
+              - { label: "Oben", value: "50% 8%" }
+              - { label: "Eher oben", value: "50% 35%" }
+              - { label: "Mitte", value: "50% 50%" }
+              - { label: "Eher unten", value: "50% 70%" }
+              - { label: "Unten", value: "50% 85%" }
+              - { label: "Oben links", value: "22% 18%" }
+              - { label: "Oben rechts", value: "78% 18%" }
+              - { label: "Links", value: "20% 50%" }
+              - { label: "Rechts", value: "80% 50%" }
+          - name: hero_fokus_mobile
+            label: "Großes Bild: Bildausschnitt am Handy"
+            hint: "Am Handy ist das Bild schmaler – hier ein eigener Ausschnitt."
+            widget: select
+            default: "50% 50%"
+            options: *fokus_optionen
+          - name: presse
+            label: "Pressezitat (groß, unter dem Titelbild)"
+            widget: object
             fields:
-              - name: datum
-                label: Datum
-                widget: datetime
-                format: YYYY-MM-DD
-                date_format: DD.MM.YYYY
-                time_format: false
-              - name: uhrzeit
-                label: Uhrzeit
-                widget: string
-                hint: "z. B. 19:30"
-              - name: stueck
-                label: Stück
-                widget: relation
-                collection: stuecke
-                value_field: titel
-                search_fields: [titel]
-                display_fields: [titel]
+              - { name: text, label: "Zitat (ohne Anführungszeichen)", widget: text }
+              - { name: quelle, label: Quelle, widget: string }
+          - { name: stuecke_ueberschrift, label: "Überschrift „Die Stücke“", widget: string }
+          - { name: termine_ueberschrift, label: "Überschrift „Nächste Termine“", widget: string }
+          - { name: publikum_ueberschrift, label: "Überschrift „Das sagt unser Publikum“", widget: string }
+          - name: publikum
+            label: Publikumsstimmen
+            label_singular: Publikumsstimme
+            widget: list
+            field: { name: zitat, label: "Zitat (ohne Anführungszeichen)", widget: text }
+          - { name: ueber_ueberschrift, label: "„Wer wir sind“: Überschrift", widget: string }
+          - { name: ueber_lead, label: "„Wer wir sind“: Einleitung", widget: text }
+          - { name: ueber_text, label: "„Wer wir sind“: Schlusssatz", widget: text }
 
   - name: stuecke
     label: Stücke
@@ -89,108 +110,64 @@ collections:
       - { name: rechte, label: "Rechtehinweis (Kleingedrucktes)", widget: string, required: false }
       - { name: body, label: "Beschreibung (Haupttext)", widget: markdown }
 
-  - name: startseite
-    label: Startseite & Zitate
-    icon: home
+  - name: seite_die_stuecke
+    label: "Die Stücke (Übersichtsseite)"
+    icon: subject
     editor:
       preview: false
     files:
-      - name: einstellungen
-        label: "Startseite, Kontaktdaten & Allgemeines"
-        file: src/_data/einstellungen.yaml
+      - name: die_stuecke
+        label: "Übersichtsseite „Die Stücke“"
+        file: src/_data/seiten/die_stuecke.yaml
+        hint: "Nur der Einleitungstext dieser Seite. Die einzelnen Stücke bearbeiten Sie im Reiter „Stücke“."
         fields:
-          - { name: hero_headline, label: "Großes Bild: Überschrift", widget: string }
-          - { name: hero_text, label: "Großes Bild: Text", widget: text }
-          - { name: hero_bild, label: "Großes Bild: Startbild (erstes Bild der Slideshow)", widget: image }
-          - name: hero_fokus_desktop
-            label: "Großes Bild: Bildausschnitt am Desktop"
-            hint: "Welcher Bereich des Bildes sichtbar bleibt, wenn es beschnitten wird."
-            widget: select
-            default: "50% 35%"
-            options: &fokus_optionen
-              - { label: "Oben", value: "50% 8%" }
-              - { label: "Eher oben", value: "50% 35%" }
-              - { label: "Mitte", value: "50% 50%" }
-              - { label: "Eher unten", value: "50% 70%" }
-              - { label: "Unten", value: "50% 85%" }
-              - { label: "Oben links", value: "22% 18%" }
-              - { label: "Oben rechts", value: "78% 18%" }
-              - { label: "Links", value: "20% 50%" }
-              - { label: "Rechts", value: "80% 50%" }
-          - name: hero_fokus_mobile
-            label: "Großes Bild: Bildausschnitt am Handy"
-            hint: "Am Handy ist das Bild schmaler – hier ein eigener Ausschnitt."
-            widget: select
-            default: "50% 50%"
-            options: *fokus_optionen
-          - { name: termine_hinweis, label: "Hinweistext, wenn keine Termine eingetragen sind", widget: text }
-          - { name: footer_text, label: "Text im Seitenfuß", widget: text }
-          - { name: ticket_url, label: "Link zum Ticketshop", widget: string }
-          - { name: telefon, label: Telefonnummer, widget: string }
-          - { name: telefon_link, label: "Telefonnummer für Anruf-Link (Format +49…)", widget: string }
-          - { name: email, label: E-Mail-Adresse, widget: string }
-          - { name: spielstaette, label: Spielstätte, widget: string }
-          - { name: adresse_strasse, label: Straße, widget: string }
-          - { name: adresse_ort, label: PLZ und Ort, widget: string }
-          - { name: instagram, label: Instagram-Link, widget: string }
-          - { name: facebook, label: Facebook-Link, widget: string }
-          - { name: youtube, label: YouTube-Link, widget: string }
-          - name: sponsoren
-            label: Sponsoren-Logos (im Seitenfuß)
-            label_singular: Sponsor
-            widget: list
-            summary: "{{fields.name}}"
-            fields:
-              - { name: bild, label: Logo, widget: image }
-              - { name: name, label: Name, widget: string }
-      - name: zitate
-        label: "Zitate auf der Startseite"
-        file: src/_data/zitate.yaml
-        fields:
-          - name: presse
-            label: Pressezitat (groß, unter dem Titelbild)
-            widget: object
-            fields:
-              - { name: text, label: Zitat (ohne Anführungszeichen), widget: text }
-              - { name: quelle, label: Quelle, widget: string }
-          - name: publikum
-            label: Publikumsstimmen
-            label_singular: Publikumsstimme
-            widget: list
-            field: { name: zitat, label: Zitat (ohne Anführungszeichen), widget: text }
+          - { name: ueberschrift, label: Überschrift, widget: string }
+          - { name: lead, label: Einleitung, widget: text }
 
-  - name: team
-    label: Team
-    icon: groups
+  - name: termine
+    label: "Termine"
+    icon: calendar_month
     editor:
       preview: false
     files:
-      - name: team
-        label: Team-Seite
-        file: src/_data/team.yaml
+      - name: termine
+        label: "Termine-Seite"
+        file: src/_data/seiten/termine.yaml
         fields:
-          - { name: intro, label: Einleitungstext, widget: text }
-          - name: mitglieder
-            label: Team-Mitglieder
-            label_singular: Mitglied
+          - { name: ueberschrift, label: Überschrift, widget: string }
+          - { name: lead, label: Einleitung, widget: text }
+          - { name: termine_hinweis, label: "Hinweistext, wenn keine Termine eingetragen sind", widget: text }
+          - name: liste
+            label: Vorstellungstermine
+            label_singular: Termin
             widget: list
-            summary: "{{fields.name}}"
+            summary: "{{fields.datum}} – {{fields.stueck}}"
             fields:
-              - { name: name, label: Name, widget: string }
-              - { name: bild, label: Foto, widget: image }
-              - { name: text, label: Lebenslauf, widget: text }
-              - { name: website, label: "Eigene Website (optional)", widget: string, required: false }
+              - { name: datum, label: Datum, widget: datetime, format: "YYYY-MM-DD", date_format: "DD.MM.YYYY", time_format: false }
+              - { name: uhrzeit, label: Uhrzeit, widget: string, hint: "z. B. 19:30" }
+              - name: stueck
+                label: Stück
+                widget: relation
+                collection: stuecke
+                value_field: titel
+                search_fields: [titel]
+                display_fields: [titel]
+          - { name: gutzuwissen_ueberschrift, label: "„Gut zu wissen“: Überschrift", widget: string }
+          - { name: gutzuwissen_text, label: "„Gut zu wissen“: Text", widget: markdown }
 
   - name: tickets
-    label: Ticketpreise
+    label: "Tickets"
     icon: confirmation_number
     editor:
       preview: false
     files:
-      - name: preise
-        label: Preise & Ermäßigungen
-        file: src/_data/preise.yaml
+      - name: tickets
+        label: "Tickets-Seite"
+        file: src/_data/seiten/tickets.yaml
         fields:
+          - { name: ueberschrift, label: Überschrift, widget: string }
+          - { name: lead, label: Einleitung, widget: text }
+          - { name: preise_ueberschrift, label: "Überschrift „Preise“", widget: string }
           - name: kategorien
             label: Preiskategorien
             label_singular: Kategorie
@@ -205,6 +182,30 @@ collections:
             label: Ermäßigungsberechtigte
             widget: list
             field: { name: punkt, label: Eintrag, widget: string }
+          - { name: gutzuwissen_ueberschrift, label: "Überschrift „Gut zu wissen“", widget: string, hint: "Die Fragen darunter kommen aus dem Reiter „Häufige Fragen“." }
+
+  - name: team
+    label: "Team"
+    icon: groups
+    editor:
+      preview: false
+    files:
+      - name: team
+        label: "Team-Seite"
+        file: src/_data/seiten/team.yaml
+        fields:
+          - { name: ueberschrift, label: Überschrift, widget: string }
+          - { name: intro, label: Einleitungstext, widget: text }
+          - name: mitglieder
+            label: Team-Mitglieder
+            label_singular: Mitglied
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { name: name, label: Name, widget: string }
+              - { name: bild, label: Foto, widget: image }
+              - { name: text, label: Lebenslauf, widget: text }
+              - { name: website, label: "Eigene Website (optional)", widget: string, required: false }
 
   - name: galerie
     label: "Galerie & Archiv"
@@ -212,10 +213,14 @@ collections:
     editor:
       preview: false
     files:
-      - name: produktionen
-        label: "Produktionen & Fotos"
-        file: src/_data/produktionen.yaml
+      - name: galerie
+        label: "Galerie & Archiv"
+        file: src/_data/seiten/galerie.yaml
         fields:
+          - { name: ueberschrift, label: Überschrift, widget: string }
+          - { name: lead, label: Einleitung, widget: text }
+          - { name: weitere_ueberschrift, label: "Überschrift „Weitere Produktionen“", widget: string }
+          - { name: weitere_lead, label: "„Weitere Produktionen“: Einleitung", widget: text }
           - name: produktionen
             label: Produktionen
             label_singular: Produktion
@@ -254,10 +259,12 @@ collections:
       preview: false
     files:
       - name: faq
-        label: "Fragen & Antworten"
-        file: src/_data/faq.yaml
+        label: "Häufige Fragen"
+        file: src/_data/seiten/faq.yaml
         hint: "Erscheint auf der FAQ-Seite und als „Gut zu wissen“ auf der Ticketseite."
         fields:
+          - { name: ueberschrift, label: Überschrift, widget: string }
+          - { name: lead, label: Einleitung, widget: text }
           - name: fragen
             label: Fragen
             label_singular: Frage
@@ -267,113 +274,107 @@ collections:
               - { name: frage, label: Frage, widget: string }
               - { name: antwort, label: Antwort, widget: markdown }
 
-  - name: seitentexte
-    label: "Seitentexte"
-    icon: description
+  - name: kontakt
+    label: "Kontakt"
+    icon: alternate_email
     editor:
       preview: false
     files:
-      - name: seiten
-        label: "Überschriften & Texte der Seiten"
-        file: src/_data/seiten.yaml
-        hint: "Hier stehen die Überschriften, Einleitungen und Textabsätze der einzelnen Seiten. Die Listen wie Stücke, Termine oder Team werden in ihren eigenen Bereichen gepflegt."
+      - name: kontakt
+        label: "Kontakt-Seite"
+        file: src/_data/seiten/kontakt.yaml
+        hint: "Telefon, E-Mail und Adresse pflegen Sie im Reiter „Allgemeines“."
         fields:
-          - name: start
-            label: "Startseite"
-            widget: object
-            collapsed: true
+          - { name: ueberschrift, label: Überschrift, widget: string }
+          - { name: lead, label: Einleitung, widget: text }
+
+  - name: infos
+    label: "Infos"
+    icon: info
+    editor:
+      preview: false
+    files:
+      - name: service
+        label: "Infos-Übersicht"
+        file: src/_data/seiten/service.yaml
+        fields:
+          - { name: ueberschrift, label: Überschrift, widget: string }
+          - { name: lead, label: Einleitung, widget: text }
+
+  - name: anfahrt
+    label: "Anfahrt"
+    icon: directions
+    editor:
+      preview: false
+    files:
+      - name: anfahrt
+        label: "Anfahrt-Seite"
+        file: src/_data/seiten/anfahrt.yaml
+        hint: "Spielstätte und Adresse in der Einleitung kommen aus „Allgemeines“."
+        fields:
+          - { name: ueberschrift, label: Überschrift, widget: string }
+          - { name: bus_bahn_ueberschrift, label: "Abschnitt 1: Überschrift", widget: string }
+          - { name: bus_bahn_text, label: "Abschnitt 1: Text", widget: markdown }
+          - { name: bahn_ueberschrift, label: "Abschnitt 2: Überschrift", widget: string }
+          - { name: bahn_text, label: "Abschnitt 2: Text", widget: markdown }
+          - { name: auto_ueberschrift, label: "Abschnitt 3: Überschrift", widget: string }
+          - { name: auto_text, label: "Abschnitt 3: Text (unter der Navigationsadresse)", widget: markdown }
+
+  - name: das_u
+    label: "Das U"
+    icon: theaters
+    editor:
+      preview: false
+    files:
+      - name: das_u
+        label: "Seite „Das U“"
+        file: src/_data/seiten/das_u.yaml
+        fields:
+          - { name: ueberschrift, label: Überschrift, widget: string }
+          - { name: lead, label: Einleitung, widget: text }
+          - { name: text, label: Fließtext, widget: markdown }
+
+  - name: newsletter
+    label: "Newsletter"
+    icon: mail
+    editor:
+      preview: false
+    files:
+      - name: newsletter
+        label: "Newsletter-Seite"
+        file: src/_data/seiten/newsletter.yaml
+        hint: "Nur der Einleitungstext. Das Anmeldeformular selbst ist fest hinterlegt."
+        fields:
+          - { name: ueberschrift, label: Überschrift, widget: string }
+          - { name: lead, label: Einleitung, widget: text }
+
+  - name: allgemeines
+    label: "Allgemeines"
+    icon: settings
+    editor:
+      preview: false
+    files:
+      - name: allgemeines
+        label: "Kontaktdaten, Seitenfuß & Ticket-Link"
+        file: src/_data/einstellungen.yaml
+        hint: "Diese Angaben erscheinen auf allen Seiten (z. B. im Seitenfuß und in der Navigation)."
+        fields:
+          - { name: footer_text, label: "Text im Seitenfuß", widget: text }
+          - { name: ticket_url, label: "Link zum Ticketshop", widget: string }
+          - { name: telefon, label: Telefonnummer, widget: string }
+          - { name: telefon_link, label: "Telefonnummer für Anruf-Link (Format +49…)", widget: string }
+          - { name: email, label: E-Mail-Adresse, widget: string }
+          - { name: spielstaette, label: Spielstätte, widget: string }
+          - { name: adresse_strasse, label: Straße, widget: string }
+          - { name: adresse_ort, label: PLZ und Ort, widget: string }
+          - { name: instagram, label: Instagram-Link, widget: string }
+          - { name: facebook, label: Facebook-Link, widget: string }
+          - { name: youtube, label: YouTube-Link, widget: string }
+          - name: sponsoren
+            label: Sponsoren-Logos (im Seitenfuß)
+            label_singular: Sponsor
+            widget: list
+            summary: "{{fields.name}}"
             fields:
-              - { name: stuecke_ueberschrift, label: "Überschrift „Die Stücke“", widget: string }
-              - { name: termine_ueberschrift, label: "Überschrift „Nächste Termine“", widget: string }
-              - { name: publikum_ueberschrift, label: "Überschrift „Das sagt unser Publikum“", widget: string }
-              - { name: ueber_ueberschrift, label: "„Wer wir sind“: Überschrift", widget: string }
-              - { name: ueber_lead, label: "„Wer wir sind“: Einleitung", widget: text }
-              - { name: ueber_text, label: "„Wer wir sind“: Schlusssatz", widget: text }
-          - name: die_stuecke
-            label: "Seite „Die Stücke“"
-            widget: object
-            collapsed: true
-            fields:
-              - { name: ueberschrift, label: Überschrift, widget: string }
-              - { name: lead, label: Einleitung, widget: text }
-          - name: termine
-            label: "Seite „Termine“"
-            widget: object
-            collapsed: true
-            fields:
-              - { name: ueberschrift, label: Überschrift, widget: string }
-              - { name: lead, label: Einleitung, widget: text }
-              - { name: gutzuwissen_ueberschrift, label: "„Gut zu wissen“: Überschrift", widget: string }
-              - { name: gutzuwissen_text, label: "„Gut zu wissen“: Text", widget: markdown }
-          - name: tickets
-            label: "Seite „Tickets“"
-            widget: object
-            collapsed: true
-            fields:
-              - { name: ueberschrift, label: Überschrift, widget: string }
-              - { name: lead, label: Einleitung, widget: text }
-              - { name: preise_ueberschrift, label: "Überschrift „Preise“", widget: string }
-              - { name: gutzuwissen_ueberschrift, label: "Überschrift „Gut zu wissen“", widget: string }
-          - name: team
-            label: "Seite „Team“"
-            widget: object
-            collapsed: true
-            fields:
-              - { name: ueberschrift, label: Überschrift, widget: string, hint: "Die Einleitung dieser Seite wird im Bereich „Team“ gepflegt." }
-          - name: galerie
-            label: "Seite „Galerie & Archiv“"
-            widget: object
-            collapsed: true
-            fields:
-              - { name: ueberschrift, label: Überschrift, widget: string }
-              - { name: lead, label: Einleitung, widget: text }
-              - { name: weitere_ueberschrift, label: "Überschrift „Weitere Produktionen“", widget: string }
-              - { name: weitere_lead, label: "„Weitere Produktionen“: Einleitung", widget: text }
-          - name: faq
-            label: "Seite „Häufige Fragen“"
-            widget: object
-            collapsed: true
-            fields:
-              - { name: ueberschrift, label: Überschrift, widget: string }
-              - { name: lead, label: Einleitung, widget: text }
-          - name: kontakt
-            label: "Seite „Kontakt“"
-            widget: object
-            collapsed: true
-            fields:
-              - { name: ueberschrift, label: Überschrift, widget: string }
-              - { name: lead, label: Einleitung, widget: text }
-          - name: service
-            label: "Seite „Infos“"
-            widget: object
-            collapsed: true
-            fields:
-              - { name: ueberschrift, label: Überschrift, widget: string }
-              - { name: lead, label: Einleitung, widget: text }
-          - name: anfahrt
-            label: "Seite „Anfahrt“"
-            widget: object
-            collapsed: true
-            fields:
-              - { name: ueberschrift, label: Überschrift, widget: string, hint: "Adresse und Spielstätte darunter kommen aus „Startseite, Kontaktdaten & Allgemeines“." }
-              - { name: bus_bahn_ueberschrift, label: "Abschnitt 1: Überschrift", widget: string }
-              - { name: bus_bahn_text, label: "Abschnitt 1: Text", widget: markdown }
-              - { name: bahn_ueberschrift, label: "Abschnitt 2: Überschrift", widget: string }
-              - { name: bahn_text, label: "Abschnitt 2: Text", widget: markdown }
-              - { name: auto_ueberschrift, label: "Abschnitt 3: Überschrift", widget: string }
-              - { name: auto_text, label: "Abschnitt 3: Text (unter der Navigationsadresse)", widget: markdown }
-          - name: das_u
-            label: "Seite „Das U“"
-            widget: object
-            collapsed: true
-            fields:
-              - { name: ueberschrift, label: Überschrift, widget: string }
-              - { name: lead, label: Einleitung, widget: text }
-              - { name: text, label: Fließtext, widget: markdown }
-          - name: newsletter
-            label: "Seite „Newsletter“"
-            widget: object
-            collapsed: true
-            fields:
-              - { name: ueberschrift, label: Überschrift, widget: string }
-              - { name: lead, label: Einleitung, widget: text }
+              - { name: bild, label: Logo, widget: image }
+              - { name: name, label: Name, widget: string }

@@ -11,7 +11,7 @@ active: termine
     </div>
     <section class="section">
       <div class="wrap">
-        {%- set kommende = termine.termine | zukuenftige %}
+        {%- set kommende = seiten.termine.liste | zukuenftige %}
         {%- if kommende.length %}
         {%- for gruppe in kommende | nachMonat %}
         <h2 class="termin-monat">{{ gruppe.monat }}</h2>
@@ -33,7 +33,7 @@ active: termine
         {%- endfor %}
         {%- else %}
         <div class="prose">
-          <p class="lead">{{ einstellungen.termine_hinweis }}</p>
+          <p class="lead">{{ seiten.termine.termine_hinweis }}</p>
           <p>Schauen Sie bald wieder vorbei oder abonnieren Sie unseren <a href="{{ '/service/newsletter/' | url }}">Newsletter</a> – dann erfahren Sie als Erste, wann es weitergeht. Sobald die Vorstellungen feststehen, finden Sie die Karten direkt in unserem Ticketshop.</p>
           <div class="hero-actions">
             <a class="btn btn-red" href="{{ einstellungen.ticket_url }}" target="_blank" rel="noopener">Zum Ticketshop</a>

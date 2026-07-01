@@ -7,11 +7,11 @@ active: team
 ---
     <div class="wrap page-head">
       <h1>{{ seiten.team.ueberschrift }}</h1>
-      <p class="lead">{{ team.intro }}</p>
+      <p class="lead">{{ seiten.team.intro }}</p>
     </div>
     <section class="section">
       <div class="wrap">
-        {%- for person in team.mitglieder %}
+        {%- for person in seiten.team.mitglieder %}
         <div class="person reveal">
           <figure class="person-foto frame">
             <img src="{{ person.bild | url }}" alt="Porträt von {{ person.name }}" loading="lazy">

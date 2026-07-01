@@ -1,6 +1,11 @@
-# Produktionen (Galerie & Archiv) – über das CMS unter „Galerie & Archiv“ bearbeitbar.
+# Galerie & Archiv – Einleitung und alle Produktionen an einem Ort.
 # Produktionen MIT Bildern erscheinen oben als eigener Block mit Fotos,
 # Produktionen OHNE Bilder erscheinen unten in der Chronik.
+ueberschrift: "Galerie & Archiv"
+lead: "Eindrücke aus unseren Produktionen – nach Stück sortiert. Fotos zum Vergrößern einfach anklicken."
+weitere_ueberschrift: "Weitere Produktionen"
+weitere_lead: "Alle Stücke seit 2013 – auch ohne Fotos in unserem Archiv."
+
 produktionen:
   - titel: "Die Tanzstunde"
     jahre: "2024"

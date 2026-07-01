@@ -20,16 +20,16 @@ active: tickets
             <tr><th>Kategorie</th><th>Plätze</th><th>Preis</th></tr>
           </thead>
           <tbody>
-            {%- for kat in preise.kategorien %}
+            {%- for kat in seiten.tickets.kategorien %}
             <tr><td class="kat">{{ kat.name }}</td><td>{{ kat.plaetze }}</td><td>{{ kat.preis }}</td></tr>
             {%- endfor %}
           </tbody>
         </table>
         <div class="prose">
-          <p>{{ preise.versand_hinweis }}</p>
+          <p>{{ seiten.tickets.versand_hinweis }}</p>
           <p><strong>*Ermäßigungsberechtigt mit Nachweis sind:</strong></p>
           <ul>
-            {%- for punkt in preise.ermaessigung %}
+            {%- for punkt in seiten.tickets.ermaessigung %}
             <li>{{ punkt }}</li>
             {%- endfor %}
           </ul>
@@ -39,7 +39,7 @@ active: tickets
     <section class="section section-deep">
       <div class="wrap">
         <h2>{{ seiten.tickets.gutzuwissen_ueberschrift }}</h2>
-        {%- for f in faq.fragen %}
+        {%- for f in seiten.faq.fragen %}
         <details class="info"{% if loop.first %} open{% endif %}>
           <summary>{{ f.frage }}</summary>
           <div class="inhalt">{{ f.antwort | md | safe }}</div>

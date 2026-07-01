@@ -38,7 +38,7 @@ export default function (eleventyConfig) {
   // Flache Liste aller Produktions-Fotos (für die Hero-Slideshow auf der Startseite)
   eleventyConfig.addGlobalData("alleFotos", () => {
     try {
-      const data = yaml.load(readFileSync("src/_data/produktionen.yaml", "utf8"));
+      const data = yaml.load(readFileSync("src/_data/seiten/galerie.yaml", "utf8"));
       return (data.produktionen || []).flatMap((p) => p.bilder || []);
     } catch {
       return [];

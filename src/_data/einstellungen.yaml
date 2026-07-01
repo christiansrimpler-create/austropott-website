@@ -1,11 +1,6 @@
-hero_headline: Unsere nächste Spielzeit beginnt 17.10.26!  Freuen Sie sich auf 3 neue Produktionen!
-hero_text: |-
-  austroPott - Theater im Dortmunder U!
-  Monika Bujinski, Michael Kamp und Harald Schwaiger spielen seit 2012 im Herzen Dortmunds – pointiert, berührend, publikumsnah.
-hero_bild: /assets/img/galerie/abschiedsdinner.jpg
-hero_fokus_desktop: 50% 8%
-hero_fokus_mobile: 50% 8%
-termine_hinweis: Die Termine für die neue Spielzeit werden in Kürze veröffentlicht.
+# Allgemeines – Daten, die auf allen Seiten erscheinen (Kontakt, Seitenfuß,
+# Ticket-Link, Social Media, Sponsoren). Seitenspezifische Inhalte stehen in
+# den jeweiligen Seiten-Reitern.
 footer_text: Theater mit Tiefgang –  im Kino des Dortmunder U.
 ticket_url: https://austropott.tickettoaster.de/produkte
 telefon: 0231 99 320 430
