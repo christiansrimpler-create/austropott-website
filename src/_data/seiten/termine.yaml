@@ -1,15 +1,45 @@
-# Termine – Einleitung, Terminliste und „Gut zu wissen“ an einem Ort.
-ueberschrift: "Termine"
-lead: "Alle Vorstellungen finden im Kino im Erdgeschoss des Dortmunder U statt. Die Abendkasse öffnet eine Stunde vor Vorstellungsbeginn."
-termine_hinweis: "Die Termine für die neue Spielzeit werden in Kürze veröffentlicht."
-leer_zusatz: "Schauen Sie bald wieder vorbei oder abonnieren Sie unseren [Newsletter](/service/newsletter/) – dann erfahren Sie als Erste, wann es weitergeht. Sobald die Vorstellungen feststehen, finden Sie die Karten direkt in unserem Ticketshop."
-
+ueberschrift: Termine
+lead: Alle Vorstellungen finden im Kino im Erdgeschoss des Dortmunder U statt. Die Abendkasse öffnet eine Stunde vor Vorstellungsbeginn.
+termine_hinweis: Die Termine für die neue Spielzeit werden in Kürze veröffentlicht.
+leer_zusatz: Schauen Sie bald wieder vorbei oder abonnieren Sie unseren [Newsletter](/service/newsletter/) – dann erfahren Sie als Erste, wann es weitergeht. Sobald die Vorstellungen feststehen, finden Sie die Karten direkt in unserem Ticketshop.
 liste:
-  - datum: 2026-06-24
-    uhrzeit: 11:00
-    stueck: Einszweiundzwanzig vor dem Ende
-
-gutzuwissen_ueberschrift: "Gut zu wissen"
+  - datum: 2026-10-17
+    uhrzeit: 19:30
+    stueck: Achtsam morden
+  - datum: 2026-10-31
+    uhrzeit: 19:30
+    stueck: Achtsam morden
+  - datum: 2026-11-08
+    uhrzeit: 18:00
+    stueck: Achtsam morden
+  - datum: 2026-11-14
+    uhrzeit: 19:30
+    stueck: Achtsam morden
+  - datum: 2026-11-28
+    uhrzeit: 19:30
+    stueck: Achtsam morden
+  - datum: 2027-01-09
+    uhrzeit: 19:30
+    stueck: Achtsam morden
+  - datum: 2027-01-16
+    uhrzeit: 19:30
+    stueck: Achtsam morden
+  - datum: 2027-01-17
+    uhrzeit: 18:00
+    stueck: Achtsam morden
+  - datum: 2027-02-28
+    uhrzeit: 18:00
+    stueck: Achtsam morden
+  - datum: 2027-03-14
+    uhrzeit: 18:00
+    stueck: Achtsam morden
+  - datum: 2027-04-17
+    uhrzeit: 19:30
+    stueck: Achtsam morden
+  - datum: 2027-04-25
+    uhrzeit: 18:00
+    stueck: Achtsam morden
+gutzuwissen_ueberschrift: Gut zu wissen
 gutzuwissen_text: |-
   Die Abendkasse öffnet eine Stunde vor Vorstellungsbeginn. Wir haben keine Barkasse – Sie können mit EC- und Kreditkarte sowie kontaktlos zahlen.
 
