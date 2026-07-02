@@ -1,6 +1,6 @@
 ---
 titel: Love Letters
-genre: Berührender Briefwechsel von A. R. Gurney
+genre: 2 Zusatztermine wegen großer Nachfrage!
 untertitel: Deutsch von Inge Greiffenhagen und Daniel Karasek
 teaser: Eine Frau, ein Mann und ihre Briefe – mehr braucht der amerikanische Autor A. R. Gurney nicht, um eine berührende Liebesgeschichte auf die Bühne zu zaubern.
 kurztext: 'Eine Frau, ein Mann und ihre Briefe – ein Leben lang. Eine berührende Liebesgeschichte: mitreißend, witzig und tieftraurig.'
@@ -15,6 +15,11 @@ schlusszitat:
   text: Was wir sehen, ist wenig. Was wir hören, ist alles. Was wir fühlen, entsteht dazwischen.
   quelle: ''
 rechte: 'Aufführungsrechte: [PER H. LAUKE VERLAG, Hamburg](https://www.laukeverlag.de)'
+desc: 'Love Letters von A. R. Gurney: Eine Frau, ein Mann und ihre Briefe – ein Leben lang. Mit Monika Bujinski und Michael Kamp im Dortmunder U.'
+active: stuecke
+layout: stueck.njk
+permalink: /die-stuecke/love-letters/
+title: Love Letters | austroPott – Theater im Dortmunder U
 ---
 
 Seit ihrer Kindheit schreiben sich Andy und Melissa. Und sie hören nie auf – ein Leben lang. Verschiedene Schulen, gegensätzliche Lebenswege, ein Krieg, zahlreiche Affären – doch ihre Verbindung reißt nie ab. Melissa, reich, verwöhnt und extrovertiert, trifft auf Andy, wohlerzogen, ehrgeizig und klug. Unterschiedlicher könnten sie kaum sein – und doch zieht es sie immer wieder zueinander.
