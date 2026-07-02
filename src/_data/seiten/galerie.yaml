@@ -1,127 +1,127 @@
-# Galerie & Archiv – Einleitung und alle Produktionen an einem Ort.
-# Produktionen MIT Bildern erscheinen oben als eigener Block mit Fotos,
-# Produktionen OHNE Bilder erscheinen unten in der Chronik.
-ueberschrift: "Galerie & Archiv"
-lead: "Eindrücke aus unseren Produktionen – nach Stück sortiert. Fotos zum Vergrößern einfach anklicken."
-weitere_ueberschrift: "Weitere Produktionen"
-weitere_lead: "Alle Stücke seit 2013 – auch ohne Fotos in unserem Archiv."
-
+ueberschrift: Galerie & Archiv
+lead: Eindrücke aus unseren Produktionen – nach Stück sortiert. Fotos zum Vergrößern einfach anklicken.
+weitere_ueberschrift: Weitere Produktionen
+weitere_lead: Alle Stücke seit 2013 – auch ohne Fotos in unserem Archiv.
 produktionen:
-  - titel: "Die Tanzstunde"
-    jahre: "2024"
-    besetzung: "mit Monika Bujinski und Michael Kamp"
-
-  - titel: "Die Tür nebenan"
-    jahre: "2024"
-    besetzung: "mit Monika Bujinski und Michael Kamp"
+  - titel: Die Tanzstunde
+    jahre: '2024'
+    besetzung: mit Monika Bujinski und Michael Kamp
+    bilder:
+      - bild: /assets/img/DSC_0056.jpeg
+        beschreibung: Szenenfoto aus „Die Tanzstunde“
+        fokus_desktop: 50% 35%
+        fokus_mobile: 50% 35%
+      - bild: /assets/img/DSC_0080.jpeg
+        beschreibung: Szenenfoto aus „Die Tanzstunde“
+        fokus_desktop: 50% 35%
+        fokus_mobile: 50% 35%
+  - titel: Die Tür nebenan
+    jahre: '2024'
+    besetzung: mit Monika Bujinski und Michael Kamp
     bilder:
       - bild: /assets/img/galerie/tur.jpg
-        beschreibung: "Szenenfoto aus „Die Tür nebenan“"
-        fokus_desktop: "50% 35%"
-        fokus_mobile: "50% 35%"
-
-  - titel: "KUNST"
-    jahre: "2013 · 2023"
-    besetzung: "2023 mit Benjamin Grüter, Jürgen Hartmann und Michael Kamp · 2013 mit Harald Schwaiger, Richard Saringer und Michael Kamp"
+        beschreibung: Szenenfoto aus „Die Tür nebenan“
+        fokus_desktop: 50% 35%
+        fokus_mobile: 50% 35%
+      - bild: /assets/img/galerie/img-3881.jpg
+        beschreibung: Szenenfoto aus „Die Tür nebenan“
+        fokus_desktop: 50% 35%
+        fokus_mobile: 50% 35%
+      - bild: /assets/img/galerie/img-3903-2.jpg
+        beschreibung: Szenenfoto aus „Die Tür nebenan“
+        fokus_desktop: 50% 35%
+        fokus_mobile: 50% 35%
+  - titel: KUNST
+    jahre: 2013 · 2023
+    besetzung: 2023 mit Benjamin Grüter, Jürgen Hartmann und Michael Kamp · 2013 mit Harald Schwaiger, Richard Saringer und Michael Kamp
     bilder:
       - bild: /assets/img/galerie/kunst-2.jpg
-        beschreibung: "Szenenfoto aus „KUNST“"
-        fokus_desktop: "50% 35%"
-        fokus_mobile: "50% 35%"
+        beschreibung: Szenenfoto aus „KUNST“
+        fokus_desktop: 50% 35%
+        fokus_mobile: 50% 35%
       - bild: /assets/img/galerie/kunst-6.jpg
-        beschreibung: "Szenenfoto aus „KUNST“"
-        fokus_desktop: "50% 35%"
-        fokus_mobile: "50% 35%"
-
-  - titel: "Das Abschiedsdinner"
-    jahre: "2021 · 2022"
-    besetzung: "mit Monika Bujinski, Harald Schwaiger und Michael Kamp"
+        beschreibung: Szenenfoto aus „KUNST“
+        fokus_desktop: 50% 35%
+        fokus_mobile: 50% 35%
+  - titel: Das Abschiedsdinner
+    jahre: 2021 · 2022
+    besetzung: mit Monika Bujinski, Harald Schwaiger und Michael Kamp
     bilder:
       - bild: /assets/img/galerie/abschiedsdinner.jpg
-        beschreibung: "Szenenfoto aus „Das Abschiedsdinner“"
-        fokus_desktop: "50% 35%"
-        fokus_mobile: "50% 35%"
-
-  - titel: "Mephisto"
-    jahre: "2021 · 2022"
-    besetzung: "mit Harald Schwaiger"
-
-  - titel: "Der Kontrabass"
-    jahre: "2014 · 2021 · 2022"
-    besetzung: "von Patrick Süskind · mit Michael Kamp"
+        beschreibung: Szenenfoto aus „Das Abschiedsdinner“
+        fokus_desktop: 50% 35%
+        fokus_mobile: 50% 35%
+  - titel: Mephisto
+    jahre: 2021 · 2022
+    besetzung: mit Harald Schwaiger
+  - titel: Der Kontrabass
+    jahre: 2014 · 2021 · 2022
+    besetzung: von Patrick Süskind · mit Michael Kamp
     bilder:
       - bild: /assets/img/galerie/bass1.jpg
-        beschreibung: "Michael Kamp in „Der Kontrabass“"
-        fokus_desktop: "50% 35%"
-        fokus_mobile: "50% 35%"
+        beschreibung: Michael Kamp in „Der Kontrabass“
+        fokus_desktop: 50% 35%
+        fokus_mobile: 50% 35%
       - bild: /assets/img/galerie/bass2.jpg
-        beschreibung: "Michael Kamp in „Der Kontrabass“"
-        fokus_desktop: "50% 35%"
-        fokus_mobile: "50% 35%"
-
-  - titel: "Der Gott des Gemetzels"
-    jahre: "2019–2020"
-    besetzung: "von Yasmina Reza · mit Monika Bujinski, Katja Heinrich, Michael Kamp und Harald Schwaiger"
+        beschreibung: Michael Kamp in „Der Kontrabass“
+        fokus_desktop: 50% 35%
+        fokus_mobile: 50% 35%
+  - titel: Der Gott des Gemetzels
+    jahre: 2019–2020
+    besetzung: von Yasmina Reza · mit Monika Bujinski, Katja Heinrich, Michael Kamp und Harald Schwaiger
     bilder:
       - bild: /assets/img/galerie/gott-des-gemetzels.jpg
-        beschreibung: "Szenenfoto aus „Der Gott des Gemetzels“"
-        fokus_desktop: "50% 35%"
-        fokus_mobile: "50% 35%"
-
-  - titel: "Alle sieben Wellen"
-    jahre: "2018–2019"
-    besetzung: "von Daniel Glattauer · mit Katja Heinrich und Harald Schwaiger"
-
-  - titel: "Gut gegen Nordwind"
-    jahre: "2016"
-    besetzung: "von Daniel Glattauer · mit Katja Heinrich und Harald Schwaiger"
-
-  - titel: "Die Wunderübung"
-    jahre: "2015"
-    besetzung: "von Daniel Glattauer · mit Katja Heinrich, Richard Saringer und Harald Schwaiger"
-
-  - titel: "Indien"
-    jahre: "2014"
-    besetzung: "von Dorfer/Hader · mit Harald Schwaiger, Richard Saringer und Michael Kamp"
-
-  - titel: "Sechs Tanzstunden in sechs Wochen"
-    jahre: "2014"
-    besetzung: "von Richard Alfieri · mit Barbara Blümel und Michael Kamp"
-
-  # Fotos ohne eindeutige Stück-Zuordnung – im CMS den passenden Produktionen zuordnen.
-  - titel: "Impressionen"
-    jahre: ""
-    besetzung: ""
+        beschreibung: Szenenfoto aus „Der Gott des Gemetzels“
+        fokus_desktop: 50% 35%
+        fokus_mobile: 50% 35%
+  - titel: Alle sieben Wellen
+    jahre: 2018–2019
+    besetzung: von Daniel Glattauer · mit Katja Heinrich und Harald Schwaiger
+  - titel: Gut gegen Nordwind
+    jahre: '2016'
+    besetzung: von Daniel Glattauer · mit Katja Heinrich und Harald Schwaiger
+  - titel: Die Wunderübung
+    jahre: '2015'
+    besetzung: von Daniel Glattauer · mit Katja Heinrich, Richard Saringer und Harald Schwaiger
+  - titel: Indien
+    jahre: '2014'
+    besetzung: von Dorfer/Hader · mit Harald Schwaiger, Richard Saringer und Michael Kamp
+  - titel: Sechs Tanzstunden in sechs Wochen
+    jahre: '2014'
+    besetzung: von Richard Alfieri · mit Barbara Blümel und Michael Kamp
+  - titel: Impressionen
+    jahre: ''
+    besetzung: ''
     bilder:
       - bild: /assets/img/galerie/siegersbusch-fim-6482.jpg
-        beschreibung: "Szenenfoto einer austroPott-Aufführung"
-        fokus_desktop: "50% 35%"
-        fokus_mobile: "50% 35%"
+        beschreibung: Szenenfoto einer austroPott-Aufführung
+        fokus_desktop: 50% 35%
+        fokus_mobile: 50% 35%
       - bild: /assets/img/galerie/siegersbusch-fim-6758.jpg
-        beschreibung: "Szenenfoto einer austroPott-Aufführung"
-        fokus_desktop: "50% 35%"
-        fokus_mobile: "50% 35%"
+        beschreibung: Szenenfoto einer austroPott-Aufführung
+        fokus_desktop: 50% 35%
+        fokus_mobile: 50% 35%
       - bild: /assets/img/galerie/siegersbusch-fim-6638.jpg
-        beschreibung: "Szenenfoto einer austroPott-Aufführung"
-        fokus_desktop: "50% 35%"
-        fokus_mobile: "50% 35%"
+        beschreibung: Szenenfoto einer austroPott-Aufführung
+        fokus_desktop: 50% 35%
+        fokus_mobile: 50% 35%
       - bild: /assets/img/galerie/siegersbusch-fim-6671.jpg
-        beschreibung: "Szenenfoto einer austroPott-Aufführung"
-        fokus_desktop: "50% 35%"
-        fokus_mobile: "50% 35%"
+        beschreibung: Szenenfoto einer austroPott-Aufführung
+        fokus_desktop: 50% 35%
+        fokus_mobile: 50% 35%
       - bild: /assets/img/galerie/dsc-0028-2.jpg
-        beschreibung: "Szenenfoto einer austroPott-Aufführung"
-        fokus_desktop: "50% 35%"
-        fokus_mobile: "50% 35%"
+        beschreibung: Szenenfoto einer austroPott-Aufführung
+        fokus_desktop: 50% 35%
+        fokus_mobile: 50% 35%
       - bild: /assets/img/galerie/dsc-0077-2.jpg
-        beschreibung: "Szenenfoto einer austroPott-Aufführung"
-        fokus_desktop: "50% 35%"
-        fokus_mobile: "50% 35%"
+        beschreibung: Szenenfoto einer austroPott-Aufführung
+        fokus_desktop: 50% 35%
+        fokus_mobile: 50% 35%
       - bild: /assets/img/galerie/img-3881.jpg
-        beschreibung: "Szenenfoto einer austroPott-Aufführung"
-        fokus_desktop: "50% 35%"
-        fokus_mobile: "50% 35%"
+        beschreibung: Szenenfoto einer austroPott-Aufführung
+        fokus_desktop: 50% 35%
+        fokus_mobile: 50% 35%
       - bild: /assets/img/galerie/img-3903-2.jpg
-        beschreibung: "Szenenfoto einer austroPott-Aufführung"
-        fokus_desktop: "50% 35%"
-        fokus_mobile: "50% 35%"
+        beschreibung: Szenenfoto einer austroPott-Aufführung
+        fokus_desktop: 50% 35%
+        fokus_mobile: 50% 35%
