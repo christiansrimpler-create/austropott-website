@@ -7,7 +7,7 @@ kurztext: |-
   Zwei Menschen mit gemeinsamer Vergangenheit.
   Ein bewegendes Kammerspiel über Liebe, Verlust und die Hoffnung auf Versöhnung.
 bild: /assets/img/Gift Plakat.png
-bild_alt: Illustration GIFT. Eine Ehegeschichte
+bild_alt: Illustratio GIFT. Eine Ehegeschichte
 foto_credit: ''
 reihenfolge: 1
 pressezitate: []
