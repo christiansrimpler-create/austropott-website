@@ -47,6 +47,42 @@ liste:
   - datum: 2026-12-05
     uhrzeit: 19:30
     stueck: Love Letters
+  - datum: 2027-01-23
+    uhrzeit: 19:30
+    stueck: Gift. Eine Ehegeschichte
+  - datum: 2027-01-31
+    uhrzeit: 18:00
+    stueck: Gift. Eine Ehegeschichte
+  - datum: 2027-02-14
+    uhrzeit: 18:00
+    stueck: Gift. Eine Ehegeschichte
+  - datum: 2027-02-27
+    uhrzeit: 19:20
+    stueck: Gift. Eine Ehegeschichte
+  - datum: 2027-03-13
+    uhrzeit: 19:30
+    stueck: Gift. Eine Ehegeschichte
+  - datum: 2027-04-10
+    uhrzeit: 19:30
+    stueck: Gift. Eine Ehegeschichte
+  - datum: 2027-01-30
+    uhrzeit: 19:30
+    stueck: Schachnovelle
+  - datum: 2027-02-06
+    uhrzeit: 19:30
+    stueck: Schachnovelle
+  - datum: 2027-02-20
+    uhrzeit: 19:30
+    stueck: Schachnovelle
+  - datum: 2027-03-06
+    uhrzeit: 19:30
+    stueck: Schachnovelle
+  - datum: 2027-04-11
+    uhrzeit: 18:00
+    stueck: Schachnovelle
+  - datum: 2027-04-24
+    uhrzeit: 19:30
+    stueck: Schachnovelle
 gutzuwissen_ueberschrift: Gut zu wissen
 gutzuwissen_text: |-
   Die Abendkasse öffnet eine Stunde vor Vorstellungsbeginn. Wir haben keine Barkasse – Sie können mit EC- und Kreditkarte sowie kontaktlos zahlen.
