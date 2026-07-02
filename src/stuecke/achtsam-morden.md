@@ -5,7 +5,7 @@ untertitel: Bühnenfassung von Bernd Schmidt nach dem Roman von Karsten Dusse
 teaser: Erleben Sie den gestressten Top-Anwalt Björn Diemel auf seinem absurd-komischen Weg zu mehr Work-Life-Balance.
 kurztext: Erleben Sie den gestressten Top-Anwalt Björn Diemel auf seinem absurd-komischen Weg zu mehr Work-Life-Balance.
 bild: /assets/img/ChatGPT_Image_28._Juni_2026,_12_52_16.jpg
-bild_alt: Illustration Achtsam morden
+bild_alt: Illustratio Achtsam morden
 foto_credit: ''
 reihenfolge: 1
 pressezitate:
