@@ -872,7 +872,7 @@ p { margin: 0 0 1.1em; }
   grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
   gap: clamp(2rem, 5vw, 4.5rem);
   align-items: center;
-  padding: clamp(3rem, 7vw, 5.5rem) 0;
+  padding-block: clamp(3rem, 7vw, 5.5rem);
 }
 
 .stueck-hero .titelseite h1 { margin-bottom: 0.5em; }
