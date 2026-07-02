@@ -1,5 +1,7 @@
 ueberschrift: Termine
-lead: Alle Vorstellungen finden im Kino im Erdgeschoss des Dortmunder U statt. Die Abendkasse öffnet eine Stunde vor Vorstellungsbeginn.
+lead: |-
+  Der VVK beginnt am 01.September. 
+  Alle Vorstellungen finden im Kino im Erdgeschoss des Dortmunder U statt. Die Abendkasse öffnet eine Stunde vor Vorstellungsbeginn.
 termine_hinweis: Die Termine für die neue Spielzeit werden in Kürze veröffentlicht.
 leer_zusatz: Schauen Sie bald wieder vorbei oder abonnieren Sie unseren [Newsletter](/service/newsletter/) – dann erfahren Sie als Erste, wann es weitergeht. Sobald die Vorstellungen feststehen, finden Sie die Karten direkt in unserem Ticketshop.
 liste:
@@ -39,6 +41,12 @@ liste:
   - datum: 2027-04-25
     uhrzeit: 18:00
     stueck: Achtsam morden
+  - datum: 2026-10-15
+    uhrzeit: 18:00
+    stueck: Love Letters
+  - datum: 2026-12-05
+    uhrzeit: 19:30
+    stueck: Love Letters
 gutzuwissen_ueberschrift: Gut zu wissen
 gutzuwissen_text: |-
   Die Abendkasse öffnet eine Stunde vor Vorstellungsbeginn. Wir haben keine Barkasse – Sie können mit EC- und Kreditkarte sowie kontaktlos zahlen.
