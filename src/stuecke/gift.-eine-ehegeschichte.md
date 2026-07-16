@@ -15,6 +15,8 @@ schlusszitat: null
 rechte: ''
 ---
 
+**Mit Monika Bujinski und Michael Kamp**
+
 **Gift. Eine Ehegeschichte** erzählt die bewegende Begegnung eines ehemaligen Ehepaars, das sich viele Jahre nach der Trennung am Grab seines verstorbenen Kindes wiedersieht. Ein unerwarteter Anlass führt beide an diesen Ort zurück und zwingt sie, sich ihrer gemeinsamen Vergangenheit, ihrer tiefen Trauer und den ganz unterschiedlichen Wegen des Weiterlebens zu stellen. 
 
 In eindringlichen  Dialogen entfaltet sich ein preisgekröntes Kammerspiel über Verlust, Liebe, Schuld, Hoffnung und die Möglichkeit von Versöhnung. Mit leisen humorvollen Momenten und großer emotionaler Intensität zeigt das Stück, wie zwei Menschen trotz aller Verletzungen wieder miteinander ins Gespräch finden.
