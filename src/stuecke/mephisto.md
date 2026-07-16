@@ -11,14 +11,16 @@ reihenfolge: 3
 pressezitate: []
 schlusszitat: null
 rechte: ''
-active: stuecke
 desc: 'Mephisto nach Klaus Mann: Schauspiel & Chansons mit Harald Schwaiger. Ein Schauspieler zwischen Macht, Karriere, Gefahr und Verrat – im Dortmunder U.'
+active: stuecke
 layout: stueck.njk
 permalink: /die-stuecke/mephisto/
 title: Mephisto – Der Pakt mit der Macht | austroPott – Theater im Dortmunder U
 ---
 
-**Schachnovelle – Ein Soloabend nach Stefan Zweig, Schauspiel und Musik**
+**Schachnovelle – Ein Soloabend nach Stefan Zweig**
+
+**Schauspiel und Musik**
 
 **Mit Harald Schwaiger**
 
