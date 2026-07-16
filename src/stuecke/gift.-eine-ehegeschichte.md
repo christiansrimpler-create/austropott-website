@@ -15,4 +15,8 @@ schlusszitat: null
 rechte: ''
 ---
 
-**Gift. Eine Ehegeschichte** erzählt die bewegende Begegnung eines ehemaligen Ehepaars, das sich nach vielen Jahren am Grab seines verstorbenen Kindes wiedersieht. Ein unerwarteter Anlass zwingt beide, sich ihrer gemeinsamen Vergangenheit, ihrer Trauer und den unterschiedlichen Wegen des Weiterlebens zu stellen. In eindringlichen Dialogen verbindet das preisgekrönte Kammerspiel Schmerz, Hoffnung und leisen Humor zu einer berührenden Geschichte über Verlust, Liebe und Versöhnung.
+**Gift. Eine Ehegeschichte** erzählt die bewegende Begegnung eines ehemaligen Ehepaars, das sich viele Jahre nach der Trennung am Grab seines verstorbenen Kindes wiedersieht. Ein unerwarteter Anlass führt beide an diesen Ort zurück und zwingt sie, sich ihrer gemeinsamen Vergangenheit, ihrer tiefen Trauer und den ganz unterschiedlichen Wegen des Weiterlebens zu stellen. 
+
+In eindringlichen  Dialogen entfaltet sich ein preisgekröntes Kammerspiel über Verlust, Liebe, Schuld, Hoffnung und die Möglichkeit von Versöhnung. Mit leisen humorvollen Momenten und großer emotionaler Intensität zeigt das Stück, wie zwei Menschen trotz aller Verletzungen wieder miteinander ins Gespräch finden.
+
+Nach den Publikumserfolgen **„Die Tür nebenan“** und **„Die Tanzstunde“** stehen **Monika Bujinski** und **Michael Kamp** erneut in diesem außergewöhnlichen Drama gemeinsam auf der Bühne.
