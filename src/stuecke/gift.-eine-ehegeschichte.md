@@ -1,6 +1,6 @@
 ---
 titel: Gift. Eine Ehegeschichte
-genre: von Lot Vekemans
+genre: (Gif) von Lot Vekemans
 untertitel: Deutsch von Eva M. Pieper und Alexandra Schmiedebach
 teaser: Gift. Eine Ehegeschichte von Lot Vekemans ist ein intensives Kammerspiel über Liebe, Verlust und die Kraft der Versöhnung. Mit feinem Humor und großer emotionaler Tiefe erzählt das Stück von einer unerwarteten Begegnung, die alte Wunden öffnet – und die Möglichkeit eines Neuanfangs bereithält. Bewegend, klug und berührend bis zum Schluss.
 kurztext: |-
@@ -12,7 +12,7 @@ foto_credit: ''
 reihenfolge: 1
 pressezitate: []
 schlusszitat: null
-rechte: ''
+rechte: Aufführungsrechte bei Gustav Kiepenheuer Bühnenvertriebs-GmbH, Berlin | www.kiepenheuer-medien.de
 ---
 
 **Mit Monika Bujinski und Michael Kamp**
