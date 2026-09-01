@@ -93,6 +93,13 @@ export default function (eleventyConfig) {
     return s ? s.url : null;
   });
 
+  // "A, B und C" – Aufzählung der aktuellen Stücke (für Meta-Beschreibungen)
+  eleventyConfig.addFilter("stueckTitel", (stuecke) => {
+    const titel = (stuecke || []).map((s) => s.data.titel).filter(Boolean);
+    if (titel.length < 2) return titel.join("");
+    return `${titel.slice(0, -1).join(", ")} und ${titel.at(-1)}`;
+  });
+
   eleventyConfig.addCollection("stuecke", (api) =>
     api
       .getFilteredByGlob("src/stuecke/*.md")

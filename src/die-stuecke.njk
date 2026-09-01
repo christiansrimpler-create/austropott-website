@@ -2,7 +2,8 @@
 layout: layout.njk
 permalink: /die-stuecke/index.html
 title: "Die Stücke | austroPott – Theater im Dortmunder U"
-desc: "Die aktuellen Stücke von austroPott im Dortmunder U: Einszweiundzwanzig vor dem Ende, Love Letters und Mephisto."
+eleventyComputed:
+  desc: "Die aktuellen Stücke von austroPott im Dortmunder U: {{ collections.stuecke | stueckTitel }}."
 active: stuecke
 ---
     <div class="wrap page-head">

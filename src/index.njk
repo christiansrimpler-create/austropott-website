@@ -2,7 +2,8 @@
 layout: layout.njk
 permalink: /index.html
 title: "austroPott – Theater im Dortmunder U | Theater mit Tiefgang in Dortmund"
-desc: "austroPott spielt seit 2012 erfolgreiche Komödien und Schauspiele im Dortmunder U. Aktuelle Stücke: Einszweiundzwanzig vor dem Ende, Love Letters, Mephisto. Tickets online buchen."
+eleventyComputed:
+  desc: "austroPott spielt seit 2012 erfolgreiche Komödien und Schauspiele im Dortmunder U. Aktuelle Stücke: {{ collections.stuecke | stueckTitel }}. Tickets online buchen."
 active: start
 ---
     <section class="hero">

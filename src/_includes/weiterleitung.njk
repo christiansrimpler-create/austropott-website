@@ -1,0 +1,14 @@
+{#- Weiterleitungsseite; erwartet die Variable `ziel` (Zielpfad, z. B. /termine/) -#}
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>austroPott – Theater im Dortmunder U</title>
+  <link rel="canonical" href="{{ siteUrl }}{{ ziel }}">
+  <meta name="robots" content="noindex, follow">
+  <meta http-equiv="refresh" content="0; url={{ ziel | url }}">
+</head>
+<body>
+  <p>Diese Seite ist umgezogen zu <a href="{{ ziel | url }}">austropott.de{{ ziel }}</a>.</p>
+</body>
+</html>

@@ -34,8 +34,15 @@ GitHub Actions auf GitHub Pages – auch die Speichern-Klicks im CMS lösen
 das aus. Zusätzlich baut ein täglicher Cron-Lauf die Seite neu, damit
 **vergangene Termine automatisch verschwinden**.
 
-Die URL-Pfade entsprechen der alten Website (z. B. `die-stuecke/mephisto.html`),
-bestehende Links funktionieren nach dem Domain-Umzug weiter.
+Die URL-Pfade entsprechen der alten Website (z. B. `die-stuecke/love-letters/`),
+alte `.html`-Adressen leiten weiter (`src/_data/redirects.yaml`).
+
+**Stück-URLs** ergeben sich aus dem Titel im CMS, nicht aus dem Dateinamen
+(`src/stuecke/stuecke.11tydata.js`). Sveltia benennt Dateien beim Ändern des
+Titels nicht um – weicht der Dateiname von der URL ab, erzeugt
+`src/stueck-weiterleitungen.njk` automatisch eine Weiterleitung von der alten
+Adresse. Versteckte Felder wie `permalink`/`title`/`desc` in Stück-Dateien
+werden ignoriert (das CMS schreibt sie sonst beim Speichern wieder hinein).
 
 ### Umzug auf austropott.de (später)
 

@@ -12,7 +12,8 @@
 - { from: /die-stuecke/1h22-vor-dem-ende.html, to: /die-stuecke/achtsam-morden/ }
 - { from: /die-stuecke/1h22-vor-dem-ende/, to: /die-stuecke/achtsam-morden/ }
 - { from: /die-stuecke/love-letters.html, to: /die-stuecke/love-letters/ }
-- { from: /die-stuecke/mephisto.html, to: /die-stuecke/mephisto/ }
+- { from: /die-stuecke/mephisto.html, to: /die-stuecke/schachnovelle/ }
+- { from: /die-stuecke/mephisto/, to: /die-stuecke/schachnovelle/ }
 
 # Alte "-mobil"-Seiten der früheren EverWeb-Website (separate Handy-URLs, von
 # Google indexiert) → auf die neuen, responsiven Seiten leiten. /start-mobil.html

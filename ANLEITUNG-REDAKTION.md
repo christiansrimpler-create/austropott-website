@@ -15,7 +15,7 @@ wie man Inhalte der Website ohne technische Kenntnisse ändert.
 | Bereich | Was darin steckt |
 |---|---|
 | **Termine** | Vorstellungstermine: Datum, Uhrzeit, Stück. Vergangene Termine verschwinden automatisch. |
-| **Stücke** | Die Stück-Seiten: Texte, Fotos, Zitate. Neue Stücke können angelegt, alte gelöscht werden. |
+| **Stücke** | Die Stück-Seiten: Texte, Fotos, Zitate. Neue Stücke können angelegt, alte gelöscht werden. Die Internetadresse (z. B. austropott.de/die-stuecke/schachnovelle/) ergibt sich automatisch aus dem Titel. |
 | **Startseite & Zitate** | Überschrift und Text auf dem großen Bild, Pressezitat, Publikumsstimmen, Kontaktdaten, Sponsoren-Logos. |
 | **Team** | Die Team-Seite: Namen, Fotos, Lebensläufe. |
 | **Ticketpreise** | Die Preistabelle und die Ermäßigungen. |
