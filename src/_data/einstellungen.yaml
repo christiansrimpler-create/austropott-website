@@ -1,6 +1,3 @@
-# Allgemeines – Daten, die auf allen Seiten erscheinen (Kontakt, Seitenfuß,
-# Ticket-Link, Social Media, Sponsoren). Seitenspezifische Inhalte stehen in
-# den jeweiligen Seiten-Reitern.
 footer_text: Theater mit Tiefgang –  im Kino des Dortmunder U.
 ticketbar_text: Karten für alle Vorstellungen
 sponsoren_ueberschrift: Wir danken unseren Sponsoren und Partnern
@@ -15,13 +12,7 @@ instagram: https://instagram.com/austropott
 facebook: https://www.facebook.com/AustropottSchauspiel
 youtube: https://www.youtube.com/@austropott7406/featured
 sponsoren:
-  - bild: /assets/img/sponsoren/kulturbuero.png
-    name: Kulturbüro Dortmund
-  - bild: /assets/img/sponsoren/sparkasse-dortmund.png
-    name: Sparkasse Dortmund
   - bild: /assets/img/sponsoren/dortmunder-volksbank.jpg
     name: Dortmunder Volksbank
   - bild: /assets/img/sponsoren/dortmunder-u.png
     name: Dortmunder U
-  - bild: /assets/img/sponsoren/gundi.jpg
-    name: Gundi
