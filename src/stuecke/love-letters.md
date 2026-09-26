@@ -2,7 +2,7 @@
 titel: Love Letters
 genre: Wiederaufnahme wegen großer Nachfrage!
 untertitel: Deutsch von Inge Greiffenhagen und Daniel Karasek
-teaser: Eine Frau, ein Mann und ihre Briefe – mehr braucht der amerikanische Autor A. R. Gurney nicht, um eine berührende Liebesgeschichte auf die Bühne zu zaubern.
+teaser: Eine Frau, ein Mann und ihre Briefe – mehr braucht der amerikanische Autor A. R. Gurney nicht, um eine diese wunderbare Liebesgeschichte auf die Bühne zu zaubern.
 kurztext: Eine Frau, ein Mann und ihre Briefe – ein Leben lang. Eine mitreißende Liebesgeschichte, witzig und tieftraurig.
 bild: /assets/img/stueck-love-letters.jpg
 bild_alt: Illustratio zu „Love Letters“
