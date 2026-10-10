@@ -1,27 +1,27 @@
-# Tickets – Einleitung, Preistabelle und Ermäßigungen. „Gut zu wissen“ nutzt die
-# Fragen aus dem Reiter „Häufige Fragen“.
-ueberschrift: "Tickets"
-lead: "Tickets für unsere Vorstellungen bekommen Sie in unserem Online-Shop bei Tickettoaster – oder an der Abendkasse, eine Stunde vor Vorstellungsbeginn."
-preise_ueberschrift: "Preise"
-gutzuwissen_ueberschrift: "Gut zu wissen"
-
+ueberschrift: Tickets
+lead: Tickets für unsere Vorstellungen bekommen Sie in unserem Online-Shop bei Tickettoaster – oder an der Abendkasse, eine Stunde vor Vorstellungsbeginn.
+preise_ueberschrift: Preise
 kategorien:
-  - name: "Kategorie 1"
-    plaetze: "Reihen 1–4"
-    preis: "29 €"
-  - name: "Kategorie 2"
-    plaetze: "Reihen 5–9"
-    preis: "27 €"
-  - name: "Kategorie 3"
-    plaetze: "Reihen 10–13"
-    preis: "24 €"
-  - name: "Ermäßigt*"
-    plaetze: "alle Reihen"
-    preis: "14 €"
-versand_hinweis: "Alle Preise inklusive Vorverkaufs- und Servicegebühren. Bei Lieferung per Post erhebt Tickettoaster eine Versandgebühr von 4,90 €."
-ermaessigung_intro: "*Ermäßigungsberechtigt mit Nachweis sind:"
+  - name: Kategorie 1
+    plaetze: Reihen 1–4
+    preis: 29 €
+  - name: Kategorie 2
+    plaetze: Reihen 5–9
+    preis: 27 €
+  - name: Kategorie 3
+    plaetze: Reihen 10–13
+    preis: 24 €
+  - name: Ermäßigt*
+    plaetze: alle Reihen
+    preis: 14 €
+versand_hinweis: |-
+  ​Für die Vorstellungen von LOVE LETTERS gilt ein Sonderpreis von € 19,90 auf allen Plätzen.
+
+  Alle Preise inklusive Vorverkaufs- und Servicegebühren. Bei Lieferung per Post erhebt Tickettoaster eine Versandgebühr von 4,90 €.
+ermaessigung_intro: '*Ermäßigungsberechtigt mit Nachweis sind:'
 ermaessigung:
-  - "Schüler*innen und Studierende"
-  - "Bezieher*innen von ALG I / ALG II"
-  - "DoPass-Inhaber*innen"
-  - "Schwerbehinderte mit Merkzeichen B im Ausweis sowie deren Begleitperson"
+  - Schüler*innen und Studierende
+  - Bezieher*innen von ALG I / ALG II
+  - DoPass-Inhaber*innen
+  - Schwerbehinderte mit Merkzeichen B im Ausweis sowie deren Begleitperson
+gutzuwissen_ueberschrift: Gut zu wissen
